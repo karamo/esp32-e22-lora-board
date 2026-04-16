@@ -1,0 +1,163 @@
+[19:42:42]
+[19:42:42]
+[19:42:42]============
+[19:42:42]CLIENT SETUP
+[19:42:42]============
+[19:42:42]00:00:00;[HEAP];150728;(free)
+[19:42:42]00:00:00;[PSRM];0
+[19:42:42][EFUS]...Two Point: NOT supported
+[19:42:42][EFUS]...Vref: Supported
+[19:42:42][INIT]...initMheard
+[19:42:42][INIT]...init_flash
+[19:42:42][INIT]...init_batt
+[19:42:42][ADC ]...Characterized using eFuse Vref
+[19:42:42][INIT]...setupBMX280 - I2C:76
+[19:42:42][INIT]...BME280 startet
+[19:42:42][INIT]...MCP23017 not found
+[19:42:42][INIT]...INA226 not found
+[19:42:42][INIT]...RTC not found
+[19:42:42][INIT].._GW_ID: B750DDC8
+[19:42:42][INIT]...Initialize clock: ok
+[19:42:42][INIT]...Auto detecting display:
+[19:42:42][INIT]...Display type: 0x04
+[19:42:42][INIT]...OLED Display is SH1106
+[19:42:42][LoRa]...SX1268 chip Initializing ... success
+[19:42:42][LoRa]...RX_BOOSTED_GAIN: 1
+[19:42:42][LoRa]...RF_FREQUENCY: 433.175 MHz
+[19:42:42][LoRa]...RF_BANDWIDTH: 250 kHz
+[19:42:42][LoRa]...RF_SF: 11
+[19:42:42][LoRa]...RF_CR: 4/6
+[19:42:42][LoRa]...RF_POWER: 2 dBm
+[19:42:42][LoRa]...PREAMBLE: 8 symbols
+[19:42:42][LoRa]...Starting to listen ... success
+[19:42:42][LoRa]...All settings successfully changed
+[19:42:42][BLE ]...Device started with BLE-Name <MC-ddc8-DF2AP-98>
+[19:42:42][BLE ]...Device-Address <f8:b3:b7:50:dd:ca>
+[19:42:42][BLE ]...Waiting a client connection to notify...
+[19:42:42]
+[19:42:42]==============
+[19:42:42]CLIENT STARTED
+[19:42:42]==============
+[19:42:46][WIFI]...SSID: WLAN-DF2AP CHAN: 1 RSSI: -54 BSSID: 78:45:58:14:2F:DF
+[19:42:46]
+[19:42:46][WIFI]...SSID: WLAN-DF2AP CHAN: 1 RSSI: -66 BSSID: FC:EC:DA:3E:7:47
+[19:42:46]
+[19:42:46][WIFI]...connecting to CHAN: 1 BSSID: 78:45:58:14:2F:DF
+[19:42:46]
+[19:42:47][WIFI]...power: 48 RSSI:-56
+[19:42:48][WIFI]...Wait connect .
+[19:42:48]
+[19:42:48][WIFI]...connect OK
+[19:42:48][WIFI]...now listening at IP 192.168.2.188, UDP port 1990
+[19:42:48][WIFI]...Internet UDP-DEST meshcom.oevsv.at
+[19:42:50][WIFI]...Internet NTP-DEST pool.ntp.org
+[19:42:50]
+[19:42:56]TimeClient no update possible
+[19:42:56]
+[19:42:57]TimeClient no force update possible
+[19:42:59]00:00:01 [WIFI]..Reconnecting to WiFi...
+[19:42:59]GPS: trying 38400 baud <1>
+[19:42:59]E (19225) wifi:timeout when WiFi un-init, type=4
+[19:43:03]GPS: trying 9600 baud <1>
+[19:43:03]GPS: trying 38400 baud <1>
+[19:43:07]GPS: trying 57600 baud <1>
+[19:43:10]GPS: trying 115200 baud <1>
+[19:43:14]GPS: trying 38400 baud <2>
+[19:43:17]GPS: trying 9600 baud <2>
+[19:43:17]GPS: trying 38400 baud <2>
+[19:43:21]GPS: trying 57600 baud <2>
+[19:43:24]GPS: trying 115200 baud <2>
+[19:43:27]
+[19:43:27]
+[19:43:27]
+[19:43:27]============
+[19:43:27]CLIENT SETUP
+[19:43:27]============
+[19:43:27]00:00:00;[HEAP];150728;(free)
+[19:43:27]00:00:00;[PSRM];0
+[19:43:27][EFUS]...Two Point: NOT supported
+[19:43:27][EFUS]...Vref: Supported
+[19:43:27][INIT]...initMheard
+[19:43:27][INIT]...init_flash
+[19:43:27][INIT]...init_batt
+[19:43:27]
+[19:43:27][ADC ]...Characterized using eFuse Vref
+[19:43:27][INIT]...setupBMX280 - I2C:76
+[19:43:27][INIT]...BME280 startet
+[19:43:27][INIT]...MCP23017 not found
+[19:43:27][INIT]...INA226 not found
+[19:43:27][INIT]...RTC not found
+[19:43:27][INIT].._GW_ID: B750DDC8
+[19:43:27][INIT]...Initialize clock: ok
+[19:43:27][INIT]...Auto detecting display:
+[19:43:27][INIT]...Display type: 0x04
+[19:43:27][INIT]...OLED Display is SH1106
+[19:43:28][LoRa]...SX1268 chip Initializing ... success
+[19:43:28][LoRa]...RX_BOOSTED_GAIN: 1
+[19:43:28][LoRa]...RF_FREQUENCY: 433.175 MHz
+[19:43:28][LoRa]...RF_BANDWIDTH: 250 kHz
+[19:43:28][LoRa]...RF_SF: 11
+[19:43:28][LoRa]...RF_CR: 4/6
+[19:43:28][LoRa]...RF_POWER: 2 dBm
+[19:43:28][LoRa]...PREAMBLE: 8 symbols
+[19:43:28][LoRa]...Starting to listen ... success
+[19:43:28][LoRa]...All settings successfully changed
+[19:43:28][BLE ]...Device started with BLE-Name <MC-ddc8-DF2AP-98>
+[19:43:28][BLE ]...Device-Address <f8:b3:b7:50:dd:ca>
+[19:43:28][BLE ]...Waiting a client connection to notify...
+[19:43:28]==============
+[19:43:28]CLIENT STARTED
+[19:43:28]==============
+[19:43:28]
+[19:43:32][WIFI]...SSID: WLAN-DF2AP CHAN: 1 RSSI: -54 BSSID: 78:45:58:14:2F:DF
+[19:43:32]
+[19:43:32][WIFI]...SSID: WLAN-DF2AP CHAN: 1 RSSI: -68 BSSID: FC:EC:DA:3E:7:47
+[19:43:32][WIFI]...connecting to CHAN: 1 BSSID: 78:45:58:14:2F:DF
+[19:43:32]
+[19:43:33][WIFI]...power: 49 RSSI:-54
+[19:43:33][WIFI]...Wait connect 
+[19:43:33][WIFI]...connect OK
+[19:43:33]
+[19:43:33][WIFI]...now listening at IP 192.168.2.188, UDP port 1990
+[19:43:33][WIFI]...Internet UDP-DEST meshcom.oevsv.at
+[19:43:33][WIFI]...Internet NTP-DEST pool.ntp.org
+[19:43:35]TimeClient no update possible
+[19:43:37]GPS: trying 38400 baud <1>
+[19:43:40]GPS: trying 9600 baud <1>
+[19:43:40]GPS: trying 38400 baud <1>
+[19:43:44]GPS: trying 57600 baud <1>
+[19:43:47]GPS: trying 115200 baud <1>
+[19:43:51]GPS: trying 38400 baud <2>
+[19:43:54]GPS: trying 9600 baud <2>
+[19:43:54]GPS: trying 38400 baud <2>
+[19:43:58]GPS: trying 57600 baud <2>
+[19:44:01]GPS: trying 115200 baud <2>
+[19:44:05]GPS: trying 38400 baud <3>
+[19:44:08]GPS: trying 9600 baud <3>
+[19:44:08]GPS: trying 38400 baud <3>
+[19:44:12]GPS: trying 57600 baud <3>
+[19:44:15]GPS: trying 115200 baud <3>
+[19:44:19]GPS: trying 38400 baud <4>
+[19:44:22]GPS: trying 9600 baud <4>
+[19:44:22]GPS: trying 38400 baud <4>
+[19:44:26]GPS: trying 57600 baud <4>
+[19:44:29]GPS: trying 115200 baud <4>
+[19:44:33]GPS: trying 38400 baud <5>
+[19:44:36]GPS: trying 9600 baud <5>
+[19:44:36]GPS: trying 38400 baud <5>
+[19:44:40]GPS: trying 57600 baud <5>
+[19:44:43]GPS: trying 115200 baud <5>
+[19:44:47]GPS: trying 38400 baud <6>
+[19:44:50]GPS: trying 9600 baud <6>
+[19:44:50]GPS: trying 38400 baud <6>
+[19:44:54]GPS: trying 57600 baud <6>
+[19:44:57]GPS: trying 115200 baud <6>
+[19:45:01]GPS: trying 38400 baud <7>
+[19:45:04]GPS: trying 9600 baud <7>
+[19:45:04]GPS: trying 38400 baud <7>
+[19:45:08]GPS: trying 57600 baud <7>
+[19:45:11]GPS: trying 115200 baud <7>
+[19:45:15]GPS: trying 38400 baud <8>
+[19:45:18]GPS: trying 9600 baud <8>
+[19:45:18]GPS: trying 38400 baud <8>
+[19:45:22]GPS: trying 57600 baud <8>
