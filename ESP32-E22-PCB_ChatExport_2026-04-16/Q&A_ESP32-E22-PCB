@@ -1,0 +1,139 @@
+
+10 January 2025
+Kurt Baumann OE1KBC created topic «ESP32-E22 PCB»
+00:52
+Kurt Baumann OE1KBC
+In reply to this message
+Entwicklung und Information zu ESP32-E22 PCB
+Kurt Baumann OE1KBC changed topic icon to «0»
+08:12
+wolfgang z
+In reply to this message
+Alle Beiträge während der Entwicklung der PCB, also vor der endgültigen V2.1.2 habe ich im #General belassen.
+👍
+08:12
+In reply to this message
+... hier folgen in chronologischer Reihenfolge die Beiträge zur V2.1.2 in u.U. angepasster Form ...
+08:13
+In reply to this message
+wolfgang z, [13.11.2024 15:47]
+in der PCB V2.1.2 sind viele kleine Änderungen eingeflossen, die auch speziell nach einigen Chats mit DG4NEU Stefan und anderen Erwägungen entstanden sind.
+Aber grundsätzlich hat V2.1.2 die gleichen Grundfunktionen wie die Vorversionen, nur mit einigen wichtigen Erweiterungen:
+• Querformat für Outdoor (alle Ausgänge unten)
+• dementsprechend OLED um 90° gedreht einbaubar
+• erweiterte Stromversorgungsmöglichkeit
+
+ESP32-E22 Projekt - PCB V2.1.2
+https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2
+10:15
+wolfgang z
+In reply to this message
+Deep Links für einfacheren Zugriff auf die wichtigsten Unterlagen:
+
+Datenblätter u.a. der Key-Components
+https://github.com/DK9BT/esp32-e22-lora-board/tree/main/datasheet
+
+Schaltplan V2.1.2
+https://github.com/DK9BT/esp32-e22-lora-board/blob/main/ESP32-E22_V2.1.2/pdf/ESP32-E22_2.1.2_SCH.pdf
+
+Bestückungspläne und Gehäuseeinbau PCB V2.1.2
+https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/pdf
+
+Bestückungshinweise PCB V2.1.2
+https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#best%C3%BCckungshinweise-pcb-v212
+10:22
+In reply to this message
+❗️Achtung: Die BOM (Bill Of Material = Stückliste) ist noch von V2.1.0 und daher nicht aktuell für V2.1.2 - bitte beachten! Ggf. in den Schaltplan schauen, was aktuell ist.
+❤
+10:31
+In reply to this message
+Ben, [14.11.2024 12:10]
+@wolfgang_zel Kann man da kein bestell.link machen wie bei aisler?
+
+wolfgang z, [14.11.2024 12:12]
+habe ich bei JLBPCB nicht gefunden.
+Aber bei anderen Herstellern ist das möglich.
+Ja, ich habe auch schon daran gedacht und werde das noch evaluieren.
+
+Aber die Key-Components und Kleinkram kann man ja schon mal bestellen bzw. überprüfen, was man schon hat, denn die haben tw. auch längere Lieferzeiten.
+
+Es gibt vieles Teile auch bei Reichelt und Amazon wenn man will.
+Einzelne Teile gibt es nur von Aliexpress (günstiger) ... und da ist auch Lieferzeit.
+
+Den Spannungsregler aber gibt's auch noch anderswo teurer, da ja weit verbreitet.
+Aber man kann auch alternativ einen teuren Recom DC/DC einbauen. z.B. eine Lieferquelle dafür:
+https://at.rs-online.com/web/p/schaltregler/1392959
+10:41
+In reply to this message
+Ben, [15.11.2024 13:59]
+Achtung: die normalen E32 Nodemcu boards passen nicht, sind zu schmal...am besten einfach über den Amazon link bestellen...die teile passen dann
+10:42
+In reply to this message
+Stefan, [15.11.2024 13:28]
+In GitHub sind in der Galerie ein paar Bilder von meinem Node, da kann man den ESP ganz gut erkennen. War auch mal vor Jahren ne Packung von AZ-Delivery im Angebot bei Amazon.
+https://github.com/DK9BT/esp32-e22-lora-board/tree/main/gallery/DG4NEU_Stefan
+
+Inzwischen bevorzuge ich Aliexpress, die Preise sind dort extrem besser und die Herkunft vermutlich die gleiche. Meine Vorliebe für lokale Lieferanten hab ich angesichts dieser Unterschiede mal hintenan gestellt und hab dafür ein bisschen Geduld für die längere Lieferzeit.
+10:43
+In reply to this message
+Wolfgang Hallmann DF7PN, [15.11.2024 13:41]
+Ich haben noch eine Frage zu der Liste wegen dem OLED:
+Da steht drinn: OLED-Display (VCC-GND-SCL-SDA)
+Ist diese Reihenfolge der Pins genau so einzuhalten, oder ein Tippfehler?
+Ich habe bisher nur solche OLEDs gefunden wo die Reihenfolge: GND-VCC-... verfügbar ist. Also die beiden Pins vertauscht.
+Arg, der amazon link zeigt auf ein teures aber mit Pin-Anordnung wie in der Liste. Die Ali Teile sind viel günstiger aber haben VCC/GND vertauscht.
+
+Stefan, [15.11.2024 13:43]
+Ja, die OLEDs gibt es in beiden Versionen, auf der Platine ist aber vorgesehen, die Pins zu "tauschen". Ich würde allerdings nach den passenden Displays schauen. Einige Ausführungen erlauben auch ein Tauschen der Belegung durch Brücken auf der OLED-Platine. Dann stimmt aber die Beschriftung nicht mehr.
+Beim Ali muss man sehr genau hinsehen, dass man die Richtigen bestellt/bekommt. Zur Not eben die Platine anpassen.
+https://de.aliexpress.com/item/1005006425021544.html
+Das hatte ich letzt bestellt, die passen und sind günstig, wenn man nicht nur eins bestellt.
+10:44
+In reply to this message
+wolfgang z, [15.11.2024 14:10]
+1️⃣ Ja, die OLED gibt es in grundsätzlich 2 verschiedenen Pin-Anordnungen. Die angegebene (VCC-GND-SCL-SDA) ist bereits auf der PCB verdrahtet.
+Fall man VCC <> GND umdrehen möchte, dann sind auf der Rückseiten 2 Leiterbahnen zu unterbrechen und 2 Drahtbrücken herzustellen.
+Wer will, kann bei JP1 & JP2 Pfostenstecker einbauen (auf der Rückseite) und Jumper verwenden.
+10:48
+In reply to this message
+Stefan, [15.11.2024 15:28]
+Du musst nur aufpassen, wenn du den E22 anschließt, der zieht zu viel Strom. Bis dahin solltest du auch die 5V-Versorgung bestücken.
+10:48
+In reply to this message
+Neee, wenn ich ein geeignetes USB-Netzteil verwende, dann funktioniert das. Z.B. von einem RPi.
+10:50
+Wolfgang Hallmann DF7PN
+In reply to this message
+Danke für die Mühe das hier in diesem Stream zu sammeln!
+10:55
+wolfgang z
+In reply to this message
+Stefan, [15.11.2024 15:30]
+Nicht über den ESP, dann bricht beim Senden die Spannung ein und der macht einen Reboot. Hier getestet.
+Hilft nur, die Sendeleistung runterzunehmen.
+
+wolfgang z, [15.11.2024 15:31]
+Nein, das sollte nicht so sein, denn der 5V-Pfad geht durch an die Steckerleiste und am E22 ist deswegen auch noch der große Elko. Sollte also funktionieren, Aber ich werde es n.W. sehen bzw. auch messen.
+
+Am ESP32-DevKitC-V4 ist zwischen USB und Stiftleiste nur die eine D3 Schottky-Diode im Pfad. Also meine ich, dass es gehen sollte.
+Denn wie ich schon vor einiger Zeit das Thema der Schutzdioden thematisierte, und auch wie zuvor gezeigt:
+USB-Netzgerät > µ-USB am ESP32 > BAT760-7 > Stiftleiste > E22
+Für Strom-Spikes ist der Elko + 100nF Kerko direkt am E22 vorgesehen.
+Ich sehe da kein Problem.
+❤
+10:56
+In reply to this message
+11:07
+In reply to this message
+und wie man sieht, sind am ESP32-DevKit-V4 die +5V links unten gleich neben der USB-Buchse, also keine langen Leiterbahnen, wo ein nennenswerter Spannungsabfall entstehen könnte.
+11:08
+In reply to this message
+Die beiden bisherigen getesteten Käfer
+11:09
+In reply to this message
+wolfgang z, [15.11.2024 15:49]
+ja, haben offensichtlich gleiches Pinning und gleichen Pin-Abstand.
+11:10
+In reply to this message
+5 Stk um ≈35€
+https://www.amazon.de/dp/B08BZFW41S
