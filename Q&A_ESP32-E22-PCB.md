@@ -11,7 +11,7 @@ Aber grundsätzlich hat V2.1.2 die gleichen Grundfunktionen wie die Vorversionen
 • erweiterte Stromversorgungsmöglichkeit  
 ESP32-E22 Projekt - PCB V2.1.2  
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2  
-10:15  
+
 #### OE3WAS wolfgang z  
 Deep Links für einfacheren Zugriff auf die wichtigsten Unterlagen:  
 Datenblätter u.a. der Key-Components  
@@ -22,7 +22,7 @@ Bestückungspläne und Gehäuseeinbau PCB V2.1.2
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/pdf  
 Bestückungshinweise PCB V2.1.2  
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#best%C3%BCckungshinweise-pcb-v212  
-10:22  
+
 ❗️Achtung: Die BOM (Bill Of Material = Stückliste) ist noch von V2.1.0 und daher nicht aktuell für V2.1.2 - bitte beachten! Ggf. in den Schaltplan schauen, was aktuell ist.  
 
 #### ben, [14.11.2024 12:10]  
