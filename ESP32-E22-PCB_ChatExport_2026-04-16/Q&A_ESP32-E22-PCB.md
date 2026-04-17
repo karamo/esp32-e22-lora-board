@@ -966,40 +966,7 @@ das wäre dann aber der esp der die plötzlich anders will. Gibts sowas? wohl eh
 ? Sind es die identischen GPS-Module?  
 11:48  
 Ein einfacher Test, ob ein Pin ein Eingang ist, falls er keinen PullUp/PullDown hat, mit dem Oszi an diesen Eingang und gleichzeitig diesen Pin mit dem Finger berühren. Damit koppelt man die allgegenwärtigen 50Hz ein und man sieht am Oszi, ob der Pin hochohmig ist.  
-11:49  
-Wolfgang Hallmann DF7PN  
-Das war es auch nicht.  
-11:50  
-kein Oszi hier  
-11:50  
-#### wolfgang z  
-ältere FW probiert?  
-11:50  
-???  
-11:50  
-Wolfgang Hallmann DF7PN  
-keine mehr vorhanden hier  
-11:50  
-#### wolfgang z  
-auf Github  
-11:50  
-Wolfgang Hallmann DF7PN  
-stimmt  
-11:51  
-der ist frisch aufgebaut. ich lade mal was älteres drauf  
-11:51  
-gibt hier aber viele mit V gleich aufgebaut die laufen  
-11:52  
-#### wolfgang z  
-nimm die "r"  
-11:52  
-Wolfgang Hallmann DF7PN  
-ok  
-11:57  
-wie zu erwarten, keine gps Erkennung  
-11:58  
-Helmut OE5HWN  
-Hast du noch ein weiteres GPS Modul  
+
 11:58  
 #### wolfgang z  
 hat sich in der FW nicht geändert:  
