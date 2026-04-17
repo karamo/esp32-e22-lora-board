@@ -1,11 +1,11 @@
 # Q&Q ESP32-E22 PCB  
 Beginnend am 10 January 2025 aus Telegram exportierter Chat zur Entwicklung und Information zu ESP32-E22 PCB  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Alle Beiträge während der Entwicklung der PCB, also vor der endgültigen V2.1.2 wurden in der Telegram Gruppe im Thema #General belassen.  
 
-#### wolfgang z, [13.11.2024 15:47]  
-in der PCB V2.1.2 sind viele kleine Änderungen eingeflossen, die auch speziell nach einigen Chats mit DG4NEU Stefan und anderen Erwägungen entstanden sind.  
+#### OE3WAS wolfgang z, [13.11.2024 15:47]  
+in der PCB V2.1.2 sind viele kleine Änderungen eingeflossen, die auch speziell nach einigen Chats mit DG4NEU #### Stefan und anderen Erwägungen entstanden sind.  
 Aber grundsätzlich hat V2.1.2 die gleichen Grundfunktionen wie die Vorversionen, nur mit einigen wichtigen Erweiterungen:  
 • Querformat für Outdoor (alle Ausgänge unten)  
 • dementsprechend OLED um 90° gedreht einbaubar  
@@ -13,7 +13,7 @@ Aber grundsätzlich hat V2.1.2 die gleichen Grundfunktionen wie die Vorversionen
 ESP32-E22 Projekt - PCB V2.1.2  
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2  
 10:15  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Deep Links für einfacheren Zugriff auf die wichtigsten Unterlagen:  
 Datenblätter u.a. der Key-Components  
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/datasheet  
@@ -28,7 +28,7 @@ https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Ass
 
 #### ben, [14.11.2024 12:10]  
 @wolfgang_zel Kann man da kein bestell.link machen wie bei aisler?  
-#### wolfgang z, [14.11.2024 12:12]  
+#### OE3WAS wolfgang z, [14.11.2024 12:12]  
 habe ich bei JLBPCB nicht gefunden.  
 Aber bei anderen Herstellern ist das möglich.  
 Ja, ich habe auch schon daran gedacht und werde das noch evaluieren.  
@@ -42,9 +42,9 @@ https://at.rs-online.com/web/p/schaltregler/1392959
 #### ben, [15.11.2024 13:59]  
 Achtung: die normalen E32 Nodemcu boards passen nicht, sind zu schmal...am besten einfach über den Amazon link bestellen...die teile passen dann  
 10:42  
-Stefan, [15.11.2024 13:28]  
+#### Stefan, [15.11.2024 13:28]  
 In GitHub sind in der Galerie ein paar Bilder von meinem Node, da kann man den ESP ganz gut erkennen. War auch mal vor Jahren ne Packung von AZ-Delivery im Angebot bei Amazon.  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/gallery/DG4NEU_Stefan  
+https://github.com/DK9BT/esp32-e22-lora-board/tree/main/gallery/DG4NEU_#### Stefan  
 Inzwischen bevorzuge ich Aliexpress, die Preise sind dort extrem besser und die Herkunft vermutlich die gleiche. Meine Vorliebe für lokale Lieferanten hab ich angesichts dieser Unterschiede mal hintenan gestellt und hab dafür ein bisschen Geduld für die längere Lieferzeit.  
 10:43  
 Wolfgang Hallmann DF7PN, [15.11.2024 13:41]  
@@ -53,18 +53,18 @@ Da steht drinn: OLED-Display (VCC-GND-SCL-SDA)
 Ist diese Reihenfolge der Pins genau so einzuhalten, oder ein Tippfehler?  
 Ich habe bisher nur solche OLEDs gefunden wo die Reihenfolge: GND-VCC-... verfügbar ist. Also die beiden Pins vertauscht.  
 Arg, der amazon link zeigt auf ein teures aber mit Pin-Anordnung wie in der Liste. Die Ali Teile sind viel günstiger aber haben VCC/GND vertauscht.  
-Stefan, [15.11.2024 13:43]  
+#### Stefan, [15.11.2024 13:43]  
 Ja, die OLEDs gibt es in beiden Versionen, auf der Platine ist aber vorgesehen, die Pins zu "tauschen". Ich würde allerdings nach den passenden Displays schauen. Einige Ausführungen erlauben auch ein Tauschen der Belegung durch Brücken auf der OLED-Platine. Dann stimmt aber die Beschriftung nicht mehr.  
 Beim Ali muss man sehr genau hinsehen, dass man die Richtigen bestellt/bekommt. Zur Not eben die Platine anpassen.  
 https://de.aliexpress.com/item/1005006425021544.html  
 Das hatte ich letzt bestellt, die passen und sind günstig, wenn man nicht nur eins bestellt.  
 10:44  
-#### wolfgang z, [15.11.2024 14:10]  
+#### OE3WAS wolfgang z, [15.11.2024 14:10]  
 1️⃣ Ja, die OLED gibt es in grundsätzlich 2 verschiedenen Pin-Anordnungen. Die angegebene (VCC-GND-SCL-SDA) ist bereits auf der PCB verdrahtet.  
 Fall man VCC <> GND umdrehen möchte, dann sind auf der Rückseiten 2 Leiterbahnen zu unterbrechen und 2 Drahtbrücken herzustellen.  
 Wer will, kann bei JP1 & JP2 Pfostenstecker einbauen (auf der Rückseite) und Jumper verwenden.  
 10:48  
-Stefan, [15.11.2024 15:28]  
+#### Stefan, [15.11.2024 15:28]  
 Du musst nur aufpassen, wenn du den E22 anschließt, der zieht zu viel Strom. Bis dahin solltest du auch die 5V-Versorgung bestücken.  
 10:48  
 Neee, wenn ich ein geeignetes USB-Netzteil verwende, dann funktioniert das. Z.B. von einem RPi.  
@@ -72,11 +72,11 @@ Neee, wenn ich ein geeignetes USB-Netzteil verwende, dann funktioniert das. Z.B.
 Wolfgang Hallmann DF7PN  
 Danke für die Mühe das hier in diesem Stream zu sammeln!  
 10:55  
-#### wolfgang z  
-Stefan, [15.11.2024 15:30]  
+#### OE3WAS wolfgang z  
+#### Stefan, [15.11.2024 15:30]  
 Nicht über den ESP, dann bricht beim Senden die Spannung ein und der macht einen Reboot. Hier getestet.  
 Hilft nur, die Sendeleistung runterzunehmen.  
-#### wolfgang z, [15.11.2024 15:31]  
+#### OE3WAS wolfgang z, [15.11.2024 15:31]  
 Nein, das sollte nicht so sein, denn der 5V-Pfad geht durch an die Steckerleiste und am E22 ist deswegen auch noch der große Elko. Sollte also funktionieren, Aber ich werde es n.W. sehen bzw. auch messen.  
 Am ESP32-DevKitC-V4 ist zwischen USB und Stiftleiste nur die eine D3 Schottky-Diode im Pfad. Also meine ich, dass es gehen sollte.  
 Denn wie ich schon vor einiger Zeit das Thema der Schutzdioden thematisierte, und auch wie zuvor gezeigt:  
@@ -89,7 +89,7 @@ und wie man sieht, sind am ESP32-DevKit-V4 die +5V links unten gleich neben der 
 11:08  
 Die beiden bisherigen getesteten Käfer  
 11:09  
-#### wolfgang z, [15.11.2024 15:49]  
+#### OE3WAS wolfgang z, [15.11.2024 15:49]  
 ja, haben offensichtlich gleiches Pinning und gleichen Pin-Abstand.  
 11:10  
 5 Stk um ≈35€  
@@ -97,24 +97,24 @@ https://www.amazon.de/dp/B08BZFW41S
 11:18  
 #### ben, [15.11.2024 16:32]  
 Also um Klarheit wegen der Spannungsversorgung zu bringen....ein "dummes" ("starkes") 5V Netzteil am ESP32 kann auch den E22 mitversorgen...hab ich getestet....ein intelligentes Netzteil schafft aber evtl. nur 500mA. ...die Peaks aber "könnten" ggf. von Elko (am E22) abgefangen werden...ansonsten haben wir für intelligente Netzteile eine USB-C Buchse vorgesehen die wegen der 5.1k Beschaltung die 5V/2A dann auch liefert.  
-#### wolfgang z, [15.11.2024 16:34]  
+#### OE3WAS wolfgang z, [15.11.2024 16:34]  
 kleine Korrektur und Klarstellung: 5k1 bedeuten 5V/3A  
 (5k1 = 5,1 kΩ Widerstand 2 Stk. bei der USB-C Buchse)  
 ...  
 oder auch einen DC/DC, der 5V/3A liefern kann und mit höherer Eingangsspannung zurecht kommt.  
 Wolfgang Hallmann DF7PN, [15.11.2024 16:45]  
 wird dann umgekehrt über die USB-C Buchse der ESP32 mit versorgt?  
-#### wolfgang z, [15.11.2024 16:47]  
+#### OE3WAS wolfgang z, [15.11.2024 16:47]  
 JA, ALLE Varianten sind möglich!  
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2#erl%C3%A4uterung-zur-schutzbeschaltung  
 11:28  
 @dg2rbf hat der externe Button irgendeine Funktion?  
 @DG4NEU hast du den Button am ESP32-E22 verwenden können, nachdem du ihn aktiviert hast?  
-Stefan, [16.11.2024 11:15]  
+#### Stefan, [16.11.2024 11:15]  
 Sorry: Korrektur, gerade noch mal probiert, er schaltet zwischen den einzelnen Messages durch.  
 11:55  
-#### wolfgang z  
-#### wolfgang z, [17.11.2024 14:23]  
+#### OE3WAS wolfgang z  
+#### OE3WAS wolfgang z, [17.11.2024 14:23]  
 ESP32-E22-Projekt  
 Ich habe die Idee, einen eigenen Power-Switch auf das Board zu platzieren. Den könnte man direkt bestücken oder auch über Drähte ans Gehäuse führen. Dabei stellt sich die Frage: "In welchen Strompfad einbauen?"  
 1️⃣❓der DC/DC hat ja einen EN-Eingang, an dem man ihn abschalten kann. Das wäre eine ganz einfache Möglichkeit, einen Power-Switch einzubauen. Das würde aber nur bei Versorgung über die Schraubklemme + DC/DC wirken.  
@@ -123,8 +123,8 @@ Ich habe die Idee, einen eigenen Power-Switch auf das Board zu platzieren. Den k
 11:55  
 Ok, dann habe ich mich für die einfachste Variante 1️⃣ entschieden und nur einen Jumper mit einer Leiterbahn mit dem EN-Pin des DC/DC verbunden. Offen = EN, geschlossen = OFF (nur mit dem DC/DC-Wandler)  
 12:33  
-#### wolfgang z  
-#### wolfgang z, [19.11.2024 11:08]  
+#### OE3WAS wolfgang z  
+#### OE3WAS wolfgang z, [19.11.2024 11:08]  
 😭 Ein Einzelentwickler, so wie ich, hat gerade gestern ein E22-Modul "irrtümlich" (eben wegen dieses Spieltriebes) zerstört. Daher ist die endgültige Inbetriebnahme meines ESP32-E22-Boards leider verzögert worden.  
 Ich "wahnsinniger" od. "ehrgeiziger" wollte das E22 nicht direkt auflöten sondern sockeln. Dabei ist die mechanische Spannung zwischen E22-Modul-Lötstellen, die nur Halblöcher sind, offenbar zu groß gewesen und es gab offensichtlich Leiterbahnunterbrechungen am E22.  
 Es kam einfach der Fehlercode -2 bei der Initialisierung von MeshCom.  
@@ -133,15 +133,15 @@ Zur Unterstützung des E22-900 (für 868MHz) kommen wir noch. ...
 
 Wenn schon defekt, dann gleich mal öffnen. So sieht ein E22-fffMxxS innen aus.  
 12:36  
-Stefan, [19.11.2024 11:41]  
+#### Stefan, [19.11.2024 11:41]  
 Der Nachteil der (irgendwie-) Sockellösung ist natürlich die fehlende "Bodenhaftung", da müsste man ein dickeres Wärmeableitpad druntersetzen. Bisher allerdings ist die Temperatur des E22 bei mir noch kein Problem gewesen.  
-#### wolfgang z, [19.11.2024 11:42]  
+#### OE3WAS wolfgang z, [19.11.2024 11:42]  
 Es ist dann so viel "Bodenabstand", dass man einen kleinen Kühlkörper unten auf das E22-Modul kleben kann, wie man solche auch beim RPi, Motortreibern u.ä. verwendet.  
 12:42  
 Das Problem mit dem E22-900 ... wird hier abgehandelt  
 https://t.me/c/1987218802/1/10025  
 und in anderem Thema weiter ausgeführt ...  
-#### wolfgang z, [22.11.2024 13:10]  
+#### OE3WAS wolfgang z, [22.11.2024 13:10]  
 @oe1kbc bez. ESP32-E22 Projekt:  
 Das PCB mit der FW MeshCom  
 ✅ funktioniert mit einem E22-400M30S Modul  
@@ -158,19 +158,19 @@ https://www.cdebyte.com/product_serch/E22-400M33S/1/
 Helmi Beh  
 Du musst dich mal mit der Adressierung des I2C-Busses beschäftigen. Das LSB ist das R/W-Bit. Wenn man das nicht berücksichtigt (7bit-Adresse) kommt 0x3C heraus. Wenn man das berücksichtigt (Shift left), wird's dann zu 0x78!  
 12:55  
-#### wolfgang z  
-#### wolfgang z, [25.11.2024 21:39]  
+#### OE3WAS wolfgang z  
+#### OE3WAS wolfgang z, [25.11.2024 21:39]  
 Kurze Info zur PCB V2.1.2  
 1️⃣ Ich habe mal eine variants.h für Meshtastic erstellt, selbst kompiliert und läuft offenbar problemlos.  
 2️⃣ Der Button funktioniert mit MeshCom ordentlich, aber mit Meshtastic nur sporadisch. Ein PullUp kann das Problem nicht lösen, da GPIO12 = strapping Pin  
 3️⃣ Es könnte ja sein, dass man eine LED auf dem PCB haben möchte. Dafür würde sich GPIO2 anbieten.  
 4️⃣ Es könnte auch sein, dass man einen Buzzer (Signalgeber) auf dem PCB anschließen möchte. Auch dafür muss noch ein geeigneter GPIOxx gefunden werden.  
-Stefan, [25.11.2024 21:43]  
+#### Stefan, [25.11.2024 21:43]  
 Zu 4: Buzzer finde ich gut, hab das beim T-Deck zu schätzen gelernt. (So lange man den auch abschalten kann😀)  
-#### wolfgang z, [25.11.2024 21:49]  
+#### OE3WAS wolfgang z, [25.11.2024 21:49]  
 leider hatte das bislang niemand zur Sprache gebracht, sonst hätte ich das vorgesehen.  
 Ich hatte aber auch nicht genau das DevKitC-V4 Board angesehen. Das hat leider keine OnBoard-LED, wie viele andere Boards sehr wohl.  
-Stefan, [25.11.2024 21:55]  
+#### Stefan, [25.11.2024 21:55]  
 Bisher sehe ich das e22-Board für mich eher als Gateway, daher ist mir das gar nicht so wichtig. In der Firmware vorgesehen, wäre das aber für die anderen Boards sinnvoll. LED oder Buzzer bei eintreffenden DM z.B.  
 13:02  
 Ein neues ESP32-Board:  
@@ -179,14 +179,14 @@ ESP32-S3 N16R8 2,4G Wifi Modul Entwicklung Board für Microphython ESP IDF 8 MB 
 https://de.aliexpress.com/item/1005006413972573.html  
 DUBEUYEW 3PCS ESP32-S3 ESP32-S3-DevKitC-1 N16R8 WiFi-Modul + 5.0 Bluetooth Internet Development Board 16M Externe Flash-Erweiterung 8M PSRAM mit einem Typ-C-Kabel (gelötet) https://amzn.eu/d/dfaFvCY  
 Wir hatten neulich mal die Diskussion das ESP32 mit mehr flash besser wären wegen OTA Update  
-#### wolfgang z, [25.11.2024 21:46]  
+#### OE3WAS wolfgang z, [25.11.2024 21:46]  
 Das ESP32-S3-WROOM-1-N16R8 Board habe ich jetzt auch und festgestellt, dass  
 1️⃣ das Board nochmals um 3 Pins länger ist,  
 2️⃣ eine andere Pinbelegung als das derzeit verwendete ESP32-DevKitC-V4 hat.  
 ad 1️⃣ es wäre grundsätzlich möglich, den gleichen Formfaktor der Platine beizubehalten, dh. ins gleiche Gehäuse passend.  
 ad 2️⃣ ein Redesign (routing) ist damit erforderlich.  
 14:58  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 zu GPS nur wenig Text hier und entsprechende Links, zu viele Beiträge.  
 Besser: ein solches Board, Antenne und Chip als Einheit mit Kabel an die Platine gesteckt.  
 Für die GPS-Antenne ist "rechts oben" neben der SMA-Buchse die Platine ausgespart. Da ist Platz im Gehäuse, die Antenne parallel zur Seitenwand anzubringen.  
@@ -203,8 +203,8 @@ Zu den in der Anfangsphase erwähnten und verfügbaren 3D-PDFs.
 2. nicht wirklich angekommen wurden bei "euch" und  
 3. ein nicht unerheblicher aufwand, die zu erstellen. 😉  
 15:17  
-#### wolfgang z  
-Stefan, [23.12.2024 16:36]  
+#### OE3WAS wolfgang z  
+#### Stefan, [23.12.2024 16:36]  
 Einbaubuchse für die Versorgung des E22/ESP32-Boards:  
 rot/schwarz = VCC/GND  
 blau/weiß = D+/D-  
@@ -221,19 +221,19 @@ https://t.me/c/1987218802/1/10854
 https://t.me/c/1987218802/1/10877  
 https://t.me/c/1987218802/1/10882  
 15:42  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Suitbert, DF2PI, [05.01.2025 18:29]  
 Einbau GPS-Board und GPS-Antenne in OE3WAS-Meshcom-Trcvr: wer eine mechanische Lösung hierfür sucht, darf sich hier gerne bedienen: https://www.printables.com/model/1135886-montagebrucke-interne-gps-antenne-gps-board-fur-me vy 73, Suitbert, DF2PI 😀  
 15:51  
 #### ben, [06.01.2025 20:55]  
 ...übrigens wärmeleitpaste unter den E22 in geringen! Mengen macht sinn...hab irgendwo was von doppelseitigem Klebeband gelesen...lieber Paste  
-#### wolfgang z, [06.01.2025 20:56]  
+#### OE3WAS wolfgang z, [06.01.2025 20:56]  
 dafür ist auch die größere Bohrung in der Mitte da, um die auch nachträglich noch reindrücken zu können!  
 15:52  
 Wolfgang Hallmann DF7PN, [06.01.2025 19:21]  
 Ich habe heute diese Kabel bekommen USB-C mit D+/- und Cc1/2. Ich messe die mA mit einem USB Adapter und sehe beim Senden mit einem doofen 3A/5V Steckernetzteil beim Senden mit 22 dBm nur max. 0,8 A . Nehme ich eins mit PD Gedöns für CC dann sinds nur 200 mA.  
 Da würde ich sagen das mit dem CC Signal tut nichts signalisieren. Noch dazu frage ich mich wenn normal 0,8A gebraucht werden, da 3A Netzteile angeraten werden? Hat jemand Erfahrungen mit der CC Steuerung?  
-#### wolfgang z, [06.01.2025 20:18]  
+#### OE3WAS wolfgang z, [06.01.2025 20:18]  
 Nein, natürlich nicht!  
 Das E22...30 mach ja nur 30dBm und das sind 1W.  
 Ich habe folgende max. Ströme genommen von:  
@@ -261,14 +261,14 @@ Um den Strom wirklich real messen zu können, muss man einen Shunt in die Versor
 Alle anderen "Messgeräte" sind da unbrauchbar, da kurzzeitig höhere Ströme fließen können.  
 15:56  
 ❌ Einen BME 5V von der 5V der Stiftleiste des ESP versorgen ...  
-#### wolfgang z, [09.01.2025 00:22]  
+#### OE3WAS wolfgang z, [09.01.2025 00:22]  
 Das solltest du nicht machen!  
 Das könnte tödlich für den ESP32 werden!  
 Denn bei 5V-Versorgung sind auch die Datenleitungen dann 5V und das verträgt der ESP32 NICHT !!!  
 lies das mal:  
 https://t.me/c/1987218802/9026  
 20:42  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Warum wollte ich den E22 sockeln?  
 Um eine Adapterplatine an Stelle des E22 aufstecken zu können.  
 Darauf sind +5V / +3,3V / GND / I²C / SPI verfügbar, um z.B. Sensoren o.ä. zu testen.  
@@ -286,22 +286,22 @@ Andere Stecker die ich da reinführen soll, sind auch nicht viel schmaler.
 Bei unserem Bausatz lasse ich die Kabelklemme und den DC/DC Wandler weg.  
 Da wäre ich nur mit einem Kabel reingegangen.  
 ahja, diesen DC/DC Teil lassen wir weg. Kann sich einbauen wer mag.  
-#### wolfgang z, [01.12.2024 10:58]  
+#### OE3WAS wolfgang z, [01.12.2024 10:58]  
 ❗️Ich habe viele Möglichkeiten vorgesehen. Man kann einiges weglassen, wenn man weiß, was man tut. Aber man sollte auch die Schaltung verstehen.  
 Zusätzlich, was noch in der Doku noch nicht so genau beschrieben ist:  
 1️⃣ Schraubklemme kann verwendet werden, auch ohne DC/DC, dann Drahtbrücke einbauen.  
 2️⃣ Sicherung F1 & Diode D5 müssen nicht verwendet werden, können aber.  
 3️⃣ Auf die Stiftleiste J2 kann eine USB-C Einbaubuchse angesteckt werden.  
 20:49  
-z.B. die 6-polige (VCC GND CC1 CC2 D+ D-), wobei die Belegung offenbar von Stefan gefunden wurde. Siehe zuvor.  
+z.B. die 6-polige (VCC GND CC1 CC2 D+ D-), wobei die Belegung offenbar von #### Stefan gefunden wurde. Siehe zuvor.  
 20:50  
 es kann auch sein, dass die 5-polige (VCC GND CC D+ D-) funktioniert. Davon habe ich eine Belegung gefunden. Wahrscheinlich gemeinsames CC, also CC1-CC2 verbunden, was aber zu dem bekannten RPi-Problem führt.  
 20:50  
-#### wolfgang z, [01.12.2024 11:10]  
+#### OE3WAS wolfgang z, [01.12.2024 11:10]  
 ❌ Die 2-poligen (nur VCC & GND) und die 4-poligen (VCC & GND & D- & D+) funktionieren aber definitiv NICHT, da die CC1 & CC2 Anschlüsse fehlen und daher von dem USB-C Netzteil nur 5V/500mA bereitgestellt werden darf, außer ev. Ausnahmen, wenn man "dumme" Netzteile u/o "dumme" USB-C Anschlusskabel verwendet.  
 21:01  
 Andre fragte nach "Remote-Steuerung"?  
-#### wolfgang z, [19.12.2024 10:58]  
+#### OE3WAS wolfgang z, [19.12.2024 10:58]  
 Ja, es gäbe die Möglichkeit, Geräte via LoRa zu steuern.  
 Mir ist dabei auch aufgefallen, dass nicht mal RT/TX auf eine Stiftleiste herausgeführt ist, was aber durchaus sinnvoll gewesen wäre.  
 Dies und noch andere sinnvolle Ergänzungen wird es in einer ev. Nachfolgeversion geben.  
@@ -318,7 +318,7 @@ Wild aber es funktioniert .. habe es auf der HAMRADIO vorgestellt.
 Auf dem orangefarbenen Board ist ein Pegelkonverter aufgebaut.  
  
 20 January 2025  
-Stefan  
+#### Stefan  
 Das sollte auch ohne eine Anleitung kein Problem sein, mit Platine, den Bauteilen, Bestückungsliste und Schaltplan klappt das gut. Bei Fragen dazu, einfach hier melden. 😊  
 15:47  
 Ben  
@@ -327,13 +327,13 @@ und:
 https://md.freifunk-mwu.de/s/7OQwy7e9F  
 👍  
 15:53  
-Stefan  
+#### Stefan  
 Könnte André DL4QB vll auf seiner Seite verlinken!  
 15:57  
 Juergen DF2AP  
 Top 👍 Super herzlichen Dank 😊  
 17:44  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Kannst du auch auf GitHub nachlesen. Ich habe alle wichtigen Informationen gegeben. Brauchst nur lesen und etwas Elektronik-Verständnis. 
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly  
 
@@ -342,15 +342,15 @@ https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Ass
 Juergen DF2AP  
 Guten Morgen. Wie habt Ihr bei Euch die Stromversorgung gelöst? Schraubkkemmen, USB-C Breakout-Board oder direkt an den ESP32? Falls jemand USB-C-Breakout nutzt, gibt es einen Link für ein vierpoliges Kabel um die USB-C-Buchse nach außen zu führen?  
 10:25  
-Stefan  
+#### Stefan  
 Schau mal weiter oben, dort ist der Link für das 6-Polige Kabel. Das funktioniert prima. Aktuell habe ich einfach über 5V-Schraubkkemme versorgt.  
 10:27  
 Juergen DF2AP  
-Danke Stefan. Hast Du das HW-613 Modul verbaut oder speist Du einfach 5V fest ein?  
+Danke #### Stefan. Hast Du das HW-613 Modul verbaut oder speist Du einfach 5V fest ein?  
 10:29  
 Kann man als Sicherung auch so eine selbstrückstellende Sicherung bei F1 einbauen? Die kleinen Glassicherungen scheint es nur im 1.000 er Pack zu geben.  
 10:30  
-Stefan  
+#### Stefan  
 Bei mir hängt die 5V-USV dran, die über USB an nem kleinen Netzteil. Bilder dazu im Github  
 10:30  
 Sollte auch gehen! Gute Idee. Nur sind 5A etwas heftig, 3A müsste reichen  
@@ -362,19 +362,19 @@ Würde so aussehen
 10:33  
 Hab die 5 A Variante bestellt.  
 10:33  
-Stefan  
+#### Stefan  
 Sollte die Diode aushalten... 😉  
 10:35  
 Juergen DF2AP  
 Du hast so ein Montagekreuz aus dem 3-D Druck drunter. Korrekt?  
 10:35  
-Stefan  
+#### Stefan  
 Ja, das hält auch das GPS-Antennchen fest.  
 10:35  
 Juergen DF2AP  
 Was ist das für eine USV?  
 10:37  
-Stefan  
+#### Stefan  
 https://de.aliexpress.com/item/1005006860598580.html  
 10:38  
 Hält mit 2x3400mAh-Akkus recht lange durch und kostet wenig.  
@@ -382,16 +382,16 @@ Hält mit 2x3400mAh-Akkus recht lange durch und kostet wenig.
 Juergen DF2AP  
 Was es nicht alles gibt. Das wird ja doch ein Riesen Projekt 😂👍  
 11:26  
-Stefan  
+#### Stefan  
 Hast du einen 3D-Drucker in Reichweite?  
 13:55  
 Wolfgang Klein  
-Stefan die 5V Variante oder die 12V-Variante?  
+#### Stefan die 5V Variante oder die 12V-Variante?  
 14:11  
 Wolfgang Klein  
 Und kann man die STL-Datei bekommen?  
 14:38  
-Stefan  
+#### Stefan  
 Ich hab die 5V-Variante etwas "verbessert", so dass die 5,3V ausspuckt. Wird ein SMD-R getauscht. So kann man die Ohne Sendeleistungsverlust an de E22 anklemmen.  
 14:39  
 Kannst du gerne ha#### ben, muss die mal suchen. Ich hatte verschiedene Varianten, die Finale war die mit GPS-Antennen-Halterung.  
@@ -399,13 +399,13 @@ Kannst du gerne ha#### ben, muss die mal suchen. Ich hatte verschiedene Variante
 Wolfgang Klein  
 Super Danke! Und hast Du noch einen Tip für die 3400mAh Akkus? Bin da etwas vorsichtig wegen Fakeangaben  
 14:48  
-Stefan  
+#### Stefan  
 Da passen alle 18650 FlatTop rein, es reichen auch 3000er aus. Die brauchen auch nicht "geschützt" sein, darum kümmert sich die USV.  
 14:59  
 Wolfgang Klein  
 wenn du einen Bestelllink hättest?  
 15:06  
-Stefan  
+#### Stefan  
 Ich hab meine bei Akkuman bestellt, bin bisher zufrieden:  
 https://www.akkuman.de/shop/10x-Tenpower-INR18650-32HE-36V-Li-Ion-3100mAh-10A-Entladestrom  
 15:08  
@@ -414,20 +414,20 @@ Aber bitte beachten, dass die Zellen kein BMS ha#### ben, sollten also nur für 
 Wolfgang Klein  
 LED Lampen sollten auch gehen, Danke schaue ich mir mal an  
 15:11  
-Stefan  
+#### Stefan  
 Nur, wenn die ein BMS ha#### ben, sonst ist davon abzuraten. Normale Taschenlampen zum Beispiel haben keinen Schutz gegen Tiefentladung.  
 15:28  
 Juergen DF2AP  
 An den STL-Dateien hätte ich auch Interesse. Hab jemanden in der Nähe, der 3D-Druck machen kann.  
 16:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 4-polig geht NICHT - siehe GitHub!  
 16:40  
 Nein, gibt es auch 10 Stk z.B. man muss nur mal suchen.  
 16:42  
 https://www.amazon.de/dp/B083R44LKT  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Der Elko C2 lins obere Ecke des ESP32 ist völlig unnötig! Siehe GitHub!  
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#98-weitere-hinweise  
 19:14  
@@ -435,11 +435,11 @@ https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Ass
 ❗️Kaum jemand weiß, was es mit diesem ADC-Eingang für eine Bewandtnis hat.  
 
 19:19  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Alles, was ich hier nicht beschrieben habe, das sind Spezialfälle und dabei sollte man wissen, was man tut!  
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#best%C3%BCckungshinweise-pcb-v212  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Der Elko link soben schadet grundsätzlich nicht, aber er verlängert in unnötiger Weise den RESET-Vorgang und das könnte in speziellen Versorgungsspannungssituationen zu Fehlfunktionen führen. Ich empfehle, den nicht einzulöten!  
 Der war nur für die "alten" ESP32-Board tw. erforderlich bez. des Flash-Vorganges.  
 
@@ -450,7 +450,7 @@ Leider habe ich da einfach die Widerstände kopiert und daher sind deren Wert je
 
 Spannungsteiler ist so zu dimensionieren, dass aus der Maximalspannung maximal 3.3V werden  .
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Der Spannungsteile ist von mir 2:1 gewählt worden, da ich davon ausgehe, auch ≈5V messen zu können und somit der ADC-Eingang nicht "am Anschlag" steht.  
 
 19:46  
@@ -461,40 +461,40 @@ wir müssten das aber konfigurierbar machen...also den teiler
 der eine will 13.8V messen..der nächste nur 5V...  
 oder wir einigen uns auf nen spannungsteiler und stellen das fix ein  
 19:52  
-Stefan  
+#### Stefan  
 Das würde ich vorschlagen, 0-20V, das ist von der Genauigkeit dann noch ausreichend.  
  
 #### Ben  
 ofiziell haben wir 5.1k/5.1k -> da sind dann maximal 6.6V messbar  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, das war meine Idee bez. der gleichen Widerstände.  
 
 #### Ben  
 aber ich würde gut finden das wir 13.8 mindestens auch noch messen können....wir haben ja den step down wandler jetzt auch drinnen  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 dann ganz einfach einen "Verstärkungsfaktor" und einen "GPIO pin" frei einstellbar lassen.  
 
 #### Ben  
 bei 100k/22k könnten wir 18,5V messen  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Verstärkungsfaktor bzw. Kalibrierungsfaktor.  
 Damit kann man die Genauigkeit noch erhöhen wegen der verschiedenen Toleranzen.  
 19:58  
 Ben  
 @DG4NEU : bist du grade am rechner? könnte dir ne testversion schnell machen  
 19:58  
-Stefan  
+#### Stefan  
 Nee, leider gerade nicht, kann nachher noch mal gucken.  
 19:59  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 macht mal wer ein Issue [Enhancement] für den ADC-Pin und den Kalibrierungsfaktor.  
 
 #### 2 February 2025  
 12:23  
-Stefan  
+#### Stefan  
 hier noch der Ali-Link für die  
 Einbaubuchse für die Versorgung des E22/ESP32-Boards:  
 rot/schwarz = VCC/GND  
@@ -514,10 +514,10 @@ Flex USB Kabel zum flashen
 Juergen DF2AP  
 Kurze Frage zum Einbau von U4 HW613. Der muss ja unter das OLED-Display? Ich hab dem Ding eine Stiftleiste verpasst. Passt da noch eine 4er Buchse auf die Leiterplatte oder habt ihr die Stiftleiste direkt eingelötet?  
 13:52  
-Stefan  
+#### Stefan  
 Die Platine ist so designed, dass der auch stehend eingebaut werden kann. Ich würde das nicht mit Stiftleisten oder Buchsenleisten machen, sondern mit starren Drähten fest einlöten. So findet er auch unter dem Display Platz, sonst wird das zu eng. Und unter das Modul eine Isolierung anbringen, damit es nicht direkt aufliegt. Z.B. mit doppelseitigem Klebeband.  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 einfach so wie du es mit der Stiftleiste bestückt hast von unten durchstecken:  
 16:17  
 NEIN - ist nur marginal höher als die fette Diode  
@@ -527,7 +527,7 @@ Super Danke. Spannung hab ich auf 5,3V eingestellt. Dann rein damit 👍
 18:01  
 So richtig?  
 18:31  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, genau so! Passt  
 18:55  
 Juergen DF2AP  
@@ -537,7 +537,7 @@ Danke Wolfgang 👍
 Andreas Frank  
 Hallo, ich habe eine Frage zur Einstellung der Sendeleistung. Bei meinen beiden Nodes kann ich nur 17 dBm einstellen, obwohl diese mehr könnten. Mache ich da was falsch? Danke für die Antworten. VG Andreas  
 20:17  
-Stefan  
+#### Stefan  
 Du machst nix falsch, die PA im E22 ist noch nicht passend in der Software/FW berücksichtigt. Daher einfach Maximum einstellen, bzw. auch weniger, wenn die volle Leistung nicht benötigt wird.  
 20:38  
 Rainer OE1KFR  
@@ -559,41 +559,41 @@ Screenshot (14.02.2025 22:10:29)
 So solls aussehen beim e22  
 15 February 2025  
 08:47  
-Stefan  
+#### Stefan  
 Hast du den E22/ESP32-Bausatz oder einen anderen Node? Das oben Beschriebene gilt nur für diesen, nicht für T-Beam oder so.  
 09:05  
 Andreas Frank  
-Hallo Stefan, ja, ich habe ein T-Beam. Ich dachte, der kann 100mW.  
+Hallo #### Stefan, ja, ich habe ein T-Beam. Ich dachte, der kann 100mW.  
 09:10  
-Stefan  
+#### Stefan  
 Bei den "Alten" Versionen des T-Beam ist die Leistung bewusst gedrosselt, sonst tauchen unerwünschte Effekte auf. Nur die neuen laufen mit 21dB problemlos.  
 09:23  
 Rainer OE1KFR  
 Müsste man halt 100% verifizieren, dass das für alle SX127x Boards einwandfrei geht. Mein Infostand war, dass der Boost PA Mode bei den Chips ein verzerrtes Signal zur Folge hat, weil es da einen Designfehler im Chip gibt.  
 09:31  
-Stefan  
+#### Stefan  
 Wie könnte man das feststellen? Hohe Leistung und dann schauen, ob msg ankommen?  
 09:33  
 Rainer OE1KFR  
 Ja und das halt nicht nur am Schreibtisch.  
 09:35  
-Stefan  
+#### Stefan  
 Ich hab leider keinen der Teile mehr da, vll kann ich mir einen besorgen die Tage.  
 09:46  
 Wolfgang Hallmann DF7PN  
 Frage an die Profis: hier ist beim Workshop gerade ein Pin vom Board am E22 weggebrannt. Ist dieser Pin wichtig? Platine damit kaputt?  
 09:47  
 09:48  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Wie ist das passiert?  
 09:48  
-Stefan  
+#### Stefan  
 Das sind 3 Masse-Pins nebeneinander, daher ist der Verlust zu verschmerzen... 😉  
 09:49  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Genau , so ist es.  
 09:49  
-Stefan  
+#### Stefan  
 Die 3 Pins sind eh etwas schwierig zu löten, da braucht es ordentlich Hitze, weil die Board/Chip-Masseflächen die Wärme rasch abtransportieren.  
 09:51  
 Gleiches gilt für die Pins gegenüber, 2x Masse und in der Mitte die Antenne.  
@@ -611,7 +611,7 @@ Ich kann THD messen relativ genau...wir müssten da halt nen sauberen träger ir
 Jochen DG3FBL  
 T-Beam 1 habe ich zwei hier  
 13:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Hmm, wie willst du bei den Chirp-Signal von LoRa eine Verzerrung messen. Stelle ich mir nicht einfach vor.  
 14:33  
 Ben  
@@ -623,30 +623,30 @@ Hallo, ich habe für mein ESP32-E22 Projekt ein SMA to N Buchse eingebaut.
 Also SMA Buchse - SMA Stecker - 20cm RG178 - N-Buchse. Als ich die node in Betrieb genommen habe, musste ich feststellen das der Empfänger verglichen mit einem TLORA T3_V1.6.1 ziemlich schlecht ist. Ich habe dann eine zweite node gebaut, aber habe diesmal eine IPEX to N-Buchse genommen. Jetzt war alles perfekt und daher habe ich die erste Platine auch auf IPEX to N-Buchse umgebaut und die Empfangsleistung ist jetzt auch ok.  
 Kann es sein das das SMA to N-Buchse Kabel so stark dämpft oder habe ich da was übersehen?  
 15:47  
-Stefan  
+#### Stefan  
 Hast du die Lötbrücke auf der Platine für die SMA-Buchse eingelötet?  
 15:48  
 Stelio  
 ja, habe ich  
 15:52  
-Stefan  
+#### Stefan  
 Das sollte dann prima funktionieren. Du kannst das auch nachmessen, ob evtl. irgendwo was nicht passt: erst mal mit einem Widerstansmessgerät (Multimeter) auf Durchgang und Isolation. Dann evtl. mit SMA-N-Adapter testen.  
 15:58  
 Stelio  
-Ok, Danke Stefan. Das Kabel habe ich schon durchgemessen. Die Verbindung Pin21 und R8 dürfte auch ok sein, BTW den jumper habe ich jetzt wieder entfernt.  
+Ok, Danke #### Stefan. Das Kabel habe ich schon durchgemessen. Die Verbindung Pin21 und R8 dürfte auch ok sein, BTW den jumper habe ich jetzt wieder entfernt.  
 16:00  
-Stefan  
+#### Stefan  
 R8 ist ja 0Ohm, ich hab dafür einen Draht eingelötet. 😉  
 16:03  
 Stelio  
 ja, ich auch. Aber es gibt 0R zu kaufen ... habe ich nie verstanden.  
 16:04  
-Stefan  
+#### Stefan  
 Macht Sinn für Bestückungsmaschinen. Daher gibt es die.  
 16:07  
 Ich hab meinen Node mit einem IPX-Kabel angeschlossen, einmal IPX-SMA und einen anderen mit IPX-N, einer mit IPX-BNC ist gerade im Bau. Probleme gab es dabei nicht bisher  
 16:25  
-Stefan  
+#### Stefan  
 Ist meines Erachtens die bessere Variante, als den "Umweg" über die SMA-Buchse zu nehmen.  
 16:32  
 Stelio  
@@ -656,44 +656,44 @@ Helmi Beh
 Und bitte denkt dran, dass auch hochwertige IPX-Stecker nur für maximal 10 Steckzyklen spezifiziert sind, weil sie gerne ausleiern.  
 👍  
 21:58  
-Stefan  
+#### Stefan  
 😊 Daher ja für den Gehäuse-Einbau. Das Kabel macht man nicht dauernd ab.  
 Durch die Rumtesterei hab ich die allerdings schon bis an die Verschleißgrenze abgenutzt. Erstaunlich, was die trotzdem aushalten. Ob dann noch die Bandbreite bis 6GHz reicht, hab ich nicht ausprobiert! 😀  
 🤣  
 22 February 2025  
 17:10  
-Stefan  
+#### Stefan  
 Mal so als Info: Vll kann sich der eine oder andere noch erinnern, ich hatte Probleme mit bestimmten ESP32-Clones aus China. Die sind immer mal unkontrolliert "ausgestiegen" und haben Müll gepostet. Mit der aktuellen Firmware hab ich die nun seit einigen Tagen auf dem E22-Board laufen, keinerlei Probleme mehr. Also kein Unterschied zu den doppelt so teuren ESP32 von EZ-Delivery.  
 Die eine Variante hat einen IPEX-Anschluss für eine ext. WLAN/BT-Antenne, das erhöht die Reichweite dafür ordentlich.  
 17:12  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ahh, gut. Und was meinst du, war das Problem?  
 17:16  
-Stefan  
+#### Stefan  
 Gute Frage, ich hab ein bisschen die Spannungsversorgung in Verdacht gehabt, aber die ist nicht verändert. Daher vermute ich ich irgendwas in der Firmware. Erklären kann ich es nicht.  
 23 February 2025  
 15:50  
-Stefan  
+#### Stefan  
 Inzwischen sind die Platinen der 2. Auflage zum Projekt bei mir angekommen, ich fange nun an, die zu verschicken. Sollte noch jemand Interesse ha#### ben, wir haben noch eine geringe Anzahl, die nicht reserviert wurden. 4€ + VVK (2€ DL, 4€ OE). Bitte dann ggf. Mail an dg4neu(at)darc.de  
 Bitte auch melden, wenn die mir bekannten "Besteller" heute keine Info von mir bekommen haben.  
 25 February 2025  
 14:59  
-Stefan  
+#### Stefan  
 Prima, viel Spaß und Erfolg bei Bau! 🙂  
 18:16  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Bei Startschwierigkeiten am Board dann versuchsweise doch den C1 bestücken. Der verlängert die Reset Zeit.  
 18:46  
 André  
 Platinen sind heute angekommen 😊  
-Vielen Dank Stefan.  
+Vielen Dank #### Stefan.  
 👍  
 27 February 2025  
 16:06  
 Juergen DF2AP  
 @DG4NEU meine Platinen sind auch eingetroffen. Danke für den Super Service 👍  
 16:08  
-Stefan  
+#### Stefan  
 Gerne, manchmal klappt's auch mit der Post! 😀  
 16:12  
 Juergen DF2AP  
@@ -705,23 +705,23 @@ kurze Nachfrage: das bei mir verbaute USB-C-Adapterboard hat 4 Anschlüsse
 Das Kabel hat sechs Anschlüsse?  
 Was mache ich mit D+ und D-?  
 16:13  
-Stefan  
+#### Stefan  
 Ja, da gibt es noch ws/bl für D+/D-, aktuell nicht genutzt  
 16:17  
 Juergen DF2AP  
 Super. Dann lass ich die einfach dran und isolier sie.  
 16:20  
-Stefan  
+#### Stefan  
 Mach das, ich hab ne Idee dafür, muss das aber erst noch testen.  
 21:32  
 Wolfgang Hallmann DF7PN  
 Unsere Leute haben da folgendes gemacht. Ein microusb Winkel gekauft und da die Datenleitungen dran gemacht. Somit kann man mit einer externen USB-C Buchse auch die serielle am microusb Anschluss nutzen  
 21:37  
-Stefan  
+#### Stefan  
 Das hab ich heute auch versucht, aber das klappt nicht so, wie ich mir das vorgestellt hab.  
 🤔  
 22:41  
-Stefan  
+#### Stefan  
 Der ESP braucht wohl die 5V an der Buchse, hatte aber heute keine Zeit. Morgen vll. dann gibts auch Einzelheiten.  
 28 February 2025  
 07:57  
@@ -732,7 +732,7 @@ Carsten
 Vielen Dank!!!!! sind bei mir auch angekommen  
 👍  
 12:27  
-Stefan  
+#### Stefan  
 Kannst Du mir mal zeigen, wie das (vom Schaltbild her) gemacht wurde? Hier funktioniert das nicht, wenn nur die Datenleitungen am Micro-USB hängen. Oder haben die Kollegen, das komplett über die Buchse gemacht? Nur die CC1/CC2 am Board angeschlossen? Mit D+/D-/GND/VCC von der Buchse an den ESP klappt das.  
 15:07  
 Wolfgang Hallmann DF7PN  
@@ -766,15 +766,15 @@ Rainer OE1KFR
 Hey super toll! Voll schön auch die Fotos. Super, dass ihr euch so engagiert  
 4 March 2025  
 09:40  
-Stefan  
+#### Stefan  
 Noch mal zum Thema USB-C-Buchse: Ich hab nun die Kabel etwas anders angelötet, funktioniert. Von den Leitungen der USB-C-Gehäusebuchse sind nur die CC1/CC2 auf dem Board, die VCC/GND/D+/D- direkt am Micro-USB-Stecker angelötet. So ist die Stromversorgung gewährleistet und die Kommunikation über die Buchse mit dem ESP klappt auch.  
 Vorteil: Man muss das Gehäuse zum Anschließen des Terminals nicht mehr aufschrauben und auch das Board nicht ausbauen.  
 👍  
 10:30  
-Stefan  
+#### Stefan  
 Tststs... warum schreibst du das nicht schon eher! 😀  
 11:21  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Der Grund ist folgender:  
 VBUS kommt von der USB-Buchse und ist über die D3 entkoppelt von EXT_5V, welches über die USB-C Buchse kommen würde.  
 VBUS ist aber erforderlich, damit der CP2102 (U1) an seinem Pin 8 = VBUS Sense ein Signal bekommt und richtig arbeitet.  
@@ -790,45 +790,45 @@ https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf
 Datenblätter & Application Note AN144 siehe Github  
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/datasheet  
 11:49  
-Stefan  
+#### Stefan  
 Danke für die Info! Demnach ist das aber eine gute Lösung, so liefert USB-C genügend Strom und auch die Kommunikation ist möglich.  
 11:50  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 genau so ist es!  
 Ich habe noch keine Idee, ob und wie ich das auf der PCB ev. noch einfacher ermöglichen könnte.  
 12:13  
-Stefan  
+#### Stefan  
 Wäre vll etwas aufwändiger, aber ein USB-C-Serial-Wandler als Board auf der Platine (wie der Spannungswandler), versorgt dann den ESP per RX/TX?  
 12:29  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, grundsätzlich möglich. Habe auch schon daran gedacht, als ich erwähnte, dass RX/TX rausgeführt sinnvoll gewesen wäre. ... muss noch etwas gären ...  
 12:30  
-Stefan  
+#### Stefan  
 Vll probiere ich das mal aus, man muss den cp2102 dazu ja nicht deaktivieren, oder?  
 12:31  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ich würde dann aber gleich auf ein "neueres" Board umsteigen, welches die 2x USB-C on Board und auch größeren Speicher hat. Das würde dann sogar die jetzige USB-C Adapterplatine obsolet werden lassen.  
 12:34  
-Stefan  
+#### Stefan  
 Kann man überlegen. Macht das nicht Sinn, gleich einen neuen ESP (s3...) vorzusehen? Gibt da ja noch Modelle, die USB-C mitbringen.  
 12:39  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 genau, den meinte ich auch:  
 ESP32-S3-WROOM-1 N16R8  
 hab da z.B. µPython schon darauf laufen.  
 12:41  
-Stefan  
+#### Stefan  
 Ich denke nicht, dass es Sinn macht, das jetzige Board zu ändern. Dann lieber was Neues, das auch mehr bietet.  
 12:42  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, ist natürlich EINE Möglichkeit.  
 Aber ich habe auch schon angedacht, eine Adapterplatine auf den jetzigen ESP32-Sockel zu machen. Dann könnte man bestehende Boards auch aufrüsten.  
 ... mit wem hatte ich das schon mal besprochen ? ...  
 12:43  
-Stefan  
+#### Stefan  
 😉😇  
 12:44  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Sticker  
 😂  
 12:44  
@@ -837,20 +837,20 @@ war am 30.Jan.2025
 12:47  
 vlt. sollte ich den Chat von damals mal zusammenfassen und hier reinstellen ...  
 12:48  
-Stefan  
+#### Stefan  
 Erst müsste man mal klären, ob die Entwickler auch die FW dafür bereitstellen würden. Dann können wir das auch in Angriff nehmen.  
 12:52  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Na ja, sind ja "nur" ein paar andere Definitionen erforderlich. Und wenn man die GPIO grundsätzlich mal variabel als Parameter einstellbar zu machen vorsieht (so wie Button & OneWire), dann reduziert sich das in der FW. Dh. man lagert einige Parameter/Einstellungen in eine externe config aus.  
 Ev. mach ich auch einen Fork und teste das mal, was da notwendig wäre zu ändern.  
 👍  
 12:54  
 und wie ich sehe, wird ja ESP32-S3 ja schon unterstützt.  
 13:01  
-Stefan  
+#### Stefan  
 Ben hatte da auch mit experimentiert. Wäre ne schöne Option, wenn das mit einer Adapterplatine funktionieren würde.  
 13:05  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, Ben hat auch so ein Board schon - offenbar.  
 13:05  
 Adapterplatine wäre ja recht einfach mal.  
@@ -865,20 +865,20 @@ Wir haben in der neuen dev version "variants"... Eine header mit pin definition
 17:02  
 E290 und helltec v3 sind S3 schon  
 17:02  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ja, das hatte ich eh auch schon in erinnerung.  
 17:58  
 Rainer OE1KFR  
 Wäre schon sehr cool der S3 N18R8. Ich hab in der GPIO Map gesehen, dass einige GPIOs da schon eben wegen dem psram in Verwendung sind.  
 18:35  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, aber es sind auch mehr zur Verfügung. Ich habe schon mal eine Gegenüberstellung gemacht. Muss sie nur noch suchen.  
 5 March 2025  
 09:55  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 das ist unproblematisch, da das PSRAM über SPI angebunden ist und daher wenig GPIO braucht.  
 12:39  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Am PCB V2.1.2 mit dem ESP32-DevKitC-V4 haben wir folgende GPIOs in Verwendung:  
 E22  
 GPIO5 E22_NSS  
@@ -907,7 +907,7 @@ Zum ESP32-S3-WROOM-1 N16R8 habe ich schon 1 Kollision gefunden. Ist aber behebba
 Wolfgang Hallmann DF7PN  
 Gibt es noch Platinen? Hätte noch interesse.  
 09:32  
-Stefan  
+#### Stefan  
 Ja, hab noch was... Mail an dg4neu@darc.de  
 18 March 2025  
 08:37  
@@ -944,7 +944,7 @@ Das GPS Modul hat fix und blinkt und am einem ttl/usb Wandler mit u-center ist a
 11:39  
 Da die Pins direkt auf den Prozessor gehen, fällt mir nichts weiter ein  
 11:39  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ich nehme da mal an, dass das das leidige Problem mit dem Auskreuzen von RX<>TX ist.  
 Versuche mal, die umzudrehen.  
 Es ist nie sicher, was TX/RX jeweils an den GPS-Modulen bedeutet.  
@@ -952,7 +952,7 @@ Es ist nie sicher, was TX/RX jeweils an den GPS-Modulen bedeutet.
 Wolfgang Hallmann DF7PN  
 bin skeptisch, aber ich hänge die Leitungen mal um.  
 11:41  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ESP32-GPIO16_GPS_RX <—> TX vom GPS-Modul  
 und entsprechen die andere Leitung  
 11:41  
@@ -961,14 +961,14 @@ ja klar. da habe ich auch den tanzenden Pegel gemessen im Takt der LED
 11:43  
 das wäre dann aber der esp der die plötzlich anders will. Gibts sowas? wohl eher nicht, da die gpios 16/17 ja auch andere Aufgaben erfüllen können. Probieren geht über studieren ☺️  
 11:45  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ? hat das in einer früheren FW-Version schon funktioniert?  
 ? Sind es die identischen GPS-Module?  
 11:48  
 Ein einfacher Test, ob ein Pin ein Eingang ist, falls er keinen PullUp/PullDown hat, mit dem Oszi an diesen Eingang und gleichzeitig diesen Pin mit dem Finger berühren. Damit koppelt man die allgegenwärtigen 50Hz ein und man sieht am Oszi, ob der Pin hochohmig ist.  
 
 11:58  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 hat sich in der FW nicht geändert:  
 #elif defined(BOARD_E22)  
 //For heltec these are the pins:  
@@ -1001,13 +1001,13 @@ Wenn's aber im u-center läuft wird es keinen Defekt haben
 12:04  
 Bitte die Platine auf Lötfehler prüfen, kann ja mal vorkommen  
 12:11  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 war da nicht was, dass man auf nur NMEA einstellen musste oder so?  
 12:12  
 Helmut OE5HWN  
 Das sollte beim Neo-6m als Standard sein, bei dehnen habe ich noch nie was umstellen müssen  
 12:13  
-Stefan  
+#### Stefan  
 Das GPS war schon immer sehr zickig, vll kann man längerfristig eine andere Library dafür hernehmen. Meshtastic z.B. oder die FW von Ricardo ist da wesentlich zuverlässiger, was das GPS angeht. Zumindest ist das mein Eindruck.  
 Ich kämpfe da schon lange mit, GPS an den diversen Nodes ans Laufen zu kriegen.  
 12:14  
@@ -1033,16 +1033,16 @@ nix
 12:28  
 zum verrücktwerden  
 12:29  
-Stefan  
+#### Stefan  
 Vll kann Kurt dazu mal was schrei#### ben, ob es tatsächlich die Möglichkeit gibt, die Library (gerne auch mal testweise) zu wechseln. Wir haben hier bei diversen Nodes immer wieder die Probleme, dass das GPS unter Meshtastic z.B. einwandfrei läuft, unter MeshCom aber nicht.  
 12:31  
 Wolfgang Hallmann DF7PN  
 Sachen gibt's  
 12:31  
-Stefan  
+#### Stefan  
 Kann ja auch sein, dass das damit gar nichts zu tun hat, aber irgendeinen Unterschied muss es ja ge#### ben, dass sich die Nodes mit anderer Software so anders verhalten.  
 12:31  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Sticker  
 😰  
 12:33  
@@ -1088,7 +1088,7 @@ ok ist logisch. ttl wandler gibt 3.3 V ab
 12:58  
 an der mesh kiste ist es auch 3.3 bzw 3.5  
 12:58  
-Stefan  
+#### Stefan  
 Am E22 sind es 3,3V, mit dem passendenden Adapter kann man das für den PC einstellen. Ich hab das mit 3,3V auch am PC zuverlässig laufen.  
 13:00  
 Wolfgang Hallmann DF7PN  
@@ -1118,7 +1118,7 @@ Ich habe jetzt einen frischen Neo-6M ausgepackt und der lief sofort
 🇨🇳 Zeugs halt... Fake  
 ❤  
 14:14  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 so wie es mir erscheint, ist da ein LDO drauf, dh. dieses Board benötigt 5V. Damit wäre mit 3,3V dann zu wenig Spannung am Chip  
 14:14  
 Wolfgang Hallmann DF7PN  
@@ -1127,13 +1127,13 @@ unter dem Aufkleber waren Reste zu sehen vom Vorgänger
 14:15  
 Halleluja sag ich  
 14:16  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Wenn du aber die VCC auf +5V hängen würdest, dann sind TX/RX wahrscheinlich außerhalb der 3,5V Spezifikation für den ESP32.  
 14:31  
 Wolfgang Hallmann DF7PN  
 eher nicht, da die auf allen Boards drauf sind aber trotzdem als 3,3v Module angepriesen werden.  
 14:36  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 hast REcht:  
 Support 2.7~3.6V power supply, typical 3.3V power supply.  
 19:16  
@@ -1156,7 +1156,7 @@ Leider werden die ATM Module nicht von der Firmware erkannt, gehen am ttl/USB Wa
 Helmut OE5HWN  
 habe meine GPS Module bis jetzt immer bei A...n bestellt, da auch eine 3er Packung die nicht Original waren ging zurück, kein Problem. Ersatz bei einem anderen Anbieter etwas teurer bestellt die laufen.  
 20:35  
-Stefan S.  
+#### Stefan S.  
 Ist mir auch schon vorgekommen, auf dem Sticker ist ein ublox 6M aufgedruckt, beim Start an der Seriellen meldet er sich dann als 5M, also Resteverwertung! Vy73 aus Gmünd.  
 27 March 2025  
 08:12  
@@ -1178,7 +1178,7 @@ Michael DG1FBP
 mesh klappte noch nicht, 2 kalte Lötstellen an dieser seltsamen Sockelkonstruktion😂😂  
 3 April 2025  
 10:50  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Um verschiedene Spannungen mittels des wählbaren Spannungsteilers am Board messen zu können, ist das gelöst worden:  
 Da ist jetzt ein Kalibrierungsfaktor !!!  
 2025-04-03 v4.34v.04.03 Minor-Release  
@@ -1190,7 +1190,7 @@ Berechnung on/off --analogcheck on/off (default off)
 Kurt Baumann OE1KBC  
 Schon probiert ob auch gemessen wird. In welchen Rythmus sollen wir messen … sec?  
 10:53  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Nein, noch nicht. Bin noch am TLORA und habe heute Arzt-Termin und schönes Wetter ...  
 Ist aber in der Pipeline !!!  
 Danke für die Lösung!  
@@ -1198,7 +1198,7 @@ Danke für die Lösung!
 Kurt Baumann OE1KBC  
 Bin auch gerade beim Hautprüfer HI  
 10:54  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Frage: Ist GATEWAY_NOPOS weggefallen?  
 Da dies durch das ANALOG_CHECK ersetzt wurde?  
 10:58  
@@ -1234,7 +1234,7 @@ Kurt meinte deine Spannungsversorgung bricht ein, deshalb der Fehler. Dein -12er
 Michael DG1FBP  
 werde das beobachte, mit usb-c an der platine , das sollte reichen  
 20:20  
-Stefan  
+#### Stefan  
 Achte darauf, dass das Netzteil auch die 2A mindestens liefert. Es gibt genug davon, die die Leistung nicht bringen, trotz USB-C  
 20:29  
 Michael DG1FBP  
@@ -1259,10 +1259,10 @@ taugen die Dinger was ? Angeblich bis 12 A 😂😂
 Thomas - DO1TFS  
 stell feuerlöscher daneben 🤣😂🤣  
 20:54  
-Stefan  
+#### Stefan  
 Ich hab ne andere Version vom gleichen Hersteller. Hat mich bisher nicht enttäuscht. Nur die Spitzenströme kannst du damit nicht sehen, da ist das zu träge.  
 22:07  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das ist sehr zu empfehlen!  
 Ich habe ja dokumentiert, dass 2A meistens nicht reichen, da die Stromspitzen von den allermeisten Netzgeräten nicht abgefangen werden können.  
 Aber wenn du meine ESP32-E22 PCB verwendest, dann solltest du auch die Bestückungsdaten der Kondensatoren einhalten.  
@@ -1281,11 +1281,11 @@ also 4.34w
 19:02  
 19:02  
 19:56  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, ja, natürlich bemerke ich das schon sehr lange. Aber ich wollte Kurt damit (noch) nicht nerven, da es wichtigere Dinge gab. 😉  
 Übrigens: Am T-LORA Board  
 20:17  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ❓Warum hast du den Elko C6 zw. Display und grüner Schraubklemme nicht bestückt?  
 20:26  
 Ich habe extra da noch darauf hingewiesen❗️  
@@ -1300,7 +1300,7 @@ Vermute mal ein 2,4" Display
 Juergen DF2AP  
 Danke 👍  
 09:46  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Nochmals, Michael DG1FBP, und alle anderen, es hat einen Grund, dass in Summe ≈1000µF Elko und einige 100nF Keramik-Kondensatoren auf der PCB verteilt angeordnet sind!  
 Jeder erfahrene Elektronik-Entwickler und PCB-Designer wird das sofort verstehen.  
 Wer das nicht einhält, der braucht sich dann auch nicht wundern, dass es zeitweise zu einem Fehlverhalten der Elektronik und der FW kommen kann.  
@@ -1310,14 +1310,14 @@ sorry, Bilder waren schon gemacht, bevor der letzte Elko gelötet wurde, hab nic
 10:11  
 Trotzdem vielen Dank für Deine Mühe mit diesem Projekt 👍  
 10:29  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ok  
 15 April 2025  
 12:05  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 https://github.com/DK9BT/esp32-e22-lora-board/blob/main/ESP32-E22_V2.1.2/PCB-Assembly/README.md#2-spannungsversorgung  
 13:56  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 C3 470µF + C4 100nF sind dafür da, die Stromspitzen vom E22 abzublocken. Und somit den Spannungseinbruch abzumildern. Daher auch ganz nahe am E22 platziert.  
 Der andere C6 470µF Elko + C5 100nF sind im Bereich der Stromversorgung, um hier auch zu puffern.  
 Die restlichen 100nF sind jeweils sehr nahe bei speziellen Komponenten, um die sehr kurzen Stromspitzen abzublocken.  
@@ -1329,17 +1329,17 @@ ESP32-E22_2.1.2_SCH.pdf
 60.3 KB  
 ich habe den C2 jetzt ausgekreuzt.  
 19:48  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 bitte LESEN und beachten !!!  
 1 May 2025  
 07:27  
-#### wolfgang z  
-#### wolfgang z 26.04.2025 10:00:17  
+#### OE3WAS wolfgang z  
+#### OE3WAS wolfgang z 26.04.2025 10:00:17  
 ❗️übrigens: Ich habe mir gestern ein ESP32-S3-N16R8 Board "zerstört" und das könnte nun auch die Erklärung für jene sein, bei denen das ESP32-Board in einer Boot-Loop hängt, trotz guter Stromversorgung:  
 Offensichtlich ist durch einen Kurzschluss des 3V3-Pins auf der Stiftleiste gegen GND der Spannungsregler so gestor#### ben, dass er zwar noch 3,2V liefert, aber den Strom nicht mehr liefern kann.  
 Aber ich muss das erst noch genau analysieren.  
 07:27  
-#### wolfgang z 26.04.2025 17:33:58  
+#### OE3WAS wolfgang z 26.04.2025 17:33:58  
 💥Diagnose:  
 • Board hängt in einem Boot-Loop  
 • An den 3,3V Pin ist im Oszillogramm nichts ersichtlich, aber es triggert bei >1,96V, dh. die 3,3V brechen extrem kurzzeitig ein, sodass der Brown-Out Kreis des ESP32-S3 anspricht und ein Reboot macht.  
@@ -1351,7 +1351,7 @@ Lösungsversuch:
 (BT kommen nächste Woche MO)  
 👍  
 07:27  
-#### wolfgang z 27.04.2025 22:18:24  
+#### OE3WAS wolfgang z 27.04.2025 22:18:24  
 Den AMS1117-3,3 habe ich nun ausgelötet und mit Netzgerät mit 4,8V versorgt und mit einem Widerstand belastet.  
 Bei >100mA bricht die Spannung massiv ein, obwohl es bei Nachrechnung der Verlustleistung und Wärmewiderstand zu keiner thermischen Überlastung kommen sollte.  
 Außerdem ist er lt. Datenblatt gegen Kurzschluss und thermische Überlast geschützt.  
@@ -1364,7 +1364,7 @@ somit ist Tj = 52°C < 125°C = Tjmax
 Morgen kommen neue AMS1117-3,3 Regler und ich werde den Versuch wiederholen.  
 Seid gespannt ...  
 07:27  
-#### wolfgang z 29.04.2025 20:56:36  
+#### OE3WAS wolfgang z 29.04.2025 20:56:36  
 Aber eine "Herz-Transplantation": ASM1117 getauscht und das Board läuft wieder. Zuvor mit dem defekten LDO in einem Boot-Loop gewesen.  
 07:27  
 ist ja auch die ältere FW, wo ich nur GPIO38 aktiviert habe und kein Neopixel.  
@@ -1377,12 +1377,12 @@ der Test ist denkbar einfach:
 07:27  
 per SW nicht, nur durch externes messen der Spannung bei Belastung  
 07:27  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Kurt Baumann OE1KBC 29.04.2025 21:02:57  
 Das wird für manche eine Challenge  
 07:27  
-#### wolfgang z  
-#### wolfgang z 29.04.2025 21:06:05  
+#### OE3WAS wolfgang z  
+#### OE3WAS wolfgang z 29.04.2025 21:06:05  
 Nicht wirklich. Ist zwar ein SMD-Bauteil, aber die Reihenfolge ist folgende:  
 •1) mit einem scharfen Seitenschneider die 3 Beinchen abzwicken.  
 •2) dann etwas aufbiegen und die breite Lasche ablöten.  
@@ -1400,14 +1400,14 @@ https://www.az-delivery.de/products/esp32-board-dev-kit-c-v4-nodemcu-wlan-wifi-d
 👌  
 19 May 2025  
 10:14  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Sticker  
 🔥  
 10:15  
 Ich habe soeben eine Mitteilung bekommen, die meinen Anfangsverdacht bestätigt hat:  
 LÖTFEHLER => GESAMTES PCB nachlöten  
 10:15  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ralf Herold 19.05.2025 08:08:35  
 Hallo Wolfgang . Du hattest vor einiger Zeit wegen den Fehl-Aussendungen von DH1IAC-16 hier geschrieben. Er ist ein befreundeter Funkamateur von mir. Hat leider kein Telegramm . Aber er hat den Fehler auf seinem E22 Board behoben indem er alles nochmal nachgelötet hat. Er hat wohl zuvor auch selbst schon gemessen das hier und da nicht genug Spannung vorhanden ist. Seit dem Nachlöten funktioniert es offenbar  
 ❤  
@@ -1418,7 +1418,7 @@ Franz DG2RBF
 Wolfgang Hallmann DF7PN  
 Oh brauche Hilfe. Bei der Firmware gibts jetzt neue Aufteilungen. Was ist denn laut der Liste ein DevKitC mit E22400M30S?  
 14:49  
-Stefan  
+#### Stefan  
 Das ist die 1W-Variante des E22 für 433MHz mit dem bisherigen Board mit ESP32 (ohne S3)  
 Der mit 2W hat die Bezeichnung E22 400M33S  
 15:12  
@@ -1429,19 +1429,19 @@ und welche Version der SW ist das nun? Bisher gabs nur einen bin. jetzt sinds zw
 15:13  
 erster oder zweiter Eintrag? ich weiß nicht was ich nehmen muss  
 15:14  
-Stefan  
+#### Stefan  
 Der erste ist für 868MHz-E22, der Zweite für die 433MHz-Variante.  
 15:14  
 Wolfgang Hallmann DF7PN  
-puh, danke Stefan  
+puh, danke #### Stefan  
 15:17  
-Stefan  
+#### Stefan  
 Bitteschön!  
 15:26  
 Wolfgang Hallmann DF7PN  
 Wäre sicher gut gewesen diese MHZ in den Namen mit einzubringen wenn man nicht die einfachen Nutzer auflaufen lassen wollte.  
 15:27  
-Stefan  
+#### Stefan  
 Naja, man sollte schon ein bisschen über die Bezeichnungen Bescheid wissen, wenn man das nicht über den Webflasher macht. Die Unterschiede 433/868 sind da nicht ganz unwichtig. 😉  
 15:39  
 Kurt Baumann OE1KBC  
@@ -1458,7 +1458,7 @@ https://www.az-delivery.de/products/gy-bme280?variant=19385550536800&utm_source=
 Wolfgang  
 jemand ne Ahnung was mit "brownout detector was triggered" gemein ist. hab mir das PCB von DK9BT zusammen gebrutzelt und wenn das teil startet bekomme ich nach der initalisierung diese Meldung im Telnet client angezeigt. meine Versorungs ist ein 5V 3A netzeil, das sollte nach angaben eigentlich reichen  
 19:59  
-Stefan  
+#### Stefan  
 Wenn das Netzteil genau 5V liefert, an der Schotty-Diode noch 0,3V abfallen und beim ersten Senden mit 2W die Spannung noch mal ein wenig zusammenbricht, dann rutschst du unter die "Brownout-Schwelle". Evtl. die Diode mal überbrücken.  
 20:00  
 Bei anderen waren es unsaubere Lötstellen, an denen durch Übergangswiderstände ein Spannungsabfall aufgetreten ist. Also beim "Zusammenbrutzeln" wundert mich das nicht! 😄  
@@ -1467,16 +1467,16 @@ Bei anderen waren es unsaubere Lötstellen, an denen durch Übergangswiderständ
 Helmi Beh  
 Hatte gerade das gleiche Problem mit dem Brownout Detector. Bei mir ist das Problem das Display. Ich habe eines mit der Anschlussreihenfolge Gnd-Vcc-SCL-SDA. Und wenn man die Brücken nicht auftrennt, sondern nur die Jumper umsteckt, gibt es einen Kurzschluss zwischen 3V3 und Gnd.  
 20:43  
-Stefan  
+#### Stefan  
 Autsch... aber da ist die Ursache ja eher eindeutig! 😀  
 20:43  
 Helmi Beh  
 Dazu noch ein Hinweis: mein Display kann ich nicht in den J11 stecken, da der Abstand zum ESP32 zu eng ist und sich die beiden PCBs berühren.  
 20:44  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Wer lesen kann, ist entscheidet im Vorteil. 😉  
 20:44  
-Stefan  
+#### Stefan  
 Ist das ein 0,96" oder 1,3"?  
 20:44  
 Helmi Beh  
@@ -1484,24 +1484,24 @@ In den unbezeichneten Stecker neben den Jumpern geht es aber rein.
 20:46  
 0.96", allerdings 128*64 mit SSD1306.  
 20:46  
-Stefan  
+#### Stefan  
 Sollte aber eigentlich passen... 😳  
 20:48  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Der ist nicht unbezeichnet, sondern auf der Rückseite mit J11  
 20:49  
 Wenn man weiß, was das für Konsequenzen hat, dann kann man das tun.  
 20:51  
 Helmi Beh  
 20:51  
-Stefan  
+#### Stefan  
 Sicher doch. Die Diode ist schon sinnvoll bei ner Klemme für den Stromanschluss. Für eine Ursachenforschung aber mal verzichtbar. 😉  
 👍  
 20:51  
 Helmi Beh  
 Das ist das OLED im J11. Der andere Stecker hat bei mir keine Bezeichnung.  
 20:52  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 20:52  
 Das ist KEIN DevKitC-V4 !!!  
 👌  
@@ -1509,10 +1509,10 @@ Das ist KEIN DevKitC-V4 !!!
 Helmi Beh  
 Ich meine aber den waagerechten! Der hat keine Bezeichnung, bzw. U2. Da ist noch ein halber mm Platz.  
 20:54  
-Stefan  
+#### Stefan  
 Es gibt unterschiedliche Bauformen. Auch welche, die größer sind. Um 90° verdreht müsste das aber passen.  
 20:55  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, richtig. Der ist Teil des OLED und das hat den Bezeichner U2  
 20:55  
 Helmi Beh  
@@ -1521,13 +1521,13 @@ Hat aber die gleiche Pinbelegung und der Abstand der beiden Pinreihen stimmt auc
 Kurt Baumann OE1KBC  
 Schaut die WLAN Antenne am Ende etwas raus ca. 5mm  
 20:56  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, aber ist ne NodeMCU und hat u.U. andere Kennwerte.  
 20:56  
 Kurt Baumann OE1KBC  
 Sehe ich auch so  
 20:59  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, natürlich. Ich habe das Design nur möglichst sicher gemacht. Man kann einiges weglassen und einiges überbrücken.  
 Auch ohne den Schutzdioden sollte im Normalfall nichts passieren. Aber das kommt auf die Netzgeräte an.  
 21:00  
@@ -1536,7 +1536,7 @@ Und wenn man IMMER nur EINE Versorgung angesteckt hat, dann ist das auch OHNE Di
 Helmi Beh  
 Welche anderen Kennwerte meinst du?  
 21:01  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 z.B. Stromverbrauch, was sich auswirken könnte.  
 21:02  
 Aber auch die Sicherheit der WiFi-Verbindung, da anderes Design des Moduls. Es gab ja einen triftigen Grund, dass das neue Design die WiFi-Antenne frei überstehend hat.  
@@ -1560,7 +1560,7 @@ Brounout: Eingangsspannung am ESP32 zu gering, Prozessor sichern kurz noch wicht
 Gegenmaßnahmen: Spannungspegel auf Eingangsspannung gem. Datenblatt erhöhen und stabil halten.  
 Die Verwendung von "billigen" USB-Leitungen, zu geringer Aderquerschnitt etc, führen gerne zum geschilderten Problem.  
 10:03  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 das wäre ja kein Problem, wenn er dabei nicht irgendwelche Fehlaussendungen macht.  
 Ich habe zwar schon alles vorbereitet für so eine Messung, aber muss erst noch die ADC-Filterung fertig machen.  
 14:43  
@@ -1571,7 +1571,7 @@ danke... das USB kabel ist kein billiges mit knappe 10 € und ich hatte acuh bi
 Wolfgang  
 Kurzes Update... es waren keine Lötstellen, und keine problem mit der platiene... es ist das DevKit4 leider ist es defekt, deshalb der Brownout...  
 10:53  
-Stefan  
+#### Stefan  
 Das ist auch meine Erfahrung, manche der Teile sind empfindlich gegen Unterspannung. Vor Allem bei den China-Teilen passiert das eher, die von z.B. AZ-Delivery waren bisher alle ok.  
 10:58  
 Wolfgang  
@@ -1579,7 +1579,7 @@ der ist tatsächlich von AZ-Delivery
 11:00  
 mal ne andere frage gibt es irgend ein kniff um auf die webseite des nodes zu kommen? wlan habe ich eingerichtet, aber laut putty startet er den webserver und die Wlanverbindung nicht selbständig, und wenn ich drauf zugreifen will wenn ich den webserver per app aktiviere ist er nach dem reboot wieder aus  
 11:08  
-Stefan  
+#### Stefan  
 Der Node sollte sich das merken, wenn die WLAN-Info hat. Die Verbindung kommt nur zustande, wenn der Webserver oder GW aktiv ist. Das sollte er sich aber auch merken.  
 Wenn du den Webserver einschaltest, dann lasse den Node erst mal in Ruhe, das dauert manchmal ein bisschen, nach dem automatischen Reboot noch einige Zeit, bis er dann doch den Webserver aktiviert.  
 11:10  
@@ -1587,10 +1587,10 @@ Wolfgang
 jetzt nach dem ich GW aktiviert habe macht er die Verbindung.... aber auch die Webseite kann ich immer noch nicht drauf. da bringt er mit  
 [189708][E][WiFiClient.cpp:429] write(): fail on fd 50, errno: 104, "Connection reset by peer"  
 11:12  
-Stefan  
+#### Stefan  
 Welchen Node hast du genau? Den vom Bild oben? Der Ist nämlich nicht gleich den von der Software unterstützten WROOM DevKits. Evtl. Liegt es daran, die BerryBase NodeMCU sind meines Wissens KEINE WROOM bzw. DevKit V4.  
 11:20  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Hast du die 3,3V nach meinen Angaben getestet?  
 Möglicherweise ist nur der 3,3V Regler nicht mehr ok.  
 11:22  
@@ -1598,7 +1598,7 @@ Wolfgang
 11:22  
 ne habe ich noch nicht gemacht  
 11:23  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 siehe hier:  
 https://t.me/c/1987218802/11812/21680  
 11:24  
@@ -1609,10 +1609,10 @@ Meinst du, AZ-Delivery macht die selbst? Die kommen auch aus China!
 12:34  
 Doch, auch die Berrybase sind ESP32-WROOM! Zwar keine V4, aber trotzdem WROOM.  
 12:35  
-Stefan  
+#### Stefan  
 Ja, frelich kommen die daher. 🙂 Allerdings gibt es wohl einige Hersteller, die die produzieren und die sehen auch in der Bestückung unterschiedlich aus.  
 13:04  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 bez. der 3,3V:  
 Diese Killen des 3,3V-Reglers kann erfolgen:  
 • durch irgendwelche Fehlbedienung,  
@@ -1624,11 +1624,11 @@ das Oled hatte gepasst... aber ist auch kein großer schade... so ein dev kit be
 13:28  
 der USB-Serial wandler hat auch einen schlag abbekommen also da muss was ganz arg schief gegangen sein....  
 20:09  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 oh, danke, interessante Info  
 1 June 2025  
 22:37  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Zum Thema BrownOut Messaufbau  
 Leute, ich sag's euch: "Die Elektronik is a Hund!" (Messtechnik)  
 So einfach es scheinen mag, so schwierig ist es zu messen.  
@@ -1652,7 +1652,7 @@ aber erst morgen weiter ...
 Helmi Beh  
 Und ein Steckbrett zwischen den Masse- und Stromleitungen ist schon mal für solche Messungen ein No-Go! Und auch diese "modernen" Dupont-Eisendrähte sind Schrott.  
 11:54  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, ja, das stimmt schon. Aber ein erster Versuch war es eben.  
 Habe schon nach paar Ideen umgebaut und werde nach dem späten "Frühstück" einen neuen Versuch starten.  
 11:56  
@@ -1665,7 +1665,7 @@ Das ist meine Vorgehensweise jetzt:
 •2) Direkt am Adapterboard Abblockung der Versorgungsspannung mit SuperCap 1,5 F (!) + 330µF Tantal + 100nF Kerko  
 •3) MessShunt R100 in der VBUS (+5V), was auch den Ri von einem Akku (Größenordnung 100mΩ) simuliert.  
 16:31  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 16:32  
 So, Leute, die Ergebnisse sind im Kasten:  
 ESP32-E22M400 PCB @ 22 dBm  
@@ -1678,7 +1678,7 @@ Daher fasse ich mal zusammen:
 3️⃣ Es war eine Mindestspannung von 4,4V vor dem R100 erforderlich und es reichte eine 1,0A Strombegrenzung, da der 1,5 F Kondensator die Stromspitzen abfing.  
 4️⃣ was kann man daraus schließen? ...  
 16:57  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 FAZIT:  
 Eine nochmalige Tiefenanalyse der Situation ergab:  
 🅰️ Es waren IMMER Nodes mit E22 und als GW.  
@@ -1693,7 +1693,7 @@ Ein gewisser Rest an Fehlfunktionen im Sinne der Fehlaussendungen könnte auftre
 17:02  
 PS: Solange niemand schlüssig nachweisen kann, wie diese vormals beobachteten "Fehlaussendungen" zustande kommen, inkl. detaillierter, genauer Bauteilsituation und Messwerten und Protokollen, kann dieser meiner Aussage NICHT widersprochen werden.  
 17:15  
-Stefan  
+#### Stefan  
 Du glaubst also allen Ernstes, dass die Messages absichtlich von irgendwem geschickt werden? Mit Verlaub, das ist alles andere als wahrscheinlich. Ich konnte diese Aussendungen bei meinen eigenen Nodes schon beoabachten und habe die sicher nicht absichtlich ausgesendet. 🙂  
 Die Tatsache, dass du diese Fehlaussendungen nicht nachstellen kannst, ist für mich noch lange kein Hinderungsgrund, dir hier zu widersprechen.  
 Ein Nachweis ist nicht ganz so einfach für den betroffenen Funkamateur, dem diese ganzen Messmittel nicht zur Verfügung stehen. Das dann als Absicht zu unterstellen, finde ich schon etwas schräg.  
@@ -1705,10 +1705,10 @@ Ich werde mir nun tatsächlich die Mühe machen und versuchen, die Situation nac
 Thomas - DO1TFS  
 Hat schon mal jemand daran gedacht, dass eine HF Einstrahlung vom E22 den ESP zum Absturz bringt ??  
 17:27  
-Stefan  
+#### Stefan  
 Ich denke, dass es tatsächlich mit der StrV zu tun hat, die Aussendungen sind z.B. immer dann zu beobachten, wenn die Batteriespannung in den Keller geht. Das sieht man u.A. auch in den Graphen der Map. Bei mir war es während einer Autofahrt, bei der der E22 mit Akkus versorgt wurde. Das lässt sich noch mal nachstellen, werde ich demnächst aufbauen.  
 17:30  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Du hast aber nicht verifizieren können - damals - ob die nicht via LoRa empfangen wurden und nur weiter geschickt wurden. Leider gibt es diesbezüglich keinen Log und es hat auch niemand darauf geachtet.  
 17:30  
 Ja, bitte, mach das.  
@@ -1723,7 +1723,7 @@ Thomas - DO1TFS
 die Situation is sowieso unlogisch... das "Partition not found" kommt doch auch nach dem Reset erst..  
 👍  
 17:35  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Genau so ist es! Dieser Klartext KANN NICHT Ausgesendet werde - irrtümlich - und auch noch von einem "sterbenden" ESP32.  
 17:35  
 Thomas - DO1TFS  
@@ -1731,15 +1731,15 @@ alles sehr seltsam
 17:36  
 hab das übrigens rausgepatcht bei mir... einfach eine Dump Core Partition angelegt 🤪  
 17:36  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das kann auf eine Koinzidenz zurückzuführen sein:  
 Die Fehlaussendungen traten auf > der Absender beendet das "Spiel" und du tauschst den ESP32. => Fehlinterpretation  
 17:38  
-Stefan  
+#### Stefan  
 Meiner Beobachtung nach sind das Nodes, die als Gateway laufen, gesendet wird ein Teil der Konsolenausgabe nach dem Reboot oder irgendwas aus dem Buffer. Daher vermute ich, dass diese Aussendungen nur über Internet an den Server gehen, wenn beim erneuten Hochlaufen die Spannung nicht reicht. Aber ich versuche das nachzustellen, das damalige Hardwaresetup ist noch vorhanden.  
 👍  
 17:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ich konnte das in vielen Versuchen, mit unterschiedlichen Versorgungsspannungen und Strombegrenzungen NICHT nachvollziehen.  
 Der ESP32 war ganz einfach funktionsfähig  
 ODER in einer BOOT-Loop  
@@ -1751,10 +1751,10 @@ zumal du ja damals gesagt hattest, dass das "fehlerhafte" ESP32-Board nun in ein
 17:41  
 Das hatte wir im Brainstorming auch schon durchgekaut. Aber dieser Ablauf ist durch rein gar nichts nachvollziehbar.  
 17:43  
-Stefan  
+#### Stefan  
 Damals war mir noch einiges nicht so klar, wie heute, ich hab dazugelernt. 🙂 Inzwischen glaube ich nicht, dass es ursächlich an defekten/unsauberen ESP liegt, eher an verschiedenen Toleranzen in Bezug auf die Versorgungsspannung. Auch die vermeinlichen Sorgen-ESPs laufen jetzt einwandfrei, nchdem ich die StrV optimiert habe.  
 17:49  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Manchmal muss man provozieren oder ablenken ...  
 1) Dieses  
 E (71) esp_core_dump_flash: No core dump partition found!  
@@ -1762,19 +1762,19 @@ kommt vom Bootloader, noch bevor irgendein Teil der FW begonnen hat zu laufen!
 2) warum sollte gerade ein Teil dieses Textes in genau den richtigen Buffer kommen, der dann als valides UDP-Packet ausgesendet wird?  
 Wahrscheinlichkeit = 00  
 17:51  
-Stefan  
+#### Stefan  
 Da ich keine Ahnung habe, wie die FW genau arbeitet, kann ich dir die Frage nicht beantworten. Tatsache ist aber, dass es passiert. Und wir finden auch raus, warum und auf welchem Weg das zum Server kommt. 😈  
 17:52  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Photo  
 511×29  
 hier seht ihr, was passiert, FALLS diese Zeile zuvor in den richtigen Buffer kommt. da die Zeichen VOR dem ":" verworfen werden und die Zeichen inkl. dem ":" grundsätzlich eine Message darstellen kann, die man im Terminal eingeben kann.  
 17:55  
-Stefan  
+#### Stefan  
 Ich versuche das nachzustellen, sobald der Fehler dann auftritt, diskutieren wir weiter. Bis dahin ist das Fischen im Trüben und nicht wirklich hilfreich.  
 👍  
 17:59  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das konstruierte Szenario wäre:  
 1) Der Bootloader sendet grundsätzlich als letzte Info die obige Zeile an die Serielle Ausgabe.  
 2) Wie aber dieser OUTPUT dann im INPUT der Seriellen Schnittstelle kommen kann, das ist das große, ungelöste Rätsel.  
@@ -1786,70 +1786,70 @@ Photo
 ‼️Hier ist es schon wieder von der bekannten Node um 16:15:26  
 Und wie sich zeigt, ist der -16 der Sender und -12 nur das GW  
 18:08  
-Stefan  
+#### Stefan  
 Bisweilen haben meine Nodes das beim Einschalten auch gemacht. Gleich nach dem Hochlaufen eine Meldung, dann war alles ok.  
 18:09  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 21:35  
 Ralf Herold  
 Der OM arbeitet Mobil und beim starten des KFz kommt es zu Unterspannung und in der folge dann zu solchen aussendungen ..  
 21:45  
 Aber so sicher ist er sich nicht ob es wirklich der Grund ist .  
 21:49  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Unerklärlich, unvorstellbar, unlogisch, ...  
 21:49  
 Ralf Herold  
 Ok er schaltet das Teil erst mal ab wir haben das Dashboard hier nicht immer im Blick  
 21:50  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 KFZ-Elektronik ist ein sehr spezielles Gebiet.  
 21:51  
 Ralf Herold  
 Wie wahrscheinlich ist die Theorie das . Die ESP 32 von Aliexpress Probleme machen?  
 21:52  
-Stefan  
+#### Stefan  
 Ich denke, dass es nicht wirklich davon abhängt. Vll sind die Toleranzen anders.  
 21:54  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Glaube ich nicht, dass es deswegen ist.  
 Aber, um Elektronik in einem KRF zu betrei#### ben, braucht es schon spezielle Vorkehrungen. Aber die sind ja bekannt unter den Elektronikern.  
 21:54  
 Ralf Herold  
 Ok hmm schwierig..Der OM hat noch einen anderen gebaut . DB0TFM-12 läuft ohne Probleme…  
 21:55  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Unwahrscheinlich m.M.n. Die ESP-Module sind wahrscheinlich alle gleich nur mit anderer Gravur. Und das Board drumherum ist lt. Design von espressif auch sehr gut definiert.  
 21:57  
-Stefan  
+#### Stefan  
 Ich hab den Testaufbau fast fertig, nur lasse ich den nicht heute Nacht auf Akku laufen, das mache ich evtl morgen. Dann schau mer mal.  
 21:58  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Kanns du bitte den Testaufbau, dh. die Verschaltung zeigen?  
 21:58  
 Speziell, welchen Akku du genau WIE an das Board angeschlossen hast.  
 21:59  
-Stefan  
+#### Stefan  
 Mache ich dann, heute nimmer. Couch ist angesagt. 😉  
 22:01  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Wirst du die Serielle-USB monitoren?  
 Das Problem ist ja, dass man sehr wenig sieht, da die USB bei einem Unterspannungs-Reboot getrennt wird.  
 Da sollten wir die RX/TX dafür verwenden, da die ja bestehen bleibt, bzw. der Serial-USB-Adapter extern versorgt wird.  
 22:02  
 Ja, das wäre ein interessantes Szenario: Akkuversorgung und Serielle über RX/TX.  
 22:02  
-Stefan  
+#### Stefan  
 Erst mal muss der Fehler ja wieder auftauchen. 😊  
 22:04  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ev. könnte dir Kurt auch ein Rufzeichen direkt in den TEST-Tab umleiten.  
 Mein OE3WAS-99 geht automatisch nach TEST in Dashboard am Server. So irritiere ich niemanden.  
 22:04  
 Ralf Herold  
 Ich habe gerade von Ihm erfahren das er bei dem Board ein E22-400T33S mit 33dBM verbaut hat …🙄  
 22:06  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 bist du dir da ganz sicher?  
 Wir verwenden einen E22-400M33S od. E22-400M30S !!!  
 22:08  
@@ -1861,7 +1861,7 @@ Jep hab gefragt ob er beim zusammenbau was anderst gemacht hat …. Ufff …
 Helmut OE5HWN  
 Wolfgang du meintest den "T"  
 22:15  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 stimmt, da hatte ich mich vertippt bei Goo.. Aber einen "S" gibt es eh nicht.  
 22:17  
 Ralf Herold  
@@ -1885,7 +1885,7 @@ Ich meinte eine Fehlbestellung s seinerseits .. Er wollte 1Watt und hat den 2Wat
 Rainer OE1KFR  
 Na dann halt die Leistung runter drehen. Die PA im Modul macht 11dB. 19+11 =30 oder noch weniger  
 23:03  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 23:06  
 Danke für die Anregung. Habe jetzt die RX/TX-Pins auf den FT232R verbunden (inkl. GND).  
 Die Versorgung erfolgt jetzt einfach über USB-C für den 1. Test. ✅ Ja, so ginge es, grundsätzlich. Aber Terminal HUHN verliert trotzdem die Verbindung, wenn die Versorgung "abstirbt". 😢 noch nicht gut.  
@@ -1959,24 +1959,24 @@ Platine > USB-A > USB-Micro > USB-C > USB-C-Winkel > ESP32-E22 V2.1.2 PCB Versor
 Das sieht man normalerweise über die USB im Terminal nicht, da der USB-Serial-Chip schon vorher "verreckt".  
 3 June 2025  
 10:44  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 jetz auch von einem T-Beam ???  
 10:44  
-#### wolfgang z  
-#### wolfgang z 03.06.2025 10:41:17  
+#### OE3WAS wolfgang z  
+#### OE3WAS wolfgang z 03.06.2025 10:41:17  
 Photo  
 685×77  
 10:44  
 Photo  
 778×70  
 10:49  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Sehr eigenartig, dass obiges um 10:31 die einzige Meldung dieser Node seit Mitternacht bisher war. Und es müsste ein ":" zuvor enthalten sein, damit es valide Text-Msg wird.  
 10:49  
-Stefan  
+#### Stefan  
 Der T-Beam hat ja auch einen ESP32 drin, daher kann das gut sein.  
 10:50  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Stimmt, hier ist immer ein ":" zuvor:  
 rst:0xc (SW_CPU_RESET),boot:0x13  
 10:52  
@@ -1996,12 +1996,12 @@ Damit können wir somit wahrscheinlich ALLE Fehlaussendungen, so sie nicht absic
 11:19  
 Wäre aber nur ein Workaround, da die wahren Ursachen, warum solche Texte als UDP ausgesendet werden, weiterhin unklar blieben.  
 11:57  
-Stefan  
+#### Stefan  
 Mein Testnode läuft jetzt, genau die Konstellation wie damals, als der Fehler das erste Mal aufgetreten ist. Ich beobachte jetzt, ob das wieder passiert, wenn die Akkus in der USV nachlassen. Wenn ja, geht es ans nachforschen/messen. 😊 Die USV liefert 5,1V aktuell, bricht auch beim Senden nicht ein. Über die ganzen Leitungen und die Diode, kommen am ESP etwa 4,6V an. Es bleibt spannend! 😀  
 Der Node ist der DG4NEU-77.  
 👍  
 12:09  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ahh, gute Idee, diese USV zu verwenden. Habe auch so eine - ganz vergessen. (fragt mich, was ich nicht habe ... Hi Hi)  
 ABER: Der Elko für den E22 ist nicht bestückt, wie ich sehen kann. UND der Elko am Eingang auch nicht. Oder sind die auf der Rückseite? Was ich nicht glaube, da die PCB so flach aufliegt.  
 12:10  
@@ -2009,28 +2009,28 @@ Welche Schottky-Diode hast du genau verwendet? Type?
 12:11  
 Hi Hi, ich habe auch einen 50Ω-BNC verwendet, in der Hoffnung, das der die max. 2W verträgt.  
 12:13  
-Stefan  
+#### Stefan  
 Die Elkos sind bestückt, liegen flach unter dem OLED aus Platzgründen. Ist ja noch die alte Testplatine. Die Schottky-Diode ist die aus der Bestückungsliste, 1N5817.  
 12:14  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ahh, ok. passt also.  
 Ja, die 1N5817 hat die geringste Durchlassspannung von 6 verschiedenen getesteten.  
 12:15  
 ja, richtig. Ist die 1. offizielle Version  
 12:17  
-Stefan  
+#### Stefan  
 Die USV ist modifiziert, wie man auf dem Bild sehen kann. Der eine 30kOhm-R ist durch einen 100k-Trimmer ersetzt, der kann die Ausgangspannung im Bereich von 4,5V bis 6V einstellen. Dreht man da zu weit aus dem Soll von 5V, raucht die Platine ab. Also Vorsicht! 😈  
 12:17  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Lasst uns die Spiele beginnen!  
 Ich habe mir 2 Stk. LTO Akkus vorbereitet, die in 2S-Konfiguration 5,6 V max. bis runter auf zulässige 3.0V liefern. Die werde ich jetzt anschalten.  
 12:18  
 welche Platine? USV oder ESP32-E22?  
 12:21  
-Stefan  
+#### Stefan  
 Die USV kann man damit beschädigen, die ist nicht für größere Toleranzen ausgelegt.  
 12:25  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Aber es gibt doch auch 9V u. 12V Typen.  
 Es scheint ein Spannungsteiler zu sein, durch:  
 R9=10k||R13=nc und R7=30k||R13=nc  
@@ -2039,10 +2039,10 @@ ich habe die SCH catchen können: aber scheint nicht ganz vollständig zu sein, 
 12:34  
 https://hackaday.com/2024/05/06/upgrading-a-cheap-lx-2bups-ups-board-to-fix-fatal-flaws/  
 12:36  
-Stefan  
+#### Stefan  
 Die Seite kenne ich, da hab ich auch die Infos zum Umbau her. Vll bestelle ich mir mal noch eine und teste das, bei welchen Toleranzen die den Geist aufgibt. 😄  
 12:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das ist nicht gut für die Akkus:  
 "Since there is no off-switch or other protections on the board, the XR2981 will happily keep operating until around 2.6V, at a rather astoundingly high idle power consumption."  
 "Da es keinen Ausschalter oder andere Schutzvorrichtungen auf der Platine gibt, arbeitet der XR2981 problemlos bis etwa 2,6 V, bei einem erstaunlich hohen Stromverbrauch im Leerlauf."  
@@ -2055,14 +2055,14 @@ Antron Argaiv says:
 May 6, 2024 at 2:23 pm  
 Even better, would be if someone were to create a new PCB with the fixes in it and release it to the world. Cheap Chinese manufacturers would steal it (as is customary) and shortly there would be improved cheap UPS products on AliExpress…win!  
 12:50  
-Stefan  
+#### Stefan  
 Für unsere Zwecke taugt das nach dem Umbau recht gut. Man kann auch Protectet-Zellen verwenden, dann gehen die auch nicht kaputt, wenn das Teil mal leerläuft. 🙂  
 Die Leerlaufstromaufnahme ist im Vergleich zum Node vernachlässigbar. Es ist ja immer noch eine USV, keine Unterwegsstromversorgung, auch wenn ich das mal so getestet hab.  
 13:03  
 Da fehlen einige Teile, ich muss auch mal suchen, ob ich einen kompletten Stromlaufplan finde.  
 Aber: Das Teil kostet beim Ali bisweilen keine 2€, daher kann man auch nicht zu viel erwarten. Ich hab noch eine andere Lösung mit einer Akkuzelle, die muss ich aber noch aufbauen und testen.  
 14:02  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 So, jetzt eine Messung des Stroms möglich.  
 • 2x LTO in 2S-Konfiguration => ≈5,4V Anfangsspannung  
 • R100 in GND-Leitung  
@@ -2082,111 +2082,41 @@ Uin = 5,34V
 Ich habe die APRS-Konfiguration leider noch nicht geschafft, damit BATT als V und nicht als % übertragen und angezeigt wird.  
 14:35  
 15:03  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Uin = 5,20 V  
 15:23  
-Stefan  
+#### Stefan  
 Node pausiert, will den nicht alleine lassen, wenn ich mit dem Hund unterwegs bin... 😉  
 16:13  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Uin = 5,00 V ... 0,35V weniger interne 5V => 4,65 V  
 17:29  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Uin = 4,80 V und intern 4,46 V ... alles läuft perfekt  
 Stromspitzen beim Senden dementsprechend auf ≈850 mA gesunken  
 19:43  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Uintern = 4,18 V ... Uin = 4,53 V ... alle läuft ...  
 bei ≈4,0 V intern wird es kritisch werden  
 wir nähern uns langsam der "Schmerzgrenze"  
 20:47  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Uintern = 4,10 V ... Uin = 4.44 V ... alles läuft  
 Stromspitzen beim Senden auf ≈850 mA gesunken  
 22:24  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 So, ich beende heute den Versuch bei Uintern = 4,0 V und Uakku = 4,36 V bei voller Funktionsfähigkeit.  
 ... morgen geht es weiter  
 22:27  
 oben gelb Akkuspannung. Bricht ≈100mV beim Senden ein.  
 unten blau Strom an R100  
-4 June 2025  
-00:16  
-Rainer OE1KFR  
-Könntest du bitte deine Brownout Testmeldungen an die Test DM schicken und nicht an All?  
-06:18  
-#### wolfgang z  
-Mein OE3WAS-99 ist doch sowieso direkt auf TEST umgeleitet und ich habe einen 50Ω Abschlusswiderstand als "Antenne". Was meinst du, wie die wo hin gehen? Am Dashbord sehe ich sie nur unter TEST.  
-06:23  
-Haben wir da irgendeinen Ausbreitungsweg übersehen?  
-06:26  
-Wer bekommt die sonst noch?  
-Außer dass sie am Dashboard auf TEST landen.  
-Ich habe jetzt zusätzlich noch den Text geändert auf "Test BrownOut". Oder was sollte ich noch tun?  
-06:37  
-Start heute mit Uintern = 4,00 V & Uakku = 4,34 V  
-... läuft problemlos. Die Versorgung bricht noch nicht ein.  
-06:50  
-‼️ Aber wie es scheint, wird der Test eh bald zu Ende sein, da jetzt plötzlich permanent REBOOTS auftreten. Muss mal die LOG ansehen.  
-06:52  
-💥 Ja:  
-Brownout detector was triggered  
-ets Jul 29 2019 12:21:46  
-rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)  
-06:53  
-Aber am Oszilloskop sehe ich KEINEN Spannungseinbruch oder er ist so kurz,  
-06:55  
-So, es wird jetzt nichts mehr aktiv ausgesendet ...  
-07:06  
-Stresstest läuft ... kann noch keine klaren Anzeichen am Oszi erkennen.  
-ABER: auch die 3,3V sind nicht mehr sauber!  
-07:12  
-Obwohl jetzt sporadische REBOOTs auftreten, sind KEINE irregulären Aussendungen zu beobachten.  
-07:17  
-07:22  
-Magenta: 3V3 bricht signifikant ein unter die Brownout Schwelle von 2,7V (ws Cursor Linie), was einen REBOOT auslöst.  
-GELB: Akkuspannung am Eingang, noch vor der Schottky-Diode, im Mittel noch 4,31 V, aber bricht auch ziemlich ein.  
-CYAN: der Versorgungsstrom.  
-07:22  
-Und das ist die REBOOT Sequenz:  
-Brownout detector was triggered  
-ets Jul 29 2019 12:21:46  
-rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)  
-configsip: 0, SPIWP:0xee  
-clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00  
-mode:DIO, clock div:2  
-load:0x3fff0030,len:1184  
-load:0x40078000,len:13232  
-load:0x40080400,len:3028  
-entry 0x400805e4  
-E (608) esp_core_dump_flash: No core dum  
-============  
-CLIENT SETUP  
-============  
-07:23  
-Ich kann KEINE irregulären Aussendungen feststellen!  
-07:26  
-Kurt Baumann OE1KBC  
-GM Wolfgang, ich werde in die nächste Version die Textsendungen von der Konsole nicht mit ":" sondern auf "::" Erkennung setzen. damit sind solche Sondersendungen besser abgesichert  
-07:27  
-#### wolfgang z  
-Die Test-Aussendungen gehen grundsätzlich problemlos weiter (alle 60"), wenn auch durch REBOOT dazwischen.  
-LOG ist auf Wunsch verfügbar.  
-07:27  
-Ich kann noch immer keine feststellen. Du etwa?  
-07:28  
-Kurt Baumann OE1KBC  
-Nein aber zusätzlich wäre das der Gürtel zum Hosenträger  
-👍  
-07:29  
-#### wolfgang z  
+
+#### OE3WAS wolfgang z  
 Und ich werde den GPIO15 über 1k an GND legen, was die BOOTloader Messages unterbindet.  
 = "Tarnanzug"  
-07:29  
-Kurt Baumann OE1KBC  
-Gut und dann sollte das Thema gut Hinterleuchtet sein  
+
 07:35  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Interessant, aber auch logisch ist, dass die BLE-Verbindung nach einem REBOOT nicht mehr immer aufgebaut werden kann, da schon das nächste REBOOT erfolgt. Aber meine APP bleibt noch immer dran und läuft.  
 07:38  
 Ahh, ich sehe, dass trotz 50Ω "Dummy-Load" manchmal doch was bis zu OE3MHU-16 kommt und der das dann verteilt.  
@@ -2196,39 +2126,39 @@ Ahh, ich sehe, dass trotz 50Ω "Dummy-Load" manchmal doch was bis zu OE3MHU-16 k
 FAZIT: Ich konnte KEINE irregulären Aussendungen beobachten!  
 07:47  
 08:54  
-Stefan  
+#### Stefan  
 Mein Test ist wieder unterbrochen, da ich nicht die ganze Zeit zuhause bin. Und alleine will ich den vll nervösen Node dann nicht lassen. 😉 Heute Mittag geht es weiter. 🙂  
 10:16  
-Stefan  
+#### Stefan  
 Guck doch bitte mal, welche R bei der 5V-Variante der USV als Spannungsteiler verwendet werden (R9/R7). Ich hab das ja bei mir geändert und den Originalen ersetzt.  
 10:24  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 habe ich oben schon mal geschrieben  
 10:25  
 https://t.me/c/1987218802/11812/23235  
 10:25  
-Stefan  
+#### Stefan  
 10/30k bei der 5V-USV...?  
 10:27  
 Die 12V hat meine ich 10/26k, ich guck aber später noch mal.  
 10:30  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ja, + » 30k ^FB^ 10k -GND logisch ergibt 1,25V am FB Eingang des XR2981, was der Vref Bandgap entspricht.  
 10:31  
 parallel zu jedem R sind freie Pads, damit man hier einen anderen R dazu schalten kann, um die Spannung zu variieren. Da muss man nichts rauslöten.  
 10:33  
-Stefan  
+#### Stefan  
 Ich wollte es aber variabel haben! 😎 Daher die Lösung mit dem Spindeltrimmer.  
 10:34  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 völlig egal - dann halt an die 3 freien Pads und entsprechenden Trimmer und geht auch. Dann ist ein Teilwiderstand des Trimmers ||zum einen SMD und der andere Teil ||zum anderen SMD.  
 10:36  
 Du kannst einen fixen Spannungsteile auf diese Art IMMER verstimmen.  
 10:37  
-Stefan  
+#### Stefan  
 Geht freilich auch. Ich such mir immer eine Lösung, die meine Bastelkiste hergibt.  
 10:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 10:44  
 steht für 12V sogar in der Schaltung  
 Vout = 1.24 * (1+(91k/10k)=12.52V  
@@ -2238,12 +2168,12 @@ Bei mir mit R7=3002=30k & R9=1002=10k
 Vout = 1.24 * (1+30/10) = 4.96 V  
 ❤  
 16:09  
-Stefan  
+#### Stefan  
 Ich hab jetzt mal die beiden Varianten verglichen, 12V und 5V, die ich zuhause habe. Offensichtlich ist es doch ausschließlich der Spannungsteiler, der die Ausgangsspannung festlegt. Bei 12V ist 10K/91K verbaut, bei 5V 10K/30K. Meine Annahme , dass da noch mehr Unterschiede sind, war falsch. Mit einem Trimmer kann man so die Ausgangsspannung vermutlich stufenlos von 5-12V regeln. Probieren werde ich das mit der 12V-Variante, falls die kaputt geht, isses nicht schlimm. 🙂  
 Geschrottet habe ich ein solches Teil wohl, als der eingelötete R den Kontakt verloren hat und dadurch sich der Regler wohl selbst gekillt hat.  
 Das soll es aber auch gewesen sein zum Thema, geht hier ja erst mal um den E22/ESP32  
 17:06  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Natürlich, sagt ich ja bereits. Und die Schaltung ist auch sehr leicht verständlich und die einzelnen Module gut getrennt:  
 Akkulader > Akku > Spannungswandler  
 17:06  
@@ -2254,11 +2184,11 @@ Daher nur parallel den Trimmer ≈200k oder größer löten.
 17:10  
 Induktivität & hohe Schaltfrequenz => hohe Spannungsspitzen => 💀  
 18:53  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 schon wieder ... eine Node mit E22 ... dass wir das aber nicht reproduzieren können, das ist eigenartig.  
 Aber mit der neuen FW wird das hoffentlich Geschichte sein.  
 19:45  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 💥 "I had a Dream"  
 • Was passiert, wenn durch einen Lötfehler die RX <-> TX Pins am ESP32 verbunden wurden?  
 Beim Einlöten der Stiftleiste oder auf der PCB.  
@@ -2268,7 +2198,7 @@ Ist zwar noch nicht ganz schlüssig, aber u.U. möglich.
 Vlt. probiere ich es über einen 100Ω Widerstand.  
 @oe1kbc bitte nochmals überprüfen, ob ALLE Buffer nach dem initialen Ablauf gelöscht werden. Und erst danach Text-Messages akzeptiert werden.  
 20:04  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ✅ Tja, das war erfolgreich ‼️  
 Schaut am Dashboard auf TEST ...  
 es wird wirklich ALLES gesendet, und auch verstümmelt tw.  
@@ -2284,7 +2214,6 @@ Wenn aber der Akku schwach wird, dann stellt der CP2102 seine Funktion ein und d
 Aber ich will mir da keinen Chip grillen, indem ich eine fixe Verbindung mache.  
 => Das würde auch die Aussage stützen: "Der USB-Serial Chip war auch defekt" von jemanden.  
 Denn wenn RX-TX verbunden sind, dann arbeiten 2 Ausgänge (TX-TX) gegeneinander und können eine Zerstörung bewirken.  
-❤  
 20:15  
 Photo  
 244×63  
@@ -2293,7 +2222,7 @@ bei "besseren" Boards sind da jeweils 1k Widerstände in Serie
 20:21  
 seht hier: https://t.me/c/1987218802/11812/23030  
 20:40  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ✅ Mit der neuen FW y.06.04 ist auch dieser Fehler nun Geschichte.  
 20:43  
 Erklärung:  
@@ -2305,7 +2234,7 @@ Die geniale, einfache Lösung von @oe1kbc Kurt, eine Message über das Terminal 
 Wolfgang  
 So, kurze Info zu meinem Problem, ich konnte Das DevKit wiederbeleben nach dem ich ein Reset auf werkseinstellungen zurückgesetzt habe... die dinger sind ja fast nicht kaputt zu bekommen. Der Esp war in einem Bootloop gefangen und hat immer wieder ein reset durchgeführ. das Devkit auf Programmiermodus geschalten und im Chrome mit 115200 Baud -> https://espressif.github.io/esptool-js/ Verbunden. Danach den Flashspeicher gelöscht. Arduino IDE auf macht und einfach ein esp32 programm (bei mir ESP32 Info) draufgeladen. Der Chip macht wieder was er soll und kann wieder ganz normal benutz werden  
 10:50  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Fein, dass du das geschafft hast.  
 ABER:  
 • "ein Reset auf werkseinstellungen" was meinst du damit?  
@@ -2317,19 +2246,19 @@ Ein FULL Flash inkl. ERASE macht das doch alles, oder?
 Wolfgang  
 ja aber wenn der USB Serial Wandler immer die Verbindung zum PC trennt, kannst du das schon versuchen... mit Full Flash... deshalb habe ich das in mehreren schritten gemacht. Die Herausforderung daran war die die permanente Verbindung wieder zu bekommen...  
 11:27  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ahh, ok, das ist interessant!  
 Denn ich habe auch schon bemerkt, dass mit HUHN die Verbindung bei einem REBOOT unterbrochen wird, woran ich mich nicht erinnern kann, dass das früher auch so war, denn das wäre mir schon bei der Entwicklung der PCB aufgefallen.  
 Ist es dir möglich, die EXAKTEN Schritte zu reproduzieren und mir schicken?  
 Heißt das jetzt, dass die serielle Verbindung nun bei einem REBOOT nicht mehr unterbrochen wird?  
 PS: mit einem anderen Terminalprogramm passiert das eh auch nicht.  
 11:55  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Nein, das Mysterium bleibt weiter bestehen, dass HUHN die serielle Verbindung bei einem REBOOT verliert (unter GoogleChrome)  
 Aber nur beim ESP32-DevKitC-V4  
 🤨  
 15:36  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ich benötige Denkhilfe/Ideen - BITTE ...  
 Ich habe schon einiges recherchiert, versucht, ...  
 FAKT:  
@@ -2347,7 +2276,7 @@ FAKT:
 Helmi Beh  
 Als Input für mein Denken: was ist HUHN? Für dich: Beim Booten bringt der ESP seine Bootmeldungen mit 74880 Bd. Vielleicht bringt das dein Hühnchen ausser Tritt? Die anderen Terminalprogramme können das ab.  
 15:46  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 https://serial.huhn.me/  
 15:47  
 eben nicht! Es sind 115200 Bd - deswegen haben wir ja diese Baudrate gewählt.  
@@ -2358,7 +2287,7 @@ Nachdem ich Firefox verwende, gebrauche ich sowieso ein gescheites Terminalprogr
 15:52  
 Huch, wo kann man die ESP32-Bootmeldungsbaudrate umstellen? Die ist doch im Bootloader fest vorgegeben!  
 15:52  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Die ist von espressif vorgegeben mit 115200  
 ev. im Bootloader  
 15:56  
@@ -2373,16 +2302,16 @@ Releases · icssw-org/MeshCom-Firmware
 https://github.com/icssw-org/MeshCom-Firmware/releases/  
 👍  
 17:32  
-Stefan  
+#### Stefan  
 Hier mit aktueller Software auf dem E22/ESP32 kein Abbruch beim reboot. Mit dem Göker und auch mit der Webflasher-Konsole alles ok. Ist auch bei mir nie anders gewesen.  
 17:34  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 eigenartig ... was ist da bei mir anders?  
 17:36  
-Stefan  
+#### Stefan  
 Die Frage kann ich dir nicht beantworten. An der FW scheint es eher nicht zu liegen.  
 17:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Dann werde ich es mal auf dem anderen Notebook versuchen.  
 17:47  
 Photo  
@@ -2391,12 +2320,12 @@ es gibt schon einen signifikanten Unterschied:
 COM3 = ESP32 (CP2102)  
 COM6 = ESP32-S3 (USB-Enhanced-SERIAL CH343)  
 18:03  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Negativ, gleicher Effekt. Aber es wird zumindest mal CP2102 erkannt.  
 OK, dann muss es wohl beim HUHN liegen.  
 MS-EDGE & Google Chrome getestet, gleicher Effekt (Win10)  
 18:56  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 💥 Problem eingekreist und gefunden:  
 E (69) esp_core_dump_flash: <14>æž<26>½É•dump partition found!  
 Hier => <14>æž<26>½É•  
@@ -2407,10 +2336,10 @@ Abhilfe-Varianten:
 • Mit GPIO15-1k-GND Bootloader Ausgabe unterbinden.  
 • Core Dump partition definieren  
 19:01  
-Stefan  
+#### Stefan  
 Aber warum taucht das Problem nur bei dir auf?  
 19:29  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Photo  
 664×37  
 Nein, ist es NICHT => BREAK => disconnected  
@@ -2418,17 +2347,17 @@ Google Chrome Browser, esptool.oesvsv.at > LOG-Console
 19:29  
 Das würde mich auch sehr interessieren.  
 19:46  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 habe ich keinen, nur den Windows Defender  
 19:47  
 außerdem, was soll der bez. Serieller Schnittstelle machen, wenn ein BREAK darauf kommt.  
 19:55  
-Stefan  
+#### Stefan  
 Vielleicht ist Windows das Problem... 😀😎 ich hab ja nur Mac...  
 Nee, auch ein Win-Notebook, teste ich nachher mal.  
 Update: Getestet, keine Verbindungsabbrüche bei --reboot  
 20:02  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 So, GPIO15-GND unterbindet zwar den 1.Teil der Bootloader-Ausgabe, aber die letzten 2 Zeilen sind immer noch da. Und somit auch der FramingError = BREAK  
 [KEEP]...KEEP1F28CCECOE3WAS-224.34y  
 E (49) esp_core_dump_flash: No core dump<\0><\0>…ÉÑ¥Ñ¥½¹found!  
@@ -2451,7 +2380,7 @@ coredump ,data ,coredump, 4032K ,64K ,
 partitions-4MB-safeboot.csv  
 260 B  
 20:08  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 DANKE, was muss ich dann noch beim compile beachten?  
 20:11  
 Thomas - DO1TFS  
@@ -2462,26 +2391,26 @@ danach kannst wieder die schnelle variante nehmen (firmware.bin via otg o.ä.)
 wobei eigentlich müsstest du nur die partition.bin flashen  
 👍  
 20:14  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ja, klar. die wird ja eh allgemein erzeugt.  
 20:15  
-Stefan  
+#### Stefan  
 Wäre das nicht ne Idee, das ganz allgemein anzulegen? Auch wenn da etwas Speicherplatz draufgeht?  
 20:17  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Natürlich wäre das ideal. Zusammen mit GPIO15 (über Jumper natürlich) wäre dann endlich Ruhe und nur der Output der FW.  
 20:19  
 Thomas - DO1TFS  
 denke die cordump geht auch kleiner (1kb) hab jetzt nur damit gestestet weil VSC das vorgeschlagen hat  
 20:33  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 "The coredump partition subtype is used to store the core dump on the flash. The core dump is used to analyze critical errors like crash and panic. This function must be enabled in the project configuration menu and set the data destination to flash. The recommended size for this partition is 64 kB (0x10000)."  
 https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/partition_table.html?highlight=partion%20table#partition-table  
 20:34  
 Thomas - DO1TFS  
 ahhh deswegen hat VScode das so vorgeschlagen  
 20:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 "The minimum size for a core dump partition on an ESP32 is 4 KB (4096 bytes). This is the minimum size for any partition on the ESP32."  
 20:40  
 Thomas - DO1TFS  
@@ -2489,7 +2418,7 @@ dann die letzten 2 zeilen
 app ,app ,ota_0 ,768K ,3324k ,  
 coredump ,data ,coredump, 4092K ,4K ,  
 20:44  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 mit 64K noch kein Problem offenbar:  
 RAM:   [==        ]  22.7% (used 120688 bytes from 532480 bytes)  
 Flash: [====      ]  44.3% (used 1481849 bytes from 3342336 bytes)  
@@ -2499,7 +2428,7 @@ Photo
 620×56  
 4kb läuft durch  
 20:49  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ✅ endlich RUHE IN DER BUDE ❗️ [KEEP]...KEEP1F28CCECOE3WAS-224.34y  
 ============  
 CLIENT SETUP  
@@ -2511,7 +2440,7 @@ Thomas - DO1TFS
 20:52  
 is nur die frage was er jetzt sendet statt no core dump....  
 20:52  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Eben NICHTS, da eine Partition vorhanden ist!  
 20:53  
 Thomas - DO1TFS  
@@ -2519,13 +2448,13 @@ ja dann aber viel. nie nächste zeile nach no core dump
 20:53  
 nie=die  
 20:54  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Es gibt keine Ausgabe vor dem "=====..." aus der FW beim Booten.  
 20:54  
 Thomas - DO1TFS  
 ahh ok  
 20:55  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 UND: es gibt in der gesamten Ausgabe KEINE Zeile mit "::" beginnend.  
 20:55  
 Thomas - DO1TFS  
@@ -2535,12 +2464,12 @@ gibst du das an Kurt weiter als Issue
 👍  
 9 June 2025  
 13:57  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 erledigt, siehe hier auch mit vollständiger Erklärung:  
 https://github.com/icssw-org/MeshCom-Firmware/issues/486  
 👍  
 14:41  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ❗️✅ Auch dieser Effekt ist nun geklärt:  
 • wenn man sich mit https://serial.huhn.me/ zu einer Node verbindet, wobei gerade ein Output auf der Seriellen Schnittstelle erfolgt, kommt es zu folgendem Effekt:  
 �y�G�y ��Y���,������)��[WIFI]...SSID: Drei_H288A_24G_yAFG CHAN: 8 RSSI: -43 BSSID: 90:FD:73:AC:F1:83  
@@ -2555,7 +2484,7 @@ Guten Morgen. Heute gibt es wieder das ESP32 Dev Kit C V4 bei AZ-Delivery im Ang
 https://www.az-delivery.de/products/esp-32-dev-kit-c-v4?variant=30871551869024&utm_source=90-Days-Engaged&utm_medium=email&utm_campaign=110625_AZ-ESP32%20Dev%20kit%2BE-paper%20display_promo_microcontroller_LVC&utm_id=01JXCC4F21C84EC2XQMSC7R0PE&utm_term=Campaign&utm_content=👉%20Jetzt%20zuschlagen%20👈&_kx=b2nJXzFUmZF_Rht_n9MewZS-R95z-K-0YgkW6K9F5hdDH8S0JoqPcYl_FPEAP9cG.QVRJMi  
 15 June 2025  
 11:22  
-Stefan  
+#### Stefan  
 Info zu den Platinen: Ich werde zur HamRadio fahren und die letzten Exemplare mitnehmen . Falls wer noch einen E22-Node aufbauen mag, einfach bei mir melden  
 👍  
 16 June 2025  
@@ -2564,13 +2493,13 @@ Wolfgang
 Jetzt muss nur noch das USB C Break Out Bord vom Ali kommen....  
 👍  
 08:01  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ❗GPIO15 mit 1k Widerstand auf GND ❗️  
 10:38  
 Wolfgang  
 wie meinst du das?  
 15:53  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Genau so wie ich es geschrieben habe.  
 Mit anderen Worten:  
 Den GPIO15 Pin des ESP32 über einen 1kOhm Widerstand mit GND verbinden  
@@ -2583,7 +2512,7 @@ danke, hatte das nicht auf dem plan mit den Fehlaussendungen.
 18:48  
 btw hab ne "Alternative" zum Ali USB Breakout gefinden, ist zwar breiter, aber schneller ferfügbar. https://www.amazon.de/dp/B0C1YV339S?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1  
 23:02  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Grundsätzlich ja, aber du musst dann die richtigen Anschlüsse verbinden.  
 18 June 2025  
 07:16  
@@ -2596,11 +2525,11 @@ Wolfgang
 So nach stundenlangem suchen und neu Flaschen des DEV Modul, versuchen die "neue" FW zu Kompilieren, muss ich jetzt das Teil erst mal in die Ecke stellen und mal vergessen... Das Teil lässt keine Bluetooth Verbindung zu, die WLAN Verbindung bricht nach ca 20 Minuten ab und ich muss den Node Neustarten... Ist so für mich nicht wirklich sinnvoll da weiter zu machen...  
 20 June 2025  
 23:41  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ich komme morgen am Samstag aus dem Urlaub zurück. Ab Sonntag dann kommen laufend die Informationen zu den letzten Änderungen und was man beachten muss und einstellen kann. Wird sich aber sicher über die nächste Woche(n) hinziehen.  
 22 June 2025  
 11:23  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 So, bin zurück und wieder aktiv.  
 Was ist eigentlich dein Problem genau?  
 • Du verwendest ESP32-E22 V2.1.2 PCB?  
@@ -2615,7 +2544,7 @@ Also, Ich hab das ESP32-E22 V2.1.2 PCB, bestückt habe ich fast alles was zu bes
 Rainer OE1KFR  
 Mein E22 hängt sich auch nach einigen Stunden auf.  
 09:40  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ok, danke mal für die Infos.  
 1️⃣ Siehe hier https://t.me/c/1987218802/11777/23650 da hängt der Web-Client definitiv. Da muss Kurt ran.  
 09:45  
@@ -2628,7 +2557,7 @@ Derzeit habe ich vier neue Hardware-Nodes auf meinem Tisch. zwei bereits inkludi
 09:48  
 Achtung seit heute früh gibt es 06.23  
 10:06  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Photo  
 350×60  
 ‼️das geht so NICHT, dass du das unter [common] in der allgemeinen platformio.ini setzt!  
@@ -2640,7 +2569,7 @@ Kurt Baumann OE1KBC
 ok, wir haben bereits einige Nodes und wenn jeder von uns einige zum testen nimmt können wir diese unterschiede berücksichtigen. Wird gemacht  
 ❤  
 10:09  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 normalerweise ist da in der ...\boards\****.json drinnen.  
 10:10  
 Kurt Baumann OE1KBC  
@@ -2656,7 +2585,7 @@ aufruft
 dann wird das pro board unterschieden.  
 Teste das bitte  
 10:32  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 hmm, ok, aber es gefällt mir überhaupt nicht, dass es immer noch die Duplikate unter \variants\***\platformio.ini gibt,  
 obwohl offenbar ALLE Boards in der allgemeinen platformio.ini enthalten sind.  
 Wozu ist das nötig?  
@@ -2666,16 +2595,16 @@ Ist am Plan, geduld bitte
 10:33  
 Muss man mit viel Gefühl, was muss an common usw. bleiben und was ist nur mehr in den variants  
 11:09  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ➡️ ESP32-E22 PCB läuft ab jetzt als OE3WAS-22 mit z.06.23 als GW ...  
 17:37  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ... Zwischenstand: OE3WAS-22 läuft ab 11:07 bis jetzt ohne Probleme als GW  
 so, hatte vergessen, die Koordinaten zu setzen. Aber jetzt ist es auf mcmap.oesvs.at sichtbar  
 Telemetrie nur BATT, da keine anderen Sensoren dran  
 24 June 2025  
 00:41  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ... läuft jetz seit über 14 Std. ohne Probleme durch.  
 Werde morgen ein GPS-Modul anstecken ...  
 00:44  
@@ -2683,7 +2612,7 @@ Wie du sehen kannst, läuft meines problemlos.
 Was hast du anders als ich?  
 OE3WAS-22 = GW, aber keine weiteren Sensoren, auch kein GPS, nur Terminal läuft mit.  
 01:59  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 So, nun GPS NEO-6M angesteckt und reboot um 01:52:04 ...  
 War auf Std. 9600 Baud eingestellt und wurde automatisch auf 38400 Bd umgestellt und läuft.  
 FIX wird es im Raum ev. nicht ge#### ben, oder sehr lange dauern, da mir der Akku auf dem Board "abhanden" gekommen ist; aber mal abwarten bis morgen früh ...  
@@ -2700,13 +2629,13 @@ aber es tut sich was, da die GPS-Time nach 15' schon vorhanden ist:
 02:08:18 newData:1 SAT:0 Fix:0 UPD:0 VAL:0 HDOP:9999  
 02:06:52 GPS-UTC-Time <local:2.0 2025-06-24 00:06:53  
 06:20  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Auch mit GPS läuft mein ESP32-E22 mit FW z.06.23 auch nach über 5 Std. ohne Probleme.  
 10:42  
 Michael DG1FBP  
 /endlich läuft auch bei mir das gps am e22.. war schon am verzweifeln..mt der 06.23 ging es gleich los :)  
 11:09  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Alles zum Fenster gelegt und schon war des FIX mit 7 Sats da.  
 11:18  
 Kurt Baumann OE1KBC  
@@ -2715,7 +2644,7 @@ Für den FIX benötigt man immer gute Signale
 Sprich: Almanach lesen  
 29 June 2025  
 10:11  
-Stefan  
+#### Stefan  
 Reminder: Letzte Möglichkeit, heute auf der Ham Radio noch Platinen für das E22/ESP32 -MeshCom Projekt zu bekommen. Am ICSSW-Stand gibt es noch einige Exemplare. 😊  
 8 August 2025  
 07:40  
@@ -2728,7 +2657,7 @@ https://www.az-delivery.de/products/esp-32-dev-kit-c-v4
 Peter Kaminski  
 Hallo, ich wollte einmal fragen, ob es noch Platinen gibt. Würde auch gerne ein Device bauen.  
 11:53  
-Stefan  
+#### Stefan  
 Hatte dir ne PM geschrieben dazu...  
 13:36  
 Peter Kaminski  
@@ -2753,7 +2682,7 @@ Hallo Klaus, Du hast Recht, Danke für den Tipp.
 Klaus  
 Hallo Elmar, ich habe mir das Modul schon zweimal gebaut, mit den Bauteilen vom Ali und bin zufrieden. Dort gibt es auch den ESP32 mit einem zusätzlichen Anschluss fürs WLAN.  
 19:57  
-Stefan  
+#### Stefan  
 Zusätzlich nicht, der hat keine eingebaute WLAN/BT Antenne, also aufpassen... 😉  
 20:03  
 Klaus  
@@ -2776,7 +2705,7 @@ Ach so, kleiner Hinweis noch. Er läuft bei mir als DF2AP-98. Also wenn da Quats
 Rainer OE1KFR  
 Check mal die Stromversorgung und ob der Elko für den E22 verbaut ist. Das Netzteil muss 3A liefern. Dann mal die Sendeleistung runter drehen wegen HF Einstreuung. Schätze da ist direkt eine Antenne drauf oder exetern?  
 23:49  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 und WIE die Stromversorgung erfolgt!?!  
 23:50  
 somit liegt der Fehler "eindeutig" am PCB, wie ich ja auch schon damals geschrieben hatte: LÖTFEHLER !!!  
@@ -2829,7 +2758,7 @@ Ach so: Antenne ist extern und ich hab die Ansteuerung für den E22 auch schon a
 12:19  
 C2 ist wie beschrieben auf der Platine nicht bestückt.  
 13:02  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ok, danke für die ausführlichen Infos.  
 Auf den 1. Blick kann ich keinen Fehler sehen.  
 Aber verstärke C6 durch einen zusätzlichen 220µF Elko parallel.  
@@ -2848,13 +2777,13 @@ Wenn aber das OLED GND-VCC-SCL-SDA hat, dann muss man diese beiden Leiterbahnen 
 Rainer OE1KFR  
 Der Elko ist zu klein. Ich hab 2000uF drinnen. Hab damals Leistung gemessen und darunter bricht sie ein.  
 13:13  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ergänze bitte diesen 1K Widerstand noch!  
 13:14  
 Helmi Beh  
 Ich kann es zwar nicht so ganz richtig beurteilen, da die Auflösung nicht so gut ist, aber manche Lötstellen sehen eher nach Klebestellen aus. Schon mal alles nachgelötet?  
 13:15  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ja, wäre auf jeden Fall gut.  
 Aber diese Flecken könnten auch nur Reflexionen von Lötrückständen sein.  
 13:17  
@@ -2865,7 +2794,7 @@ Ich habe z.B. C3 = 330µF Tantal-Elko drinnen und das funktioniert problemlos!
 Rainer OE1KFR  
 Der Puffer für den E22  
 13:18  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 C3 = 330µF Tantal-Elko  
 13:19  
 Helmi Beh  
@@ -2874,7 +2803,7 @@ Man sieht es vor allem auf der Bestückungsseite. Da ist teilweise kein Lot saub
 Rainer OE1KFR  
 Das ist meiner Meinung nach zu wenig. 1000uF min  
 13:20  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das ist nicht notwendig, da es ja Durchkontaktierungen sind.  
 13:26  
 1x 1000µF ist kontraproduktiv mit einem normalen Wickel-Elko. Da ist es besser, 2x 470µF zu bestücken.  
@@ -2892,7 +2821,7 @@ So hatte ich das auch verstanden. Heiß dann aber, dass die Brücken auf der Pla
 Die ohnehin vorhandene Leiterbahn ist dann quasi zusätzlich durch zusätzliche Brücken verstärkt.  
 👍  
 13:35  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das ist die Erweiterung, die ich auch beschrieben habe und das Ergebnis der Analyse der vormaligen Fehlaussendungen.  
 GPIO15 - 1KΩ - GND verhindert die Boot-Loader-Meldungen.  
 Siehe auch hier in der Gruppe ...  
@@ -2904,7 +2833,7 @@ Das verbaute OLED-Modul.
 13:38  
 Die Kreuzung hat Bernd schon hier gelöst.  
 13:39  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 genau - das hat die VCC-GND verdreht.  
 Daher so wie gezeigt die Beinchen auskreuzen, oder wie beschrieben die JP1 & JP2 ändern.  
 13:40  
@@ -2921,13 +2850,13 @@ Ich werde jetzt erstmal folgendes machen:
 - 1K Widerstand ergänzen  
 Melde mich anschließend.  
 13:47  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 🔥💥Das macht einen KURZSCHLUSS zw. VCC = GND ‼️  
 13:49  
 Juergen DF2AP  
 Ja genau. Wenn ein intelligentes Netzteil dran war, sollte eigentlich nichts kritisches passieren.  
 13:49  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Bevor man als ungelernter Elektroniker etwas eigenmächtig tut, ohne zu wissen, was man tut, dann wäre es besser gewesen, bei mir nachzufragen!  
 Oder den Schaltplan richtig lesen und auch verstehen, was man tut.  
 13:49  
@@ -2935,7 +2864,7 @@ Oder den Schaltplan richtig lesen und auch verstehen, was man tut.
 Juergen DF2AP  
 Deswegen bin ich mit dem Problem ja jetzt hier bei den Profis 😊  
 13:50  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Sticker  
 ⚡️  
 13:51  
@@ -2946,7 +2875,7 @@ Bin erstmal unterwegs. Melde mich später nach den Hausaufgaben wieder. Kann ein
 13:53  
 Schon mal herzlichen Dank 👍  
 14:01  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ‼️ Was mir gerade noch einfällt:  
 Wenn eine Diode überlastet wird, dann kann es unerwartete Effekte geben:  
 • Diode = Kurzschluss, dh. keine Diode mehr  
@@ -2975,7 +2904,7 @@ Mal schauen, wie er sich verhält.
 13:53  
 So sieht’s jetzt aus.  
 14:10  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Aber die Schottky-Diode(n) sind wahrscheinlich ja eh noch ok, da ja nur die 3V3 kurz geschlossen wurde und somit der 3,3V-LDO am ESP32 Board defekt wurde, wie ich ja beschrieben hatte.  
 14:10  
 Ja, schaut gut aus. Bin gespannt ...  
@@ -3011,7 +2940,7 @@ Gute Idee. Probier ich morgen mal aus und melde mich wieder.
 Dankeschön 👍  
 20 November 2025  
 00:17  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Gut, und was würdest du meinen, was jetzt die volle Funktion gebracht hat?  
 Doch Lötfehler gewesen? Oder Elko? Oder ...?  
 09:31  
@@ -3031,7 +2960,7 @@ Ja das könnte auch bei mir an meiner WLAN-Konfiguration liegen.
 Klaus  
 Davon abgesehen laufen die ESP32 Recht gut. Haben auf Anhieb funktioniert, interessant war, das beide die ersten 10min sehr heiß wurden und wenn die SV etwas schwach ist, beide im Minuten Takt booten.  
 12:41  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Bitte teste den zuvor die richtige Funktion des 3,3V-LDOs, wie ich beschrieben habe! Ich vermute, dass der defekt ist.  
 12:43  
 Wir ha#### ben, auf Grund ähnlicher Probleme, damals einen Befehl in die FW eingebaut, mit dem man die WiFi TX-Power einstellen kann.  
@@ -3042,7 +2971,7 @@ PS: Während des Bootens kann man im Terminal sehen, wie stark der WLAN-Router a
 Franz DG2RBF  
 👍  
 12:50  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Beim Booten:  
 ==============  
 CLIENT STARTED  
@@ -3061,8 +2990,8 @@ TimeClient now (UTC): 11:47:36
 12:53  
 siehe hier: https://t.me/c/1987218802/1/23899  
 12:57  
-#### wolfgang z  
-#### wolfgang z 27.05.2025 10:45:00  
+#### OE3WAS wolfgang z  
+#### OE3WAS wolfgang z 27.05.2025 10:45:00  
 Wir haben einen neuen Parameter  
 --wifiTXpower [2..20]  
 [...] ist die mathematische Schreibweise. Die Einheit ist dBm;  
@@ -3071,13 +3000,13 @@ Also du kannst versuchen, mit --wifitxpower 20 die Leistung zu erhöhen.
 Siehe auch hier:  
 https://github.com/icssw-org/MeshCom-Firmware/issues/432  
 13:07  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das deutet stark auf Lötfehler hin, da diese(r) durch Erwärmung erst später auftreten kann.  
 13:15  
 Juergen DF2AP  
 Hallo Wolfgang, der ESP32 ist nicht der vom Kurzschluss. Der war tatsächlich defekt und wurde ersetzt. Trotzdem tauchten die Probleme nach einer Weile immer mal auf.  
 13:17  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ok, das ist eigenartig. Das würde eine genauere Untersuchung erfordern.  
 Aber ich vermute, dass die ESP32-Boards auch gewisse Toleranzen oder auch selber Lötfehler/Haarrisse aufweisen können.  
 Hier ist es wirklich einfacher, das Modul zu ersetzen.  
@@ -3092,7 +3021,7 @@ Bisher konnte ich keine unerwünschten TX-Aussendungen mehr feststellen. Ich hab
 Heute habe ich das GPS-Modul angesteckt. Allerdings habe ich vermutlich ein Konfigurationsproblem mit dem GPS-Modul. Die rote LED auf dem Neo6M blinkt. Das Modul scheint also GPS-fix zu haben. Ich hab GPS in der App auch aktiviert. In der Info-Abfrage sowohl in der App, als auch im Webinterface wir jedoch kein GPS-fix angezeigt.  
 Muss das GPS-Modul anders konfiguriert werden und wenn ja, wie macht man das?  
 13:57  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das GPS-Modul wird automatisch durch die FW richtig eingestellt. Habe ich damals implementiert und getestet. Aber es muss natürlich ein kompatibles Modul sein, welches auch mit der FW kommunizieren kann.  
 ➡️ 1) Wie ich sehe, hast du ein Neo-6M Modul = kompatibel  
 2)❗️stelle bitte --gpsdebug on  
@@ -3171,13 +3100,13 @@ Schon klaar
 Ritter Freiherribert von Matschkenffark =^..^=  
 SRI für unklare Formulierung... natürlich Antenne  
 18:04  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Nein, du hast nicht das GPS-Modul ausgetauscht, du hast lediglich die aktive GPS-Antenne ausgetauscht.  
 18:05  
 Ritter Freiherribert von Matschkenffark =^..^=  
 Ja, das haben wir ja besprochen...  
 18:07  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ok, aber  
 1. habe ich die Antwort von Helmi noch nicht gesehen gehabt, und  
 2. sollten sich alle um einer möglichst exakte Ausdrucksweise bemühen, da es sonst zu groben Missverständnissen kommen kann.  
@@ -3243,7 +3172,7 @@ Danke für die schnelle Antwort. Laut Aufdruck soll es ein Neo-6M Modul sein.
 20:15  
 Kann den OM nach der Bezugsquelle fragen. Wie gesagt die rote Leuchtdiode blinkt, aber irgendwie klappt die Verbindung nicht.  
 21:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 es könnte ganz einfach sein, dass du RX <-> TX vertauscht hast. Nach welcher Anleitung hast du das GPS-Modul mit dem PCB (Board) verbunden?  
 21:43  
 Juergen DF2AP  
@@ -3261,12 +3190,12 @@ Ok Kurt. Mach ich heute Nachmittag mal.
 10:09  
 Bin erstmal unterwegs.  
 11:01  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das ist keine valide Aussage!  
 Meine Frage war: "Nach welcher Anleitung/Überlegung ...  
 meinst du, dass es korrekt sei?"  
 12:36  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 schau mal, hier habe ich die korrekte Verdrahtung beschrieben:  
 https://github.com/DK9BT/esp32-e22-lora-board/blob/main/ESP32-E22_V2.1.2/PCB-Assembly/README.md#41-gps  
 12:37  
@@ -3275,7 +3204,7 @@ In der configuration.h
 #define GPS_RX_PIN 16 <= TX am GPS-Modul  
 #define GPS_TX_PIN 17 => RX am GPS-Modul  
 12:59  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 und mit --gpsdebug on solltest du dann beispielsweise folgende Ausgabe am Terminal sehen. Bei mir im Zimmer natürlich keine SATs und auch kein Fix möglich.  
 -----------check GPS-----------  
 $GPRMC,,V,,,,,,,,,,N*53  
@@ -3288,7 +3217,7 @@ newData:1 SAT:0 Fix:0 UPD:0 VAL:0 HDOP:9999 TIMEVAL:1
 Christoph OE3BCB  
 Hat jemand die E22 bezüglich Empfang schonmal mit Heltec oder so verglichen ?? Bei mir hat das E22 um -20dbm weniger als die Heltec V3 oder Wireless Tracker mit Selber Antenne und genau selbe Position. Kann es sein dass die die SF und anderen Werte eventuell nicht passen ??  
 20:05  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Habe diesbezüglich heute mein E22-PCB mit gleicher Antenne aktiviert. Ja, der Empfang ist schlechter als der TLORA+PA mit +10dB RX.  
 Aber auf Grund der herrschenden Jahreszeit habe ich nicht die Möglichkeit, eine "Referenz"Node für solche Tests in einiger Entfernung aufzustellen, die ich auch unter meiner Kontrolle habe.  
 Die einzige nächste Node, die ich erreiche ist OE3MHU-16 bzw. OE1KBC-12. Aber von denen bekomme ich kein RX, im Gegensatz zuvor mit der TLORA+PA  
@@ -3298,7 +3227,7 @@ Christoph OE3BCB
 20:09  
 Die Frage, wird es nur schwächer angezeigt als es vielleicht wirklich ist, quasi Kalibration falsch oder so, oder ist es wirklich um so viel schwächer, das geht nur auf einem Messplatz das genau herauszufinden  
 20:11  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 oder auf möglichst Freifeld >10m Abstand ev.  
 20:13  
 Die Frage ist dann halt nur, wie ich die entfernte (Referenz)Node dazu bringen kann, Aussendungen zu machen.  
@@ -3325,7 +3254,7 @@ PCB: TX auf GPS RX
 PCB: RX auf GPS TX  
 So sollte es korrekt sein. Ich habe trotzdem noch mal RX/TX getauscht. Wie erwartet hat das jedoch auch nicht funktioniert.  
 10:49  
-Stefan  
+#### Stefan  
 Hast du ein Bild von dem GPS-Modul?  
 10:55  
 Juergen DF2AP  
@@ -3333,35 +3262,35 @@ Bin gerade unterwegs. Kann ich aber nachliefern.
 10:56  
 Ich will das Teil mal mit USB/TTL Wandler starten. Vielleicht ist es gar kein Neo 6M (Fake).  
 12:02  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ja, das sollte passen, wie ich ja zuvor auch und in der Doku auf GitHub geschrieben habe.  
 12:03  
-Ja, ev., das ist ja auch die Vermutung von Stefan. 😉  
+Ja, ev., das ist ja auch die Vermutung von #### Stefan. 😉  
 12:04  
 Helmut OE5HWN  
 Diese Vermutung hatte ich auch schon vor Tagen geäußert  
 👍  
 12:05  
-Stefan  
+#### Stefan  
 Das blaue Modul ist ein Fake und funktioniert am E22-Board nicht. Das schwarze ist ok und bei mir auch im Einsatz.  
 12:05  
 12:07  
 Über ein USB-Interface geht das, lässt sich aber nicht passend konfigurieren. Ich hab die Meisten der Fakes in die Tonne befördert, gekauft nur, weil der Preis mit Antenne günstiger war als ne Antenne einzeln. 😄  
 12:08  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das ist eine gute Idee.  
 Da es ja anfangs notwendig war, das GPS-Modul händisch mit einem speziellen Programm passend einzustellen, habe ich recherchiert und alle notwendigen Schritte für die richtige Einstellung der Parameter eruiert, die dann auch in die FW eingebaut wurden. Dadurch war es nur mehr notwendig, ein GPS-Modul zu verwenden, welches die richtige "Sprache" spricht.  
 12:09  
-Stefan  
+#### Stefan  
 Das ist ja das Blöde, die Fakes lassen sich nicht so einstellen... 😉 "Markenmodule" funktionieren dagegen.  
 12:11  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das hier funktioniert(e), findet aber im Haus keinen FIX.  
 Leider habe ich mir blöderweise den kleinen Puffer-Akku abgerissen.  
 Auf der Rückseite: "NEO-6M GPS"  
 vorne: "HW-595 0228"  
 12:49  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Photo  
 564×75  
 so, jetzt empfange ich OE3MHU-16 auch direkt via HF mit meinem E22+≈35cmAntenne, im Zimmer.  
@@ -3393,7 +3322,7 @@ Zusätzlich hab ich als zweite Problem das GPS-Modul.
 17:55  
 Wie hier bereits geschrie#### ben, scheint da offensichtlich kein ublox Chip verbaut zu sein.  
 18:25  
-Stefan  
+#### Stefan  
 Hast du mal ein Foto von dem Modul? Ist das eins, wie oben gezeigt?  
 
   
@@ -3401,7 +3330,7 @@ ESP32-E22 PCB
 Previous messages  
 28 November 2025  
 19:28  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ahh, das bist du! Hatte nicht wahrgenommen.  
 Ok, scheint immer noch die Spannungsversorgung zu sein.  
 Bitte mal mit Oszi daran schauen!  
@@ -3410,7 +3339,7 @@ Aber da es Teile aus der Kommandozeile sind, scheint mir doch noch ein Kurzschlu
 Juergen DF2AP  
 Wurde auf Meshcom zu Telegram gerufen 😅. Hier bin ich.  
 19:35  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Was meine ich damit:  
 Wenn RX <=> TX (von der USB) verbunden sind, dann kommt die Ausgabe der Konsole (TX) => RX und dann ist klar, dass "... wrong command..." kommt.  
 19:36  
@@ -3419,7 +3348,7 @@ JAAAA, sorry, hatte ich anfangs nicht so wahrgenommen.
 Juergen DF2AP  
 Das hat prima funktioniert. 👍  
 19:37  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Aber, was mir zwar noch nie vorgekommen ist, dass es ev. auch die Terminal Software verursachen könnte, dass die (Teile) vom RX gleich wieder an TX schickt.  
 Welche verwendest du?  
 19:41  
@@ -3428,7 +3357,7 @@ Welche verwendest du?
 Juergen DF2AP  
 Putty für Windows. Der PC war aber gar nicht dran, als die Aussendungen liefen.  
 19:42  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 1) Bitte nimm einen Chrome Browser und  
 https://terminal.spacehuhn.com/  
 19:43  
@@ -3439,7 +3368,7 @@ Mein Tip, ich nehme für Mac und Windows Coolterm her, das läuft besser als put
 Juergen DF2AP  
 Also ich hab den ESP32 abgezogen und alleine per Webflasher und vorherigem Erase neu geflasht. Ich wollte nochmal sauber starten.  
 19:43  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Dann schau dir beim Booten die Terminal-Ausgabe an.  
 19:44  
 Juergen DF2AP  
@@ -3450,7 +3379,7 @@ Da bei der Neueinrichtung mehrmals Reboot erfolgt, kammdas ein paar mal hinterei
 Franz DG2RBF  
 Das kommt bei manchen ESP32 vor, beim Erststart die boot Taste am ESP32 drücken.  
 19:45  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Du brauchst das ESP32-Modul nicht vom Board nehmen:  
 Micro-USB am ESP32-Modul anstecken und da das Terminal.  
 + zusätzlich an der USB-C zur Verstärkung der Versorgung.  
@@ -3462,7 +3391,7 @@ Kann sein, dass der Anode zu wenig Strom bekommen hat.
 19:46  
 Anode = Node  
 19:46  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, das kann sein. Daher µUSB am ESP32 & USB-C  
 19:47  
 Franz DG2RBF  
@@ -3470,13 +3399,13 @@ Nein, das ist ein Bug von manchen ESP32 Device
 19:47  
 Das hat mit der Stromstärke nichts zu tun  
 19:47  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Dann ist sehr anzuraten, mal den 3.3V LDO am ESP32-Board lt. meiner Anleitung zu testen.  
 19:48  
 Franz DG2RBF  
 ok..  
 19:49  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Warum ist das so?  
 Weil die 3,3V NUR am ESP32-Board vom LDO erzeugt wird.  
 Wenn der defekt ist, dann bricht die Spannung bei schon geringen Stromstärken zusammen.  
@@ -3484,7 +3413,7 @@ Wenn der defekt ist, dann bricht die Spannung bei schon geringen Stromstärken z
 Juergen DF2AP  
 Wo finde ich die Anleitung Wolfgang?  
 19:50  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Hier ... moment  
 19:51  
 https://t.me/c/1987218802/11812/26592  
@@ -3492,16 +3421,16 @@ https://t.me/c/1987218802/11812/26592
 Juergen DF2AP  
 Danke, ich lese mich ein und melde mich wieder.  
 19:51  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 exakt hier: https://t.me/c/1987218802/11812/21680  
 20:13  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ❗️Es wäre noch zu überprüfen, ob die Fehlaussendungen beim BOOTEN auch dann kommen, wenn ein Terminal angesteckt ist?  
 20:16  
 Franz DG2RBF  
 Diese Fehlaussendungen kommen immer zustande, egal ob etwas angesteckt ist, oder nichts drann steckt  
 20:24  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 20:26  
 Hier am ESP32-Board sind am Ende bei der WLAN-Antenne die 3V3 & GND.  
 Löte hier 100nF + 10µF parallel dran.  
@@ -3511,7 +3440,7 @@ Franz DG2RBF
 Ist dieser 100nf ein Keramik C?  
 👍  
 20:42  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, und da kann man auch gleich mit dem Oszi messen.  
 20:44  
 Franz DG2RBF  
@@ -3523,20 +3452,20 @@ Guten Morgen Wolfgang. Hängt der 100nF zwischen 5V und GND oder zwischen 3,3V u
 Auf dem Foto sieht es eher so aus, als ob er an 5V hängt.  
 Und parallel dazu dann noch ein 10µF?  
 09:53  
-@Stefan: hier noch ein Foto vom GPS-Modul.  
+@#### Stefan: hier noch ein Foto vom GPS-Modul.  
 09:54  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Guten Morgen,  
 1) ja, zw. 3V3 —||— GND  
 2) Das am Foto ist das ESP32-S3 Board, das hat die letzten 2 Pins jeweils dupliziert. Darum die andere Ansicht.  
 3) Ja, 10µF oder 47µF, aber nicht >100µF, da diese dann auch zu große Induktivität wegen des Wickels haben. Tantal-Elko wäre natürlich viel besser.  
 09:55  
-Stefan meinte mal, man solle unter das Pickerl schauen ... 😉  
+#### Stefan meinte mal, man solle unter das Pickerl schauen ... 😉  
 09:55  
 Juergen DF2AP  
 Okay 👍. Mach ich mal im Laufe des Tages. Muss erstmal den lokalen Adventsmarkt unserer Gemeinde mit vorbereiten.  
 09:57  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Alles normal oder mit "Schutzpanzer" 😉  
 09:58  
 Juergen DF2AP  
@@ -3553,14 +3482,14 @@ Außerdem hab ich mal noch ein ordentliches USB C Kabel geordert.
 10:00  
 Wenn alles klappt kommt das heute noch.  
 10:23  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Findest du auch Datenblätter dazu?  
 👍  
 11:14  
 Kurt Baumann OE1KBC  
 Ja bitte dann könnten wir einbauen  
 11:16  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Genau, das meinte ich auch. Ev. muss man diese Module mal händisch in ein kompatibles Format bringen.  
 Ich hatte mich ja damals nur mit dem ublox Format beschäftigt, um die Parameter passend einzustellen.  
 11:46  
@@ -3570,7 +3499,7 @@ Juergen DF2AP
 11:46  
 Sowas hier?  
 11:52  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, schaut ganz gut aus:  
 "ATGM332D-5N series of module through the UART as the main output channel output in accordance with the NMEA0183 protocol format"  
 11:53  
@@ -3591,9 +3520,9 @@ at6558.pdf
 2.5 MB  
 1 December 2025  
 17:59  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ich habe gestern 2 Stk. dieser Module mit der Bezeichnung GY-NEO6MV2 bei A..Z bestellt und sollten Mi kommen. Dann kann ich mir das mal ansehen.  
-schaut genauso aus wie deines & Stefan seines, nur andere Bezeichnung am PCB.  
+schaut genauso aus wie deines & #### Stefan seines, nur andere Bezeichnung am PCB.  
 "u-center Software: Dies ist die offizielle u-blox Software zur Evaluierung.  
 Verbinden Sie das Modul mit Ihrem PC und öffnen Sie u-center.  
 Führen Sie den Befehl UBX-MON-HW aus. Ein echtes Modul sollte korrekt antworten. Fälschungen antworten entweder nicht, mit fehlerhaften Daten oder sie melden einen anderen Chip (z. B. NEO-7M oder AT6558)."  
@@ -3618,7 +3547,7 @@ SMD-Induktivitäten sehen grundsätzlich nicht so aus wie Widerstände und sind 
 #### Juergen DF2AP  
 Heute sind zwei neue GPS-Module angekommen. Diesmal nicht direkt aus Fernost. Werde die Teile in den nächsten Tagen mal testen und hier berichten.  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ❗️Nach längerer Recherche muss ich folgendes feststellen:  
 1) Dass die GPS-Module mit dem AT6558 fake seien; ja, aber nur, wenn man NEO-6M erwartet.  
 2) Dass diese GPS-Module für die Tonne seien, dass ist völlig überzogen und falsch.  
@@ -3630,7 +3559,7 @@ Das deckt sich mit meinen Erfahrungen. Die Module bei mir sind Fake, da sie als 
 Welchen Datensatz erwartet denn unser ESP32 auf dem E22?  
 Vielleicht kann man das mit der korrekten Einstellung lösen oder wird vom ESP32 geprüft, ob da tatsächlich ein ublox-Chip dranhängt?  
 11:09  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Es gibt  
 1) Infos über die CASIC-Befehle, wie man diese AT6558 einstellen kann.  
 2) natürlich kann man die nicht mit dem u-blox-center v25.x einstellen, da eben andere Befehle notwendig sind.  
@@ -3648,7 +3577,7 @@ https://github.com/karamo/MeshAll42_MIT-AI2/tree/main/Doku/GPS
 
 3 December 2025  
 19:31  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Photo  
 368×79  
 ❗️Meine GX-GPS6MV2 sind eingetroffen.  
@@ -3669,10 +3598,10 @@ jetzt werde ich das u-center anwerfen.
 
 Das habe ich jetzt herausbekommen in der Message View  
 
-#### Stefan  
+#### #### Stefan  
 Kannst du die Bootmessage im Textfenster mitschreiben?  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 $GPTXT,01,01,02,Resetting GPS*68  
 ??:??:?? $GPTXT,01,01,02,ANTSTATUS=INIT*25  
 20:39  
@@ -3697,23 +3626,23 @@ Photo
 391×57  
 und es werden mehr  
 20:49  
-Stefan  
+#### Stefan  
 Bin leider gerade nicht zuhause, gerade OV-Abend. 😳 Geht aber über u-Center oder ein Terminal-Programm.  
 20:51  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ich lasse das u-center über einen FTDI-Adapter an dem GPS-Modul über Nacht laufen. Position direkt innen vor der Fensterscheibe auf der O-Seite meines Hauses.  
 20:52  
-#### Stefan  
+#### #### Stefan  
 U-Center hat immer problemlos funktioniert, am Node dann ging's nicht...  
 21:21  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 so schaut es mit den SATs derzeit aus. Aber sehr wechselhaft, daher noch keine Zeit und kein Fix  
 G18 & G23 stehen stabil in der Höhe aber noch zu wenig.  
 
 #### Juergen DF2AP  
 Das war der Boottext gleich nachdem einschalten vom Neo6M mit dem „Fake“ Chipsatz.  
 22:04  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, das liefert ein AT6558, aber ein original ublox NEO-6M eben nicht.  
 Mein Problem ist momentan, dass ich kein brauchbares Gehäuse für mein ESP32-E22-PCB habe.  
 Werde aber morgen das PCB + Powerbank + GPS in eine Schuhschachtel packen und vors Haus ins Freie stellen.  
@@ -3728,7 +3657,7 @@ Photo
 22:12  
 So, Zeit habe ich bereits ..  
 22:51  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 die BLAUE LED hat soeben zu blinken begonnen und ich habe Koordinaten.  
 22:52  
 habe dafür extra nochmals den PC eingeschaltet.  
@@ -3743,13 +3672,13 @@ Sowas ist heikel, würde ich nicht machen.
 04:50  
 Nur über einen USB Hub würde ich zur Sicherheit sowas machen.  
 10:22  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 unklar, was du damit meinst. Bitte genauere detailliertere Angaben, was du wie machen willst!  
 10:24  
 Ach so, du meinst beim ESP32-E22, du verwendest die Schraubklemmen.  
 JA, geht absolut problemlos, wenn du alle Schottky-Dioden richtig verbaut hast.  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 so, nun an die Node ESP32-E22 angesteckt und das kommt, wie es sein soll:  
 --gps on  
 START CHECK:  
@@ -3773,7 +3702,7 @@ $GPGLL,,,,,104829.00,V,N*4C
 newData:1 SAT:0 Fix:0 UPD:0 VAL:0 HDOP:9999 TIMEVAL:1  
 GPS-UTC-Time <local:1.0 2025-12-04 10:48:29  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Mit LoRa E22 TX = 10 dBm kein Problem und auch kein Fehler.  
 Mit LoRa E22 TX = 22 dBm => CRASH  
 12:45  
@@ -3783,13 +3712,13 @@ Da ist eine Einstreung vorhanden
 12:45  
 Oder schlechte Schirmung  
 12:46  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ist bisher noch nie aufgetreten. Muss mal überprüfen, was anders ist als zuvor.  
 12:46  
 Franz DG2RBF  
 Metallgehäuse oder Kunststoffgehäuse ?  
 12:47  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Sticker  
 😂  
 12:47  
@@ -3801,20 +3730,20 @@ Was gibts da zum Lachen? Das war eine ernst gemeinte Frage
 12:50  
 Tja, bei solchen Aufbauten wundert mich nix  
 12:50  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Deswegen, das ist mein Gehäuse  
 😭  
 12:51  
 Franz DG2RBF  
 Das ist für mich Müll  
 12:51  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Nee, das ist gut. Schmeckt mir.  
 12:52  
 Franz DG2RBF  
 Ich meinte das Gehäuse, sowas gehört ins Recycling  
 12:52  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Und außerdem passt die PCB perfekt hinein und ist gut nach unten isoliert.  
 UND: ich will ja auch mal "eure" Fehler erkennen.  
 Offenbar konnte ich mit diesem Aufbau so einen Fehler provozieren.  
@@ -3822,7 +3751,7 @@ Offenbar konnte ich mit diesem Aufbau so einen Fehler provozieren.
 Franz DG2RBF  
 hier gibts diesen „Käse“ nicht..  
 13:14  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 So, nun Aufbau geändert, dh. das GPS-Modul auf die andere Seite geführt, also nicht am E22 vorbei mit den Leitungen.  
 Ergebnis: kein Crash mehr, auch nicht bei RF=22dBm & GPS ON  
 13:14  
@@ -3838,7 +3767,7 @@ Es vermischt sich halt HF Technik und Digital Technik
 14:19  
 Das kann gravierende Probleme erzeugen  
 15:21  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ja, und so eben den Fehler bez. des Buttons gefunden!  
 siehe in Firmware Issues  
 17:27  
@@ -3856,7 +3785,7 @@ Hast du eine andere Hardware auch ? zb. Heltec oder so, mich würde interessiere
 Rainer OE1KFR  
 Pigtail direkt am E22 Chip oder SMA Buchse? Ich hab Ersteres.  
 11:26  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, habe ich schon: 2x T-LORA 433  
 Aber es war mir bislang noch nicht möglich, Vergleiche der einzelnen Module zu machen.  
 11:28  
@@ -3867,19 +3796,19 @@ Ich hab inzwischen die beiden beim großen A bestellten Neo6MV2 Module erhalten.
 12:55  
 Einfach mit schwarzen Edding durchgestrichen. Ich schick sie gleich wieder zurück. Schade ☹️  
 13:01  
-Stefan  
+#### Stefan  
 Funktionieren tun die ja, nur eben nicht als ublox. 😉  
 13:05  
 Juergen DF2AP  
 Was muss ich denn einstellen, dass sie am ESP32E22 laufen? Bisher hab ich das nicht hinbekommen?  
 13:07  
-Stefan  
+#### Stefan  
 Das klappt bei mir auch (noch) nicht. Ich werde mich mal mit der Software zum Einstellen beschäftigen, hab aber momentan keine Zeit dafür. Deswegen hab ich beim Ali andere bestellt (Bild weiter oben), die auf Anhieb funktionieren.  
 13:12  
 Juergen DF2AP  
 Danke, dann suche ich die mal.  
 14:04  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Mit der Software auf Github kannst du sie konfigurieren.  
 Aber, wie gesagt, habe ich keine solche und kann es daher auch nicht selber testen.  
 14:05  
@@ -3917,13 +3846,13 @@ z.B. AT6558-protocol-en.pdf
 Christoph OE3BCB  
 Ja bringt leider nichts  
 15:01  
-Stefan  
+#### Stefan  
 Ist der absolute Signallevel schlecht oder das SNR?  
 15:02  
 Christoph OE3BCB  
 Beides eigentlich, gefühlt wie mit Dummyload ggg, tx ist aber ok  
 15:04  
-Stefan  
+#### Stefan  
 SNR ist schlechter beim E22, der LNA verstärkt halt auch die Störungen. Aber die Empfindlichkeit ist hier grundsätzlich ok.  
 15:06  
 Einer meiner E22 hat mal einen Schlag durch Gewitter bekommen, sah dann so aus, wie bei dir. Da hat es wohl die Eingangsstufe zerbröselt. Starke Signale hört der noch, schwache nicht mehr.  
@@ -3934,7 +3863,7 @@ Hallo Wolfgang, welche Baudrate muss ich auf 38400 stellen?
 Franz DG2RBF  
 38400 ist die einzustellende Baudrate..  
 15:09  
-Stefan  
+#### Stefan  
 Die Baudrate der SSt GPS-Modul zum Node  
 15:09  
 Juergen DF2AP  
@@ -3943,14 +3872,14 @@ Das Programm hab ich von Github geholt und das "Fake" Modul angeschlossen. Stand
 Franz DG2RBF  
 Das macht der Node automatisch  
 15:10  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Da das Modul grundsätzlich, ursprünglich auf 9600 eingestellt ist. Kanns du dich mit dem Programm zuerst nur mit 9600 Baud verbinden.  
 Erst dann kannst du die Baudrate vie oben beschrieben vom Modul umstellen.  
 15:10  
 Juergen DF2AP  
 es laufen auch Daten ein im Terminal  
 15:11  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ja, gut einmal. Aber das sind keine reinen MNEA Sätze  
 15:11  
 Juergen DF2AP  
@@ -3959,7 +3888,7 @@ Antenne ist aktuell indoor...
 Franz DG2RBF  
 Das gibt Probleme  
 15:14  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 könnte sein, dass man hier was um-/einstellen muss.  
 15:14  
 Franz DG2RBF  
@@ -3971,7 +3900,7 @@ ich versuche mal einen Fix zu bekommen. Kann etwas dauern.
 Franz DG2RBF  
 Wie weit bist du mit der GPS Antenne vom Fenster oder Balkontüre entfernt ?  
 15:17  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 so was sollt rauskommen:  
 ??:??:??  $GPRMC,,V,,,,,,,,,,N*53  
 ??:??:??  $GPVTG,,,,,,,,,N*30  
@@ -3988,7 +3917,7 @@ was ist da eingestellt?
 Franz DG2RBF  
 Könnte mir jemand den Link zu dieser Software nochmal posten?  
 15:20  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 mein GitHub 😉 hier in diesem Thema  
 15:20  
 https://t.me/c/1987218802/11812/27052  
@@ -3998,7 +3927,7 @@ Diese Info ist aber spärlich :-)
 15:21  
 na also geht doch :-)  
 15:22  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ... so was von ungeduldig ... 😇  
 15:22  
 Franz DG2RBF  
@@ -4010,10 +3939,10 @@ bin auf Github nicht so fitt
 15:26  
 benötige da etwas Hilfe  
 15:31  
-Stefan  
+#### Stefan  
 Du hast Post... 😉  
 15:32  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 GnssToolKit3.zip  
 ❤  
 15:33  
@@ -4022,7 +3951,7 @@ https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/Doku/GPS/AT6558/GnssToolKi
 Franz DG2RBF  
 Leider ist diese Software in CN nicht in English, wo stellt man da die Sprache um ?  
 15:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 bitte lies hier im Thema! Ich habe alles bbeschrieben  
 15:38  
 hier beginnend: https://t.me/c/1987218802/11812/27099  
@@ -4037,7 +3966,7 @@ Welche Datensätze braucht es denn?
 Es scheinen aber Positionsdaten zu kommen.  
 $GNRMC,144702.000,A,5058.72601,N,01047.28418,E,0.00,242.22,051225,,,A*7E  
 16:11  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 dann hänge das Modul mal an die Node an.  
 16:20  
 Rainer OE1KFR  
@@ -4047,7 +3976,7 @@ Das Format muss NMEA sein. Weiß aber nicht mehr genau welches. Glaub im uBlox k
 Juergen DF2AP  
 gleiches Ergebnis. Der Node probiert alle Baudraten durch. Sie finden aber nicht zueinander. Vielleicht falsches Format auf dem "Fake" Teil eingestellt.  
 17:10  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 So, da bin ich wieder.  
 Das was Rainer im Bild zeigt, das sind die Einstellungen, die ich mache, um das u-blox passend einzustellen.  
 Ja, da kann es sich spießen.  
@@ -4058,14 +3987,14 @@ diese Datensätze liefert das Modul unter anderem jetzt:
 [17:08:33] ( 72B) $GNRMC,160833.000,A,5058.77603,N,01047.24774,E,0.96,0.00,051225,,,A*7C  
 [17:08:34] ( 74B) $GNGGA,160834.000,5058.77687,N,01047.24494,E,1,06,6.4,190.9,M,0.0,M,,*73  
 17:16  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Diese habe ich zuletzt gekauft, und obwohl nicht im Bild ersichtlich, waren es originale u-blox  
 https://www.amazon.de/dp/B0DX1V4WS1  
 17:17  
 Juergen DF2AP  
 Bleibt dabei: GPS-Modul und ESP32 reden nicht miteinander 😅  
 17:18  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ja, und wenn die sich nicht finden, dann können zwar die Datensätze passend sein, aber trotzdem kein Erfolg.  
 17:19  
 Juergen DF2AP  
@@ -4073,7 +4002,7 @@ Okay, aber dann brauche ich da erstmal nicht weiter machen.
 17:20  
 Vielleicht teste ich nochmal die beiden neuen Amazon Module.  
 17:20  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 genau darauf schaut es auch:  
 #define _RMCterm "RMC"  
 #define _GGAterm "GGA"  
@@ -4081,7 +4010,7 @@ genau darauf schaut es auch:
 Juergen DF2AP  
 Kurze Frage noch. Auf dem Foto vom großen A steht bei den von Dir bestellten Modulen auch kein ublox drauf? Hast Du welche mit ublox-Aufkleber geliefert bekommen oder so, wie die auf dem Foto?  
 17:24  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Genau, siehe meine Beiträge OOPS ...  
 17:24  
 https://t.me/c/1987218802/11812/27074  
@@ -4105,7 +4034,7 @@ Weiterhin schien es mir, dass der WX-Sensor beim Start ein paar ungewollte Zeich
 
 14 December 2025  
 14:07  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Leider noch nicht. Soeben Schrott gesendet !!!  
 DL5WB-99>all : �����n�m ��. `������goa��@���.�n��p�.���ld:����o�� .����o��� �:���:.���������.�m����@ �������`�o������w��� 57600 baud <12>  
 14:08  
@@ -4124,7 +4053,7 @@ Oh je. Tut mir leid.
 14:27  
 Hatte heute bei der Übergabe ein kurzes Gespräch. Er hat den Node mit 2W nur mit einer Aufsteckantenne betrieben. Hab ihn drauf hingewiesen, dass das zu Problemen beim ESP32 führen kann. Er soll lieber eine externe Antenne in gebührenden Abstand nutzen oder die TX-Leistung erheblich reduzieren.  
 14:30  
-Stefan  
+#### Stefan  
 Vor Allem eine stabile StrV, die auch 3A schafft ohne Spannungseinbruch!  
 👍  
 14:31  
@@ -4137,7 +4066,7 @@ Guter Hinweis. Gebe ich nochmal weiter.
 14:33  
 Ach ich hab noch eine Idee. Ich hatte mein GPS dran. Das ist jetzt nicht mehr dran und den Knopf hab ich vergessen auszuschalten.  
 14:38  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 genau, siehe hier:  
 https://t.me/c/1987218802/11777/27164  
 https://t.me/c/1987218802/11812/27160  
@@ -4153,7 +4082,7 @@ Ah ok.
 Also er baut jetzt mal externe Antenne ran, steckt mal GPS (das Richtige ublox) an und nimmt den WX-Sensor nochmal runter.  
 15 December 2025  
 02:13  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Leider noch immer Fehlaussendungen, gerade eben.  
 02:17  
 Franz DG2RBF  
@@ -4163,7 +4092,7 @@ Würde den ESP32 mal neu flashen, mit Komplet erase, wenn das nichts hilft, hat 
 Juergen DF2AP  
 Hatte ich schon gemacht. Ich hatte auch den ESP32 ausgetauscht. Das Problem war, dass der Fehler bei mir in dieser Form gar nicht reproduzierbar war.  
 11:29  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Ok, gut. Dann gehen wir wieder die Fehlersuche an:  
 ❗️Die 1. wichtigste Frage ist:  
 "Was ist unterschiedlich (Aufbau, Geräte, ...), wie es bei dir war und was gegenüber dem von DL5WB?❓  
@@ -4172,7 +4101,7 @@ Es geht um Fehlereingrenzung ...
 Juergen DF2AP  
 Sind schon dabei. Viel kann es nicht sein. Stromversorgung, Antenne, andere HF unmittelbar daneben.  
 11:40  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 was ich immer noch nicht verstehe ist, dass hier definitiv Teile von der Konsolen-Ausgabe ausgesendet werden. Das ist von der FW her eigentlich überhaupt nicht möglich.  
 MeshCom, [15.12.2025 10:53]  
 DL5WB-99>all : 00:00;[0;[HEAP];1506pporteorted  
@@ -4196,7 +4125,7 @@ Bei mir war UDP nicht aktiviert. DL5WB hat es glaube wegen MeshDash aktiviert. I
 👍  
 16 December 2025  
 00:56  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ohh, bedeutet das, dass die Störungen u.U. über WiFi gekommen sind? Das wäre ein ganz neuer Ansatz für die Fehlersuche.  
 Man sieht auch im erwähnten "Log", dass einzelne u/o mehrere Zeichen verfälscht u/o ausgelassen werden.  
 01:03  
@@ -4204,7 +4133,7 @@ Dieses wr�ng z.B. hat sicher wrong geheißen, wo das "o" korrumpiert wurde (Bi
 ??? was wäre, wenn auf dem Funkweg vom Node zum WLAN-Router die Störung erfolgen würde ???  
 Dann wäre auf der Node nichts erkennbar, was auf eine Störung hindeuten würde, aber der WLAN-Router bekommt den "Schrott" dann und schickt ihn einfach nur weiter.  
 01:18  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 andererseits ist das "00:00;[0;[HEAP];1506" definitiv ein Fragment aus dem Terminal Output, welches bei mir gleich nach dem Reboot z.B. so aussieht "01:10:28;[HEAP];73588;(free)"  
 Hierbei ist aber erkennbar, dass bei mir bereits beim 1.Mal die richtige Zeit erscheint.  
 Aber bei dem gestörten ist die Zeit offenbar noch 00:00:00, was darauf hindeutet, dass die WiFi-Verbindung noch nicht erfolgreich war und der NTP-Server (noch) nicht erreichbar, obwohl sie zu diesem Zeitpunkt schon verfügbar sein sollte, wie hier zu sehen ist:  
@@ -4225,7 +4154,7 @@ TimeClient now (UTC): 00:17:14
 ‼️ oha, jetzt habe ich plötzlich 2x hintereinander, nach einiger Zeit nach dem RESET einen Verlust des COM-Ports gehabt im terminal.spacehuhn.com  
 Möglicherweise habe ich diese Störung nun provozieren können, indem ich NUR die USB am ESP32-Board (=schwache Stromversorgung) angesteckt hatte und keine weitere Stromversorgung über USB-C oder Schraubklemme.  
 02:21  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 wenn ich dieses Fragment weiter analysiere, dann fallen mir folgende Dinge auf:  
 •1) Wenn das Board ein ESP32-E22-PCB ist, dann muss der Heap bei der 4.35h bei ≈73588 Bytes nach dem Start liegen, wie bei mir ersichtlich.  
 •2) was sollen die "1506" bedeuten?  
@@ -4246,12 +4175,12 @@ Ich muss mir da aber noch eine spezielle Versuchsanordnung überlegen ...
 Detlef DG5NBF  
 Läuft das Neo 6M GPS mit Werkseinstellung oder muss das vorher mit der Ublox Software eingestellt werden ? Meines wird am Board nicht erkannt. Es sucht immer die Baudraten durch. An der Ublox Software und USB Adapter wird's aber sofort erkannt....  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 1) Es werden ALLE originalen Ublox GPS erkannt und automatisch richtig eingestellt von der FW.  
 2) falls es den Effekt wie du beschrieben zeigt, dann ist es kein originales Ublox  
 das sagt überhaupt nichts aus, außer, dass die Ublox Software auch nicht Originale erkennen kann.  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 ja, aber wir könnten auch die L76K Erkennung auch für solche aktivieren und diese dann umstellen, da die ja den CASIS Befehlssatz unterstützen  
 
 24 February 2026  
@@ -4261,12 +4190,12 @@ Gibt's irgendwo eine Info oder Anleitung zu den notwendigen Einstelldaten ?
 
 11 March 2026  
 07:27  
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 hier folgende in meinem Repository und bei LilyGo findest du alle Datenblätter bez. CASIS Befehlen.  
 https://t.me/c/1987218802/1/29723  
 https://t.me/c/1987218802/1/29717  
 
-#### wolfgang z  
+#### OE3WAS wolfgang z  
 Das Problem damals war ja, dass ich kein solches "angeblich fake" GPS-Modul hatte. Aber im Zuge meiner Implementation des T-Beam-1W kam ich drauf, dass der ja ein L76K Modul eingebaut hat. Die nächsten Schritte ergaben sich daraus in logischer Folge.  
 
 ### Ab der FW 4.35p.04.xx sollten L76K und UBLOX GPS-Module (fast immer) einwandfrei erkannt und verwendet werden.
