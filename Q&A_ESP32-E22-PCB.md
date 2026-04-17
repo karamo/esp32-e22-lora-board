@@ -1,11 +1,10 @@
 # Q&Q ESP32-E22 PCB  
-Beginnend am 10 January 2025 aus Telegram exportierter Chat zur Entwicklung und Information zu ESP32-E22 PCB  
+**13.11.2024** Aus Telegram exportierter Chat zur Entwicklung und Information zu ESP32-E22 PCB  
 
 #### OE3WAS wolfgang z  
 Alle Beiträge während der Entwicklung der PCB, also vor der endgültigen V2.1.2 wurden in der Telegram Gruppe im Thema #General belassen.  
 
-#### OE3WAS wolfgang z, [13.11.2024 15:47]  
-in der PCB V2.1.2 sind viele kleine Änderungen eingeflossen, die auch speziell nach einigen Chats mit DG4NEU #### Stefan und anderen Erwägungen entstanden sind.  
+In der PCB V2.1.2 sind viele kleine Änderungen eingeflossen, die auch speziell nach einigen Chats mit DG4NEU Stefan und anderen Erwägungen entstanden sind.  
 Aber grundsätzlich hat V2.1.2 die gleichen Grundfunktionen wie die Vorversionen, nur mit einigen wichtigen Erweiterungen:  
 • Querformat für Outdoor (alle Ausgänge unten)  
 • dementsprechend OLED um 90° gedreht einbaubar  
@@ -28,6 +27,7 @@ https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Ass
 
 #### ben, [14.11.2024 12:10]  
 @wolfgang_zel Kann man da kein bestell.link machen wie bei aisler?  
+
 #### OE3WAS wolfgang z, [14.11.2024 12:12]  
 habe ich bei JLBPCB nicht gefunden.  
 Aber bei anderen Herstellern ist das möglich.  
@@ -44,10 +44,10 @@ Achtung: die normalen E32 Nodemcu boards passen nicht, sind zu schmal...am beste
 10:42  
 #### Stefan, [15.11.2024 13:28]  
 In GitHub sind in der Galerie ein paar Bilder von meinem Node, da kann man den ESP ganz gut erkennen. War auch mal vor Jahren ne Packung von AZ-Delivery im Angebot bei Amazon.  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/gallery/DG4NEU_#### Stefan  
+https://github.com/DK9BT/esp32-e22-lora-board/tree/main/gallery/DG4NEU_Stefan  
 Inzwischen bevorzuge ich Aliexpress, die Preise sind dort extrem besser und die Herkunft vermutlich die gleiche. Meine Vorliebe für lokale Lieferanten hab ich angesichts dieser Unterschiede mal hintenan gestellt und hab dafür ein bisschen Geduld für die längere Lieferzeit.  
 10:43  
-Wolfgang Hallmann DF7PN, [15.11.2024 13:41]  
+#### Wolfgang Hallmann DF7PN, [15.11.2024 13:41]  
 Ich haben noch eine Frage zu der Liste wegen dem OLED:  
 Da steht drinn: OLED-Display (VCC-GND-SCL-SDA)  
 Ist diese Reihenfolge der Pins genau so einzuhalten, oder ein Tippfehler?  
@@ -69,7 +69,7 @@ Du musst nur aufpassen, wenn du den E22 anschließt, der zieht zu viel Strom. Bi
 10:48  
 Neee, wenn ich ein geeignetes USB-Netzteil verwende, dann funktioniert das. Z.B. von einem RPi.  
 10:50  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Danke für die Mühe das hier in diesem Stream zu sammeln!  
 10:55  
 #### OE3WAS wolfgang z  
@@ -102,7 +102,7 @@ kleine Korrektur und Klarstellung: 5k1 bedeuten 5V/3A
 (5k1 = 5,1 kΩ Widerstand 2 Stk. bei der USB-C Buchse)  
 ...  
 oder auch einen DC/DC, der 5V/3A liefern kann und mit höherer Eingangsspannung zurecht kommt.  
-Wolfgang Hallmann DF7PN, [15.11.2024 16:45]  
+#### Wolfgang Hallmann DF7PN, [15.11.2024 16:45]  
 wird dann umgekehrt über die USB-C Buchse der ESP32 mit versorgt?  
 #### OE3WAS wolfgang z, [15.11.2024 16:47]  
 JA, ALLE Varianten sind möglich!  
@@ -124,7 +124,6 @@ Ich habe die Idee, einen eigenen Power-Switch auf das Board zu platzieren. Den k
 Ok, dann habe ich mich für die einfachste Variante 1️⃣ entschieden und nur einen Jumper mit einer Leiterbahn mit dem EN-Pin des DC/DC verbunden. Offen = EN, geschlossen = OFF (nur mit dem DC/DC-Wandler)  
 12:33  
 #### OE3WAS wolfgang z  
-#### OE3WAS wolfgang z, [19.11.2024 11:08]  
 😭 Ein Einzelentwickler, so wie ich, hat gerade gestern ein E22-Modul "irrtümlich" (eben wegen dieses Spieltriebes) zerstört. Daher ist die endgültige Inbetriebnahme meines ESP32-E22-Boards leider verzögert worden.  
 Ich "wahnsinniger" od. "ehrgeiziger" wollte das E22 nicht direkt auflöten sondern sockeln. Dabei ist die mechanische Spannung zwischen E22-Modul-Lötstellen, die nur Halblöcher sind, offenbar zu groß gewesen und es gab offensichtlich Leiterbahnunterbrechungen am E22.  
 Es kam einfach der Fehlercode -2 bei der Initialisierung von MeshCom.  
@@ -159,7 +158,6 @@ Helmi Beh
 Du musst dich mal mit der Adressierung des I2C-Busses beschäftigen. Das LSB ist das R/W-Bit. Wenn man das nicht berücksichtigt (7bit-Adresse) kommt 0x3C heraus. Wenn man das berücksichtigt (Shift left), wird's dann zu 0x78!  
 12:55  
 #### OE3WAS wolfgang z  
-#### OE3WAS wolfgang z, [25.11.2024 21:39]  
 Kurze Info zur PCB V2.1.2  
 1️⃣ Ich habe mal eine variants.h für Meshtastic erstellt, selbst kompiliert und läuft offenbar problemlos.  
 2️⃣ Der Button funktioniert mit MeshCom ordentlich, aber mit Meshtastic nur sporadisch. Ein PullUp kann das Problem nicht lösen, da GPIO12 = strapping Pin  
@@ -202,9 +200,7 @@ Zu den in der Anfangsphase erwähnten und verfügbaren 3D-PDFs.
 1. veraltet und  
 2. nicht wirklich angekommen wurden bei "euch" und  
 3. ein nicht unerheblicher aufwand, die zu erstellen. 😉  
-15:17  
-#### OE3WAS wolfgang z  
-#### Stefan, [23.12.2024 16:36]  
+
 Einbaubuchse für die Versorgung des E22/ESP32-Boards:  
 rot/schwarz = VCC/GND  
 blau/weiß = D+/D-  
@@ -230,7 +226,7 @@ Einbau GPS-Board und GPS-Antenne in OE3WAS-Meshcom-Trcvr: wer eine mechanische L
 #### OE3WAS wolfgang z, [06.01.2025 20:56]  
 dafür ist auch die größere Bohrung in der Mitte da, um die auch nachträglich noch reindrücken zu können!  
 15:52  
-Wolfgang Hallmann DF7PN, [06.01.2025 19:21]  
+#### Wolfgang Hallmann DF7PN, [06.01.2025 19:21]  
 Ich habe heute diese Kabel bekommen USB-C mit D+/- und Cc1/2. Ich messe die mA mit einem USB Adapter und sehe beim Senden mit einem doofen 3A/5V Steckernetzteil beim Senden mit 22 dBm nur max. 0,8 A . Nehme ich eins mit PD Gedöns für CC dann sinds nur 200 mA.  
 Da würde ich sagen das mit dem CC Signal tut nichts signalisieren. Noch dazu frage ich mich wenn normal 0,8A gebraucht werden, da 3A Netzteile angeraten werden? Hat jemand Erfahrungen mit der CC Steuerung?  
 #### OE3WAS wolfgang z, [06.01.2025 20:18]  
@@ -267,20 +263,19 @@ Das könnte tödlich für den ESP32 werden!
 Denn bei 5V-Versorgung sind auch die Datenleitungen dann 5V und das verträgt der ESP32 NICHT !!!  
 lies das mal:  
 https://t.me/c/1987218802/9026  
-20:42  
-#### OE3WAS wolfgang z  
+
 Warum wollte ich den E22 sockeln?  
 Um eine Adapterplatine an Stelle des E22 aufstecken zu können.  
 Darauf sind +5V / +3,3V / GND / I²C / SPI verfügbar, um z.B. Sensoren o.ä. zu testen.  
 Und für Messaufgaben mit mehreren Sensoren scheiden MeshCom & Meshtastic sowieso aus. Da ich in diesem Fall aber meistens auch kein LoRa benötige, reicht das WiFi vom ESP32 völlig aus.  
 
 20:48  
-Wolfgang Hallmann DF7PN, [30.11.2024 17:37]  
+#### Wolfgang Hallmann DF7PN, [30.11.2024 17:37]  
 Ich stelle gerade die Kleinteile zusammen für unseren Workshop: Da stellt sich mir eine Frage. Wenn ich innen eine USB-C Buchse habe, sollte auch ein Stecker durch die Gehäusewand gehen. Die empfohlenen Kabelverschraubungen erlauben aber nicht den Durchmesser, den ich bräuchte um einen Stecker durchzubekommen. Wie war das mal gedacht, dass das gehen soll?  
 #### ben, [30.11.2024 17:43]  
 Du brauchst den usb c stecker net unbedingt  
 Geht auch direkt mit 5v  
-Wolfgang Hallmann DF7PN, [30.11.2024 17:50]  
+#### Wolfgang Hallmann DF7PN, [30.11.2024 17:50]  
 Doch ich will 😉 Ne alles gut habe eben einen größere Kabelverschraubung 13,5 gefunden. Da passt der ganze USB-C Stecker durch. Im Durchgang muss man halt das Kabel etwas dicker machen durch Isoband oder Aussenhülle von nem RG58.  
 Andere Stecker die ich da reinführen soll, sind auch nicht viel schmaler.  
 Bei unserem Bausatz lasse ich die Kabelklemme und den DC/DC Wandler weg.  
@@ -301,18 +296,17 @@ es kann auch sein, dass die 5-polige (VCC GND CC D+ D-) funktioniert. Davon habe
 ❌ Die 2-poligen (nur VCC & GND) und die 4-poligen (VCC & GND & D- & D+) funktionieren aber definitiv NICHT, da die CC1 & CC2 Anschlüsse fehlen und daher von dem USB-C Netzteil nur 5V/500mA bereitgestellt werden darf, außer ev. Ausnahmen, wenn man "dumme" Netzteile u/o "dumme" USB-C Anschlusskabel verwendet.  
 21:01  
 Andre fragte nach "Remote-Steuerung"?  
-#### OE3WAS wolfgang z, [19.12.2024 10:58]  
+
 Ja, es gäbe die Möglichkeit, Geräte via LoRa zu steuern.  
 Mir ist dabei auch aufgefallen, dass nicht mal RT/TX auf eine Stiftleiste herausgeführt ist, was aber durchaus sinnvoll gewesen wäre.  
 Dies und noch andere sinnvolle Ergänzungen wird es in einer ev. Nachfolgeversion geben.  
-Kurt Baumann OE1KBC, [19.12.2024 11:25]  
+#### Kurt Baumann OE1KBC, [19.12.2024 11:25]  
 Diese Idee ist sicherlich eine Überlegung wert. Derzeit können mit dem I2C angebundenen MCP23017 16-I/O-Pins gesteuert bzw. abgefragt werden. Diese Platine ist auch im WEBClient im vollem Umfang mit Beschriftung der PINS usw. ab Version 4.33c integriert.  
 https://icssw.org/2024/06/16/meshcom-mcp23017-16-pin-i-o/  
 Via der MCP23017 kann auch eine Relaisplatine angesteuert werden um größere Ströme zu schalten.  
 Ich verwende derzeit die 4-fach SolidState-Relay-Platine von AZ-Delivery.  
 Ich würde sagen mit den derzeitigen vorhandenen Möglichkeiten lässt sich eine REMOTE-Gerätesteuerung bzw. Fernabfrage einfach aufbauen. Die Schaltfunktionen sind auch via MeshCom-Meldungen schaltbar. Eine einfach passwort-Kontrolle ist bereits inkludiert.  
-21:02  
-Kurt Baumann OE1KBC, [19.12.2024 11:33]  
+
 Hier ein Bild des Laboraufbaus.  
 Wild aber es funktioniert .. habe es auf der HAMRADIO vorgestellt.  
 Auf dem orangefarbenen Board ist ein Pegelkonverter aufgebaut.  
@@ -330,7 +324,7 @@ https://md.freifunk-mwu.de/s/7OQwy7e9F
 #### Stefan  
 Könnte André DL4QB vll auf seiner Seite verlinken!  
 15:57  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Top 👍 Super herzlichen Dank 😊  
 17:44  
 #### OE3WAS wolfgang z  
@@ -339,13 +333,13 @@ https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Ass
 
 1 February 2025  
 10:23  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Guten Morgen. Wie habt Ihr bei Euch die Stromversorgung gelöst? Schraubkkemmen, USB-C Breakout-Board oder direkt an den ESP32? Falls jemand USB-C-Breakout nutzt, gibt es einen Link für ein vierpoliges Kabel um die USB-C-Buchse nach außen zu führen?  
 10:25  
 #### Stefan  
 Schau mal weiter oben, dort ist der Link für das 6-Polige Kabel. Das funktioniert prima. Aktuell habe ich einfach über 5V-Schraubkkemme versorgt.  
 10:27  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Danke #### Stefan. Hast Du das HW-613 Modul verbaut oder speist Du einfach 5V fest ein?  
 10:29  
 Kann man als Sicherung auch so eine selbstrückstellende Sicherung bei F1 einbauen? Die kleinen Glassicherungen scheint es nur im 1.000 er Pack zu geben.  
@@ -355,7 +349,7 @@ Bei mir hängt die 5V-USV dran, die über USB an nem kleinen Netzteil. Bilder da
 10:30  
 Sollte auch gehen! Gute Idee. Nur sind 5A etwas heftig, 3A müsste reichen  
 10:31  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Die Dinger sind etwas größer. Sollten aber neben den Elko gut passen.  
 10:32  
 Würde so aussehen  
@@ -365,13 +359,13 @@ Hab die 5 A Variante bestellt.
 #### Stefan  
 Sollte die Diode aushalten... 😉  
 10:35  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Du hast so ein Montagekreuz aus dem 3-D Druck drunter. Korrekt?  
 10:35  
 #### Stefan  
 Ja, das hält auch das GPS-Antennchen fest.  
 10:35  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Was ist das für eine USV?  
 10:37  
 #### Stefan  
@@ -379,7 +373,7 @@ https://de.aliexpress.com/item/1005006860598580.html
 10:38  
 Hält mit 2x3400mAh-Akkus recht lange durch und kostet wenig.  
 11:05  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Was es nicht alles gibt. Das wird ja doch ein Riesen Projekt 😂👍  
 11:26  
 #### Stefan  
@@ -394,7 +388,7 @@ Und kann man die STL-Datei bekommen?
 #### Stefan  
 Ich hab die 5V-Variante etwas "verbessert", so dass die 5,3V ausspuckt. Wird ein SMD-R getauscht. So kann man die Ohne Sendeleistungsverlust an de E22 anklemmen.  
 14:39  
-Kannst du gerne ha#### ben, muss die mal suchen. Ich hatte verschiedene Varianten, die Finale war die mit GPS-Antennen-Halterung.  
+Kannst du gerne haben, muss die mal suchen. Ich hatte verschiedene Varianten, die Finale war die mit GPS-Antennen-Halterung.  
 14:44  
 Wolfgang Klein  
 Super Danke! Und hast Du noch einen Tip für die 3400mAh Akkus? Bin da etwas vorsichtig wegen Fakeangaben  
@@ -409,7 +403,7 @@ wenn du einen Bestelllink hättest?
 Ich hab meine bei Akkuman bestellt, bin bisher zufrieden:  
 https://www.akkuman.de/shop/10x-Tenpower-INR18650-32HE-36V-Li-Ion-3100mAh-10A-Entladestrom  
 15:08  
-Aber bitte beachten, dass die Zellen kein BMS ha#### ben, sollten also nur für T-Beam, die USV etc. verwendet werden!  
+Aber bitte beachten, dass die Zellen kein BMS haben, sollten also nur für T-Beam, die USV etc. verwendet werden!  
 15:10  
 Wolfgang Klein  
 LED Lampen sollten auch gehen, Danke schaue ich mir mal an  
@@ -417,7 +411,7 @@ LED Lampen sollten auch gehen, Danke schaue ich mir mal an
 #### Stefan  
 Nur, wenn die ein BMS ha#### ben, sonst ist davon abzuraten. Normale Taschenlampen zum Beispiel haben keinen Schutz gegen Tiefentladung.  
 15:28  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 An den STL-Dateien hätte ich auch Interesse. Hab jemanden in der Nähe, der 3D-Druck machen kann.  
 16:38  
 #### OE3WAS wolfgang z  
@@ -439,7 +433,6 @@ https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Ass
 Alles, was ich hier nicht beschrieben habe, das sind Spezialfälle und dabei sollte man wissen, was man tut!  
 https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#best%C3%BCckungshinweise-pcb-v212  
 
-#### OE3WAS wolfgang z  
 Der Elko link soben schadet grundsätzlich nicht, aber er verlängert in unnötiger Weise den RESET-Vorgang und das könnte in speziellen Versorgungsspannungssituationen zu Fehlfunktionen führen. Ich empfehle, den nicht einzulöten!  
 Der war nur für die "alten" ESP32-Board tw. erforderlich bez. des Flash-Vorganges.  
 
@@ -450,7 +443,6 @@ Leider habe ich da einfach die Widerstände kopiert und daher sind deren Wert je
 
 Spannungsteiler ist so zu dimensionieren, dass aus der Maximalspannung maximal 3.3V werden  .
 
-#### OE3WAS wolfgang z  
 Der Spannungsteile ist von mir 2:1 gewählt worden, da ich davon ausgehe, auch ≈5V messen zu können und somit der ADC-Eingang nicht "am Anschlag" steht.  
 
 19:46  
@@ -511,7 +503,7 @@ Flex USB Kabel zum flashen
 
 13 February 2025  
 13:43  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Kurze Frage zum Einbau von U4 HW613. Der muss ja unter das OLED-Display? Ich hab dem Ding eine Stiftleiste verpasst. Passt da noch eine 4er Buchse auf die Leiterplatte oder habt ihr die Stiftleiste direkt eingelötet?  
 13:52  
 #### Stefan  
@@ -522,7 +514,7 @@ einfach so wie du es mit der Stiftleiste bestückt hast von unten durchstecken:
 16:17  
 NEIN - ist nur marginal höher als die fette Diode  
 17:58  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Super Danke. Spannung hab ich auf 5,3V eingestellt. Dann rein damit 👍  
 18:01  
 So richtig?  
@@ -530,7 +522,7 @@ So richtig?
 #### OE3WAS wolfgang z  
 Ja, genau so! Passt  
 18:55  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Danke Wolfgang 👍  
 14 February 2025  
 20:12  
@@ -580,7 +572,7 @@ Ja und das halt nicht nur am Schreibtisch.
 #### Stefan  
 Ich hab leider keinen der Teile mehr da, vll kann ich mir einen besorgen die Tage.  
 09:46  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Frage an die Profis: hier ist beim Workshop gerade ein Pin vom Board am E22 weggebrannt. Ist dieser Pin wichtig? Platine damit kaputt?  
 09:47  
 09:48  
@@ -598,7 +590,7 @@ Die 3 Pins sind eh etwas schwierig zu löten, da braucht es ordentlich Hitze, we
 09:51  
 Gleiches gilt für die Pins gegenüber, 2x Masse und in der Mitte die Antenne.  
 09:54  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Danke, das ist gerettet.  
 09:55  
 Rainer OE1KFR  
@@ -690,13 +682,13 @@ Vielen Dank #### Stefan.
 👍  
 27 February 2025  
 16:06  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 @DG4NEU meine Platinen sind auch eingetroffen. Danke für den Super Service 👍  
 16:08  
 #### Stefan  
 Gerne, manchmal klappt's auch mit der Post! 😀  
 16:12  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 kurze Nachfrage: das bei mir verbaute USB-C-Adapterboard hat 4 Anschlüsse  
 -V  
 -CC1  
@@ -708,13 +700,13 @@ Was mache ich mit D+ und D-?
 #### Stefan  
 Ja, da gibt es noch ws/bl für D+/D-, aktuell nicht genutzt  
 16:17  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Super. Dann lass ich die einfach dran und isolier sie.  
 16:20  
 #### Stefan  
 Mach das, ich hab ne Idee dafür, muss das aber erst noch testen.  
 21:32  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Unsere Leute haben da folgendes gemacht. Ein microusb Winkel gekauft und da die Datenleitungen dran gemacht. Somit kann man mit einer externen USB-C Buchse auch die serielle am microusb Anschluss nutzen  
 21:37  
 #### Stefan  
@@ -725,7 +717,7 @@ Das hab ich heute auch versucht, aber das klappt nicht so, wie ich mir das vorge
 Der ESP braucht wohl die 5V an der Buchse, hatte aber heute keine Zeit. Morgen vll. dann gibts auch Einzelheiten.  
 28 February 2025  
 07:57  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Klingt gut. Dann warte ich mal auf den Bericht 👍  
 12:10  
 Carsten  
@@ -735,7 +727,7 @@ Vielen Dank!!!!! sind bei mir auch angekommen
 #### Stefan  
 Kannst Du mir mal zeigen, wie das (vom Schaltbild her) gemacht wurde? Hier funktioniert das nicht, wenn nur die Datenleitungen am Micro-USB hängen. Oder haben die Kollegen, das komplett über die Buchse gemacht? Nur die CC1/CC2 am Board angeschlossen? Mit D+/D-/GND/VCC von der Buchse an den ESP klappt das.  
 15:07  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Ich habe selber nicht damit experimentiert. Warum es nicht geht bei dir tut mich verwundern. Angeblich soll das USB C Board parallalan der Versorgung zum ESP32 hängen. Ob ich dann die Datenleitungen und Strom getrennt anlege sollte egal sein. Leider habe ich gerade den Schaltplan nicht greifbar. Da müsste es sich zeigen.  
 17:35  
 Ben  
@@ -748,7 +740,7 @@ Jörg DF3EI (df3ei@db0kk.org)
 Sicher eine aus der selben Quelle wie das PA-Modul... 😁  
 1 March 2025  
 18:51  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 3 x ESP32E22 in Thüringen fertig ✅  
 👍  
 5  
@@ -904,14 +896,14 @@ GPIO17 GPS_RX
 Zum ESP32-S3-WROOM-1 N16R8 habe ich schon 1 Kollision gefunden. Ist aber behebbar.  
 8 March 2025  
 09:05  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Gibt es noch Platinen? Hätte noch interesse.  
 09:32  
 #### Stefan  
 Ja, hab noch was... Mail an dg4neu@darc.de  
 18 March 2025  
 08:37  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Guten Morgen. Falls noch jemand Bedarf hat:  
 Das ESP-32 Dev Kit C V4 gibt es heute bei AZ-Delivery als 1er-Set für 6,99€ und als 3er-Set für 13,99€ (Deal of the Day).  
 ❤  
@@ -920,7 +912,7 @@ Das ESP-32 Dev Kit C V4 gibt es heute bei AZ-Delivery als 1er-Set für 6,99€ u
 Johann OE6POD  
 /Danke für die Info, gleich mal bestellt  
 18:20  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Gerne 🤗  
 19 March 2025  
 16:27  
@@ -928,7 +920,7 @@ Michael DG1FBP
 Da habe ich mich auch angeschlossen, danke für den Tip  
 24 March 2025  
 11:32  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 11:32  
 Ich habe hier was ganz blödes..  
 11:33  
@@ -949,14 +941,14 @@ Ich nehme da mal an, dass das das leidige Problem mit dem Auskreuzen von RX<>TX 
 Versuche mal, die umzudrehen.  
 Es ist nie sicher, was TX/RX jeweils an den GPS-Modulen bedeutet.  
 11:40  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 bin skeptisch, aber ich hänge die Leitungen mal um.  
 11:41  
 #### OE3WAS wolfgang z  
 ESP32-GPIO16_GPS_RX <—> TX vom GPS-Modul  
 und entsprechen die andere Leitung  
 11:41  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 ja klar. da habe ich auch den tanzenden Pegel gemessen im Takt der LED  
 11:43  
 das wäre dann aber der esp der die plötzlich anders will. Gibts sowas? wohl eher nicht, da die gpios 16/17 ja auch andere Aufgaben erfüllen können. Probieren geht über studieren ☺️  
@@ -975,13 +967,13 @@ hat sich in der FW nicht geändert:
 #define GPS_RX_PIN 16  
 #define GPS_TX_PIN 17  
 11:59  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Daten liegen an GPIO 16 im Takt an.  
 11:59  
 Helmut OE5HWN  
 Und eine andere Frage GPS ist auf on in der App, bzw. Webserver?  
 11:59  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 ja klar, war zu erwarten.  
 12:00  
 ich bin auf der Konsole  
@@ -990,7 +982,7 @@ ich bin auf der Konsole
 Helmut OE5HWN  
 Welches GPS Modul versendest du?  
 12:01  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 12:01  
 ich mache gerade ein weiteres dran was woanders schon lief  
 12:02  
@@ -1016,13 +1008,13 @@ Das war bei den M100, die sind default auf 115200Bd und NMEA/uBlox eingestellt. 
 Helmut OE5HWN  
 So habe mir kurz die Mühe gemacht und mein GPS getauscht von neo-6m auf neo-7m und neo-8m sogar auf ein GT-U7 werden alle erkannt. Jetzt wieder das alte neo-6m alles okay.  
 12:25  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 erledigt. Alles gut  
 12:26  
 Helmut OE5HWN  
 und was war der Fehler?  
 12:26  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Habe ja schon viele nach gleichem Muster gebastelt. Nie Stress gehabt mit dem kram. Zweites GPS Modul wird auch nicht erkannt  
 12:27  
 anderer esp brachte auch nichts.  
@@ -1036,7 +1028,7 @@ zum verrücktwerden
 #### Stefan  
 Vll kann Kurt dazu mal was schrei#### ben, ob es tatsächlich die Möglichkeit gibt, die Library (gerne auch mal testweise) zu wechseln. Wir haben hier bei diversen Nodes immer wieder die Probleme, dass das GPS unter Meshtastic z.B. einwandfrei läuft, unter MeshCom aber nicht.  
 12:31  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Sachen gibt's  
 12:31  
 #### Stefan  
@@ -1049,7 +1041,7 @@ Sticker
 Helmut OE5HWN  
 Hast du noch ein zweites E22 zur Hand das funktioniert? dann könntest du da das GPS noch einmal testen.  
 12:37  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 ja ist in Arbeit  
 12:37  
 Helmut OE5HWN  
@@ -1057,7 +1049,7 @@ Fertig aufgebaut nicht vorhanden?
 12:39  
 Ich würde einmal nur den ESP 32 DevKit alleine mit dem GPS verbinden und dann nachsehen, das würde alles andere ausschließen  
 12:42  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 😮 das will an einem anderen mesh auch nicht  
 12:42  
 fuck  
@@ -1065,7 +1057,7 @@ fuck
 Helmut OE5HWN  
 Dann zurück zum u-center und da noch einmal testen  
 12:45  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 das gps aus dem anderen mesh spielt am neuen nun auch. Also Gps boards. Nun wird es lustig.  
 Ja UCenter kommt nun dran  
 12:45  
@@ -1074,7 +1066,7 @@ nochmal dran
 Helmut OE5HWN  
 Das wird noch richtig spannend  
 12:53  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 so an UCenter gehts sofort los mit 9600  
 12:53  
 12:55  
@@ -1083,7 +1075,7 @@ wir kann man sicherstellen das er später auch nir 9600 benutzt.
 Helmut OE5HWN  
 Wie ist die Spannungsversorgung am E22 3v3 oder 5v und wie über den PC? Wenn's im U-center mit 9600 läuft dann muss es in der GW auch mit 9600 laufen  
 12:58  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 ok ist logisch. ttl wandler gibt 3.3 V ab  
 12:58  
 an der mesh kiste ist es auch 3.3 bzw 3.5  
@@ -1091,7 +1083,7 @@ an der mesh kiste ist es auch 3.3 bzw 3.5
 #### Stefan  
 Am E22 sind es 3,3V, mit dem passendenden Adapter kann man das für den PC einstellen. Ich hab das mit 3,3V auch am PC zuverlässig laufen.  
 13:00  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 eben in U Center andere Baudraten probiert, aber die Platine antworte immer nur bei 9600.  
 13:00  
 Was mag der esp nicht, das ist hier die Frage  
@@ -1105,7 +1097,7 @@ Dann kann man auch schön RX und TX umstecken
 13:14  
 Hast du die Kontakte vom ESP zu den GPS Anschüssen durch gemessen, kann ja sein das da das Problem liegt, falls es über ein Via geht wäre es möglich dass schlecht durchkontaktiert ist  
 14:11  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 also... uffbasse, hier ist die Lösung:  
 Die angeblichen Neo-6M sind keine. Da sind atm chips unter der Haube.  
 14:11  
@@ -1121,7 +1113,7 @@ Ich habe jetzt einen frischen Neo-6M ausgepackt und der lief sofort
 #### OE3WAS wolfgang z  
 so wie es mir erscheint, ist da ein LDO drauf, dh. dieses Board benötigt 5V. Damit wäre mit 3,3V dann zu wenig Spannung am Chip  
 14:14  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 unter dem Aufkleber waren Reste zu sehen vom Vorgänger  
 14:14  
 14:15  
@@ -1130,7 +1122,7 @@ Halleluja sag ich
 #### OE3WAS wolfgang z  
 Wenn du aber die VCC auf +5V hängen würdest, dann sind TX/RX wahrscheinlich außerhalb der 3,5V Spezifikation für den ESP32.  
 14:31  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 eher nicht, da die auf allen Boards drauf sind aber trotzdem als 3,3v Module angepriesen werden.  
 14:36  
 #### OE3WAS wolfgang z  
@@ -1140,13 +1132,13 @@ Support 2.7~3.6V power supply, typical 3.3V power supply.
 Helmut OE5HWN  
 Direkter Nachbau mit CE Kennzeichen (China Export) bei Ali bestellt?  
 19:21  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 ja klar. Bei zwei verschiedenen bestellt. Eine Lieferung hat gepasst. Die andere passt halt nicht.  
 19:22  
 Helmut OE5HWN  
 Shit happens, aber Schade um die Zeit die man den Fehler sucht  
 19:23  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Die ATM Module funktionieren fast alle. Bei fast allen musste man in der Antenne den Vorverstärker entfernen und brücken.  
 19:24  
 bei einigen war zuviel Lötzinn in Form von Lötfahnen vorhanden, die einen Kurzschluss produzierten.  
@@ -1160,7 +1152,7 @@ habe meine GPS Module bis jetzt immer bei A...n bestellt, da auch eine 3er Packu
 Ist mir auch schon vorgekommen, auf dem Sticker ist ein ublox 6M aufgedruckt, beim Start an der Seriellen meldet er sich dann als 5M, also Resteverwertung! Vy73 aus Gmünd.  
 27 March 2025  
 08:12  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Guten Morgen. Heute gibt es bei AZ-Delivery wieder ein Tagesangebot:  
 3xBME280 für 11,99€ und  
 3x ESP32S Dev Kit C V4 für 19,99€  
@@ -1290,14 +1282,14 @@ Ja, ja, natürlich bemerke ich das schon sehr lange. Aber ich wollte Kurt damit 
 20:26  
 Ich habe extra da noch darauf hingewiesen❗️  
 21:19  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Was ist das Jumbo Display?  
 21:47  
 Franz DG2RBF  
 Vermute mal ein 2,4" Display  
 10 April 2025  
 05:10  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Danke 👍  
 09:46  
 #### OE3WAS wolfgang z  
@@ -1394,7 +1386,7 @@ die Beinchen abzwicken (cyan)
 Die Lasche ablöten (rot)  
 7 May 2025  
 07:51  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Bei AZ-Delivery gibt es heute wieder das ESP32 Board Dev Kit C V4 im Angebot. Drei Module für 13,99€.  
 https://www.az-delivery.de/products/esp32-board-dev-kit-c-v4-nodemcu-wlan-wifi-development-board-unverlotet-mit-usb-c-anschluss-kompatibel-mit-arduino?variant=46050529444107&utm_source=90-Days-Engaged&utm_medium=email&utm_campaign=070525_ESP32%20Board%20Dev%20Kit%20C%20V4%2BD1%20Mini_promo_Microcontroller_LVC&utm_id=01JTKHW83ZT22A2CJSRHAKWWST&utm_term=Campaign&utm_content=👉%20Hier%20Angebot%20sichern%20👈&_kx=b2nJXzFUmZF_Rht_n9MewZS-R95z-K-0YgkW6K9F5hdDH8S0JoqPcYl_FPEAP9cG.QVRJMi  
 👌  
@@ -1415,14 +1407,14 @@ Hallo Wolfgang . Du hattest vor einiger Zeit wegen den Fehl-Aussendungen von DH1
 Franz DG2RBF  
 👍  
 14:37  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Oh brauche Hilfe. Bei der Firmware gibts jetzt neue Aufteilungen. Was ist denn laut der Liste ein DevKitC mit E22400M30S?  
 14:49  
 #### Stefan  
 Das ist die 1W-Variante des E22 für 433MHz mit dem bisherigen Board mit ESP32 (ohne S3)  
 Der mit 2W hat die Bezeichnung E22 400M33S  
 15:12  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 und welche Version der SW ist das nun? Bisher gabs nur einen bin. jetzt sinds zwei  
 👍  
 15:13  
@@ -1432,13 +1424,13 @@ erster oder zweiter Eintrag? ich weiß nicht was ich nehmen muss
 #### Stefan  
 Der erste ist für 868MHz-E22, der Zweite für die 433MHz-Variante.  
 15:14  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 puh, danke #### Stefan  
 15:17  
 #### Stefan  
 Bitteschön!  
 15:26  
-Wolfgang Hallmann DF7PN  
+#### Wolfgang Hallmann DF7PN  
 Wäre sicher gut gewesen diese MHZ in den Namen mit einzubringen wenn man nicht die einfachen Nutzer auflaufen lassen wollte.  
 15:27  
 #### Stefan  
@@ -1450,7 +1442,7 @@ SX1268 ist 400 Typ SX1262 ist 900 Typ
 400 ist 433Mhz … 900 ist 868  
 26 May 2025  
 09:02  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Guten Morgen. Den BME280-Sensor gibt es heute bei AZ-Delivery im 3er-Pack für 11,99€ zzgl. Versand im Angebot.  
 https://www.az-delivery.de/products/gy-bme280?variant=19385550536800&utm_source=90-Days-Engaged&utm_medium=email&utm_campaign=260525_GY-BME280-Sensor_promo_sensoren_LVC&utm_id=01JVYRSQH4SAEJ2JJEZ2ZQGEFT&utm_term=Campaign&utm_content=👉%20Hier%20kaufen%20und%20sparen%20👈&_kx=b2nJXzFUmZF_Rht_n9MewZS-R95z-K-0YgkW6K9F5hdDH8S0JoqPcYl_FPEAP9cG.QVRJMi  
 29 May 2025  
@@ -2479,7 +2471,7 @@ Diese unerkannten Zeichen entstehen dadurch, dass bei dem Verbindungsparameter 8
 Erst nach einer "Pause" kann die Synchronisation erfolgen.  
 11 June 2025  
 07:43  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Guten Morgen. Heute gibt es wieder das ESP32 Dev Kit C V4 bei AZ-Delivery im Angebot. Das 3er-Set für 14,99€.  
 https://www.az-delivery.de/products/esp-32-dev-kit-c-v4?variant=30871551869024&utm_source=90-Days-Engaged&utm_medium=email&utm_campaign=110625_AZ-ESP32%20Dev%20kit%2BE-paper%20display_promo_microcontroller_LVC&utm_id=01JXCC4F21C84EC2XQMSC7R0PE&utm_term=Campaign&utm_content=👉%20Jetzt%20zuschlagen%20👈&_kx=b2nJXzFUmZF_Rht_n9MewZS-R95z-K-0YgkW6K9F5hdDH8S0JoqPcYl_FPEAP9cG.QVRJMi  
 15 June 2025  
@@ -2648,7 +2640,7 @@ Sprich: Almanach lesen
 Reminder: Letzte Möglichkeit, heute auf der Ham Radio noch Platinen für das E22/ESP32 -MeshCom Projekt zu bekommen. Am ICSSW-Stand gibt es noch einige Exemplare. 😊  
 8 August 2025  
 07:40  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Guten Morgen. AZ-Delivery hat heute wieder ESP-32 Dev Kit C V4  
 im Angebot. 3 Stück gibt es für 14,99€.  
 https://www.az-delivery.de/products/esp-32-dev-kit-c-v4  
@@ -2690,7 +2682,7 @@ Hm, da ich meine MeshCom Module nur am Dach oder Outdoor verwende, kommt bei mir
 👍  
 15 November 2025  
 20:24  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Hallo Zusammen, ich habe aktuell den Node von DL5WB bei mir auf dem Tisch. Dieser hatte sich durch wirre Aussendungen in die Gruppe *all hervor getan. Bei mir konnte ich mich dann nicht richtig per BLE verbinden. Er hat hier nach dem Datenabruf auch wirre Sachen angezeigt und ich konnte keine Parameter ändern.  
 Was hab ich schon probiert:  
 - ich habe den ESP32 runter genommen und mittels Erase und neu flashen neu eingerichtet FW war dabei 4.35f  
@@ -2718,11 +2710,11 @@ siehe https://t.me/c/1987218802/1/26183
 Bitte möglichst detaillierte scharfe Fotos von der bestückten PCB von beiden Seiten.  
 16 November 2025  
 09:02  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Danke für die Rückmeldung. Ich such die Infos zusammen und mach mal Fotos und melde mich dann hier nochmal.  
 👍  
 11:59  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 So hier die Fotos der Platine. Die Platine ist eine Nachfertigung eines OMnaus Thüringen aus Fernost. Daher die rote Farbe.  
 12:01  
 12:01  
@@ -2811,7 +2803,7 @@ Daher reicht mein 330µF Tantal auch!
 13:27  
 Noch besser wäre eine Stufung von 470µF + 220µF + 47µF.  
 13:30  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Danke erstmal für die Infos. Lotungen sehen qualitativ gut aus, hab mit der Lupe drüber geschaut. Die Platinen sind sehr gut durchkkntsktiert, da muss das Lot nicht auf der anderen Seite raus kommen. Aber ich kann natürlich nochmal nachlösen. Schaden tut das ja nicht.  
 13:31  
 Ist der im Schaltplan drin? Wenn nicht, hat den keins meiner Boards. Was macht der Widerstand?  
@@ -2828,7 +2820,7 @@ Siehe auch hier in der Gruppe ...
 siehe hier: https://t.me/c/1987218802/11776/23410  
 👍  
 13:37  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Das verbaute OLED-Modul.  
 13:38  
 Die Kreuzung hat Bernd schon hier gelöst.  
@@ -2837,7 +2829,7 @@ Die Kreuzung hat Bernd schon hier gelöst.
 genau - das hat die VCC-GND verdreht.  
 Daher so wie gezeigt die Beinchen auskreuzen, oder wie beschrieben die JP1 & JP2 ändern.  
 13:40  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ich hab noch die Info bekommen, dass Bernd wegen seines OLED-Moduls hier horizontal gebrückt hatte, ohne die Leiterbahnen zu durchtrennen.  
 13:41  
 Da gab’s kurz Funkverkehr 🤪  
@@ -2853,7 +2845,7 @@ Melde mich anschließend.
 #### OE3WAS wolfgang z  
 🔥💥Das macht einen KURZSCHLUSS zw. VCC = GND ‼️  
 13:49  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ja genau. Wenn ein intelligentes Netzteil dran war, sollte eigentlich nichts kritisches passieren.  
 13:49  
 #### OE3WAS wolfgang z  
@@ -2861,7 +2853,7 @@ Bevor man als ungelernter Elektroniker etwas eigenmächtig tut, ohne zu wissen, 
 Oder den Schaltplan richtig lesen und auch verstehen, was man tut.  
 13:49  
 13:50  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Deswegen bin ich mit dem Problem ja jetzt hier bei den Profis 😊  
 13:50  
 #### OE3WAS wolfgang z  
@@ -2870,7 +2862,7 @@ Sticker
 13:51  
 Nicht unbedingt. Da ein so massiver Kurzschluss auch ev. ungewollte Effekte im Netzgerät ausgelöst hat. Und wenn man das dann wieder verwendet, dann ...  
 13:53  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Bin erstmal unterwegs. Melde mich später nach den Hausaufgaben wieder. Kann ein bisschen dauern. Erstmal Harmonische besuchen.  
 13:53  
 Schon mal herzlichen Dank 👍  
@@ -2894,7 +2886,7 @@ https://t.me/c/1987218802/11812/21679
 und nachfolgende Beiträge  
 19 November 2025  
 13:52  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Node von DL5WB - aktueller Sachstand:  
 - alles nochmal nachgelötet  
 - 220 Elko parallel zum 220 auf der Platine ist drauf  
@@ -2911,7 +2903,7 @@ Ja, schaut gut aus. Bin gespannt ...
 14:12  
 ev. noch einen parallel zum E22-Elko C3 !  
 21:12  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 C3 war korrekt mit 470µF bestückt. Nur C6 war mit 220µF bestückt. Da hab ich noch einen 220µF parallel dazu.  
 21:13  
 Node scheint aktuell "noch" unauffällig zu laufen. Ich hab im Moment GPS und WX-Sensor noch nicht dran. Lass ihn mal einen Tag laufen. Wenn das soweit klappt, steck ich die Hardware wieder an.  
@@ -2922,19 +2914,19 @@ Einer der beiden ist nach kurzer Zeit jeweils extrem langsam oder gar nicht mehr
 Helmi Beh  
 Wieviele Nodes sind denn in deinem Router eingebucht (Fritzbox???)? .178 ist schon ein ziemlich hoher Wert für die Tabelle.  
 22:12  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ich habe kein WLAN über die Fritzbox. Ich nutze Ubiquiti APs. Die IP XXX.XXX.X.1 bis XXX.XXX.X.99 sind bei mir für statische IP reserviert.  
 22:17  
 Helmi Beh  
 Schau doch mal, wie lang dort die Routingtabelle sein darf. Könnte sein, dass die voll ist und deswegen der letzte Teilnehmer schlechter geht.  
 22:19  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ich hab IP-Adressen, die über XXX.XXX.X.200 gehen und funktionieren.  
 22:19  
 Helmi Beh  
 Dann vergib doch mal feste IPs und probiere das dann aus.  
 22:20  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Gute Idee. Probier ich morgen mal aus und melde mich wieder.  
 22:20  
 Dankeschön 👍  
@@ -2944,7 +2936,7 @@ Dankeschön 👍
 Gut, und was würdest du meinen, was jetzt die volle Funktion gebracht hat?  
 Doch Lötfehler gewesen? Oder Elko? Oder ...?  
 09:31  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 So richtig kann ich es nicht sagen. Das Teil lief vorher teilweise recht lange problemfrei und hat dann angefangen Unsinn zu machen.  
 Nachdem ich jetzt drei Sachen gemacht habe, wird es schwierig da eine qualifizierte Aussage zu treffen. Außerdem steht der Langzeittest noch aus.  
 Ich hab aktuell auch noch einen von meinen ESP32 drauf. Ich steck heute mal den Ursprungs ESP32 drauf. Mal schauen, ob der auch problemfrei läuft.  
@@ -2954,7 +2946,7 @@ Wir bleiben mal dran und machen Schritt für Schritt weiter.
 Klaus  
 Das Problem mit dem WLAN ist bei einem meiner beiden ESP32 Nodes auch schon aufgetreten. Aus heiterem Himmel, wollte im Browser von den Nachrichten auf Mheard wechseln oder umgekehrt. Passiert selten, aber hier beim lesen sehe ich Parallelen. Ich tippe aber auch auf Probleme in meinem Netz, dass da was durcheinander kommt.🤔  
 10:52  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ja das könnte auch bei mir an meiner WLAN-Konfiguration liegen.  
 10:58  
 Klaus  
@@ -3003,7 +2995,7 @@ https://github.com/icssw-org/MeshCom-Firmware/issues/432
 #### OE3WAS wolfgang z  
 Das deutet stark auf Lötfehler hin, da diese(r) durch Erwärmung erst später auftreten kann.  
 13:15  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Hallo Wolfgang, der ESP32 ist nicht der vom Kurzschluss. Der war tatsächlich defekt und wurde ersetzt. Trotzdem tauchten die Probleme nach einer Weile immer mal auf.  
 13:17  
 #### OE3WAS wolfgang z  
@@ -3015,7 +3007,7 @@ auch hier dokumentiert:
 https://github.com/karamo/MeshAll42_MIT-AI2/blob/main/MeshCOM_Interna/MeshCom-Commands_info.md#-wifitxpower  
 23 November 2025  
 13:12  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Update zum Test:  
 Bisher konnte ich keine unerwünschten TX-Aussendungen mehr feststellen. Ich habe gestern das WX-Modul angesteckt, auch damit scheint es soweit zu laufen.  
 Heute habe ich das GPS-Modul angesteckt. Allerdings habe ich vermutlich ein Konfigurationsproblem mit dem GPS-Modul. Die rote LED auf dem Neo6M blinkt. Das Modul scheint also GPS-fix zu haben. Ich hab GPS in der App auch aktiviert. In der Info-Abfrage sowohl in der App, als auch im Webinterface wir jedoch kein GPS-fix angezeigt.  
@@ -3115,7 +3107,7 @@ Ritter Freiherribert von Matschkenffark =^..^=
 Hast Recht, deshalb habe ich mich ja wegen der inkorrekten Formulierung entschuldigt gehabt.  
 👍  
 19:50  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 esp-web-tools-logs.txt  
 5.8 KB  
 Ich hab mal beim booten per Konsole mitgeschrieben. Es scheint so, als ob zum GPS-Modul keine Verbindung zu Stande kommt.  
@@ -3166,7 +3158,7 @@ Welches GPS hast da angeschlossen, es wird auf jeden Fall nicht erkannt
 19:59  
 Dieses Problem ist bereits mehrfach aufgetreten bei GPS Modulen von Ali, da es sich dabei um Fälschungen handelt.  
 20:15  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Hallo Helmut,  
 Danke für die schnelle Antwort. Laut Aufdruck soll es ein Neo-6M Modul sein.  
 20:15  
@@ -3175,17 +3167,17 @@ Kann den OM nach der Bezugsquelle fragen. Wie gesagt die rote Leuchtdiode blinkt
 #### OE3WAS wolfgang z  
 es könnte ganz einfach sein, dass du RX <-> TX vertauscht hast. Nach welcher Anleitung hast du das GPS-Modul mit dem PCB (Board) verbunden?  
 21:43  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Danke Wolfgang für die Rückmeldung. Der Node inkl. GPS-Modul sind ja nicht mir. Ich prüfe das Morgen mal. Heute ist bei mir schon Feierabend im Shack.  
 24 November 2025  
 08:39  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Hab nachgeschaut, RX/TX sind korrekt verdrahtet. Ich werde mal mit einen USB/TTL Wandler direkt die Daten vom GPS-Modul anschauen, ob da was läuft.  
 09:30  
 Kurt Baumann OE1KBC  
 Dreh trotzdem RX/TX einmal um  
 10:09  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ok Kurt. Mach ich heute Nachmittag mal.  
 10:09  
 Bin erstmal unterwegs.  
@@ -3240,7 +3232,7 @@ Helmi Beh
 Also ich betreibe den ESP32-E22 nicht mit Meshcom, sondern benutze die Platine für Lora-Satelliten-Empfang (TinyGS). Man merkt den LNA im Gegensatz zu den TTGO und Heltecs, die ich auch noch habe, schon sehr. Die Sendeleistung kann ich natürlich nicht beurteilen, da das ein reines Empfangsprojekt ist (in Ermangelung passender Satelliten, die auch empfangen und wieder aussenden können)  
 25 November 2025  
 10:43  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Hallo Wolfgang. Bin nicht eher zum antworten gekommen.  
 Ich habe das E22 auf der fertigen Platine, also keine Lochraster Verdrahtung.  
 Dort gibt es einen 4-poligen Anschluss für das GPS-Modul.  
@@ -3257,7 +3249,7 @@ So sollte es korrekt sein. Ich habe trotzdem noch mal RX/TX getauscht. Wie erwar
 #### Stefan  
 Hast du ein Bild von dem GPS-Modul?  
 10:55  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Bin gerade unterwegs. Kann ich aber nachliefern.  
 10:56  
 Ich will das Teil mal mit USB/TTL Wandler starten. Vielleicht ist es gar kein Neo 6M (Fake).  
@@ -3303,7 +3295,7 @@ Was bedeutet das, bzw. was kann ich damit erkennen?
 ❤  
 🔥  
 21:39  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ich habe mal einen USB/TTL-Wandler angeschlossen und versucht den Boottext mitzuschreiben. Das scheint kein ublox-Chip zu sein:  
 $GPTXT,01,01,02,HW=ATGM332D,0001211360338*14  
 $GPTXT,01,01,02,IC=AT6558-5N-31-0C510800,BM08CKJ-F2-022601*50  
@@ -3313,7 +3305,7 @@ Siehe erste Zeile. Sehe ich das richtig?
 Ach so, es ging um diese Nachricht.  
 28 November 2025  
 17:52  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ich bekomme den Node nicht richtig in den Griff. Aktuell macht er ein paar seltsame Aussendungen direkt nach dem Start, dann läuft er erstmal.  
 17:53  
 Elko und 1k Widerstand haben das Problem offensichtlich nicht komplett behoben.  
@@ -3336,7 +3328,7 @@ Ok, scheint immer noch die Spannungsversorgung zu sein.
 Bitte mal mit Oszi daran schauen!  
 Aber da es Teile aus der Kommandozeile sind, scheint mir doch noch ein Kurzschluss zw. RX <-> TX am ESP32 vorzuliegen.  
 19:35  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Wurde auf Meshcom zu Telegram gerufen 😅. Hier bin ich.  
 19:35  
 #### OE3WAS wolfgang z  
@@ -3345,7 +3337,7 @@ Wenn RX <=> TX (von der USB) verbunden sind, dann kommt die Ausgabe der Konsole 
 19:36  
 JAAAA, sorry, hatte ich anfangs nicht so wahrgenommen.  
 19:36  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Das hat prima funktioniert. 👍  
 19:37  
 #### OE3WAS wolfgang z  
@@ -3354,7 +3346,7 @@ Welche verwendest du?
 19:41  
 ❓Du sagtest, dass das nur beim RESTART/BOOT auftritt?  
 19:41  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Putty für Windows. Der PC war aber gar nicht dran, als die Aussendungen liefen.  
 19:42  
 #### OE3WAS wolfgang z  
@@ -3365,13 +3357,13 @@ Franz DG2RBF
 Mein Tip, ich nehme für Mac und Windows Coolterm her, das läuft besser als putty, und braucht keinen Browser.  
 👍  
 19:43  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Also ich hab den ESP32 abgezogen und alleine per Webflasher und vorherigem Erase neu geflasht. Ich wollte nochmal sauber starten.  
 19:43  
 #### OE3WAS wolfgang z  
 Dann schau dir beim Booten die Terminal-Ausgabe an.  
 19:44  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Den neu geflashten ESP32 hab ich auf das Board gesteckt und dann hat er den Unfug gesendet.  
 19:45  
 Da bei der Neueinrichtung mehrmals Reboot erfolgt, kammdas ein paar mal hintereinander.  
@@ -3384,7 +3376,7 @@ Du brauchst das ESP32-Modul nicht vom Board nehmen:
 Micro-USB am ESP32-Modul anstecken und da das Terminal.  
 + zusätzlich an der USB-C zur Verstärkung der Versorgung.  
 19:45  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Allerdings hatte ich auch einen Fehler meinerseits. Ich war an der Powerbank nicht am 3A Ausgang.  
 19:46  
 Kann sein, dass der Anode zu wenig Strom bekommen hat.  
@@ -3410,7 +3402,7 @@ Warum ist das so?
 Weil die 3,3V NUR am ESP32-Board vom LDO erzeugt wird.  
 Wenn der defekt ist, dann bricht die Spannung bei schon geringen Stromstärken zusammen.  
 19:49  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Wo finde ich die Anleitung Wolfgang?  
 19:50  
 #### OE3WAS wolfgang z  
@@ -3418,7 +3410,7 @@ Hier ... moment
 19:51  
 https://t.me/c/1987218802/11812/26592  
 19:51  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Danke, ich lese mich ein und melde mich wieder.  
 19:51  
 #### OE3WAS wolfgang z  
@@ -3447,7 +3439,7 @@ Franz DG2RBF
 Das ist ein sehr guter Tip  
 29 November 2025  
 09:50  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Guten Morgen Wolfgang. Hängt der 100nF zwischen 5V und GND oder zwischen 3,3V und GND.  
 Auf dem Foto sieht es eher so aus, als ob er an 5V hängt.  
 Und parallel dazu dann noch ein 10µF?  
@@ -3462,13 +3454,13 @@ Guten Morgen,
 09:55  
 #### Stefan meinte mal, man solle unter das Pickerl schauen ... 😉  
 09:55  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Okay 👍. Mach ich mal im Laufe des Tages. Muss erstmal den lokalen Adventsmarkt unserer Gemeinde mit vorbereiten.  
 09:57  
 #### OE3WAS wolfgang z  
 Alles normal oder mit "Schutzpanzer" 😉  
 09:58  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Normal. Wir sind ein Dorf mit gut 1.000 Einwohnern.  
 🥰  
 09:59  
@@ -3493,7 +3485,7 @@ Ja bitte dann könnten wir einbauen
 Genau, das meinte ich auch. Ev. muss man diese Module mal händisch in ein kompatibles Format bringen.  
 Ich hatte mich ja damals nur mit dem ublox Format beschäftigt, um die Parameter passend einzustellen.  
 11:46  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 1911211831_ZHONGKEWEI-ATGM332D_C458416.pdf  
 1.7 MB  
 11:46  
@@ -3515,7 +3507,7 @@ Reference
 5. "GNSSToolKit tool instructions"  
 6. "UBF serial port upgrade tool instructions"  
 13:33  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 at6558.pdf  
 2.5 MB  
 1 December 2025  
@@ -3544,7 +3536,7 @@ Es wäre nun interessant, was du an diesem Bauteil mit dem Ohmmeter messen kanns
 
 SMD-Induktivitäten sehen grundsätzlich nicht so aus wie Widerstände und sind auch nicht so beschriftet.  
 
-#### Juergen DF2AP  
+#### #### Wolfgang Hallmann DF7PN  
 Heute sind zwei neue GPS-Module angekommen. Diesmal nicht direkt aus Fernost. Werde die Teile in den nächsten Tagen mal testen und hier berichten.  
 
 #### OE3WAS wolfgang z  
@@ -3554,7 +3546,7 @@ Heute sind zwei neue GPS-Module angekommen. Diesmal nicht direkt aus Fernost. We
 ➡️ Die GPS-Module mit einem AT6558 sollten grundsätzlich ein kompatibles Protokoll ha#### ben, was den Empfang betrifft.  
 💥Dass das automatische Einstellen der passenden Parameter mit der aktuellen MC-FW und TinyGPS zur Auswertung nicht funktioniert, das ist logisch, da die einen proprietären CASIC Befehlssatz haben.  
 09:05  
-#### Juergen DF2AP  
+#### #### Wolfgang Hallmann DF7PN  
 Das deckt sich mit meinen Erfahrungen. Die Module bei mir sind Fake, da sie als Neo6M-V2 verkauft wurden. Allerdings bekommen sie einen GPS-Fix und ich hatte sie mal an der ublox-Software. Dort wird der fix und die serielle Datenausgabe per 9600 Bd auch angezeigt. In der Software gibt es sehr viele Einstellmöglichkeiten welche Datensätze da über die serielle ausgegeben werden soll.  
 Welchen Datensatz erwartet denn unser ESP32 auf dem E22?  
 Vielleicht kann man das mit der korrekten Einstellung lösen oder wird vom ESP32 geprüft, ob da tatsächlich ein ublox-Chip dranhängt?  
@@ -3639,7 +3631,7 @@ U-Center hat immer problemlos funktioniert, am Node dann ging's nicht...
 so schaut es mit den SATs derzeit aus. Aber sehr wechselhaft, daher noch keine Zeit und kein Fix  
 G18 & G23 stehen stabil in der Höhe aber noch zu wenig.  
 
-#### Juergen DF2AP  
+#### #### Wolfgang Hallmann DF7PN  
 Das war der Boottext gleich nachdem einschalten vom Neo6M mit dem „Fake“ Chipsatz.  
 22:04  
 #### OE3WAS wolfgang z  
@@ -3791,7 +3783,7 @@ Aber es war mir bislang noch nicht möglich, Vergleiche der einzelnen Module zu 
 11:28  
 schon RX Booster eingeschaltet?  
 12:54  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ich hab inzwischen die beiden beim großen A bestellten Neo6MV2 Module erhalten. Offensichtlich wird man jetzt kreativer, wenn gar kein ublox Chip verbaut wurde.  
 12:55  
 Einfach mit schwarzen Edding durchgestrichen. Ich schick sie gleich wieder zurück. Schade ☹️  
@@ -3799,13 +3791,13 @@ Einfach mit schwarzen Edding durchgestrichen. Ich schick sie gleich wieder zurü
 #### Stefan  
 Funktionieren tun die ja, nur eben nicht als ublox. 😉  
 13:05  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Was muss ich denn einstellen, dass sie am ESP32E22 laufen? Bisher hab ich das nicht hinbekommen?  
 13:07  
 #### Stefan  
 Das klappt bei mir auch (noch) nicht. Ich werde mich mal mit der Software zum Einstellen beschäftigen, hab aber momentan keine Zeit dafür. Deswegen hab ich beim Ali andere bestellt (Bild weiter oben), die auf Anhieb funktionieren.  
 13:12  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Danke, dann suche ich die mal.  
 14:04  
 #### OE3WAS wolfgang z  
@@ -3857,7 +3849,7 @@ SNR ist schlechter beim E22, der LNA verstärkt halt auch die Störungen. Aber d
 15:06  
 Einer meiner E22 hat mal einen Schlag durch Gewitter bekommen, sah dann so aus, wie bei dir. Da hat es wohl die Eingangsstufe zerbröselt. Starke Signale hört der noch, schwache nicht mehr.  
 15:08  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Hallo Wolfgang, welche Baudrate muss ich auf 38400 stellen?  
 15:09  
 Franz DG2RBF  
@@ -3866,7 +3858,7 @@ Franz DG2RBF
 #### Stefan  
 Die Baudrate der SSt GPS-Modul zum Node  
 15:09  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Das Programm hab ich von Github geholt und das "Fake" Modul angeschlossen. Standardmässig steht es auf 9600 Baud. Hab es jetzt auf 38400 Bd gestellt und Save gedrückt.  
 15:10  
 Franz DG2RBF  
@@ -3876,13 +3868,13 @@ Das macht der Node automatisch
 Da das Modul grundsätzlich, ursprünglich auf 9600 eingestellt ist. Kanns du dich mit dem Programm zuerst nur mit 9600 Baud verbinden.  
 Erst dann kannst du die Baudrate vie oben beschrieben vom Modul umstellen.  
 15:10  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 es laufen auch Daten ein im Terminal  
 15:11  
 #### OE3WAS wolfgang z  
 Ja, gut einmal. Aber das sind keine reinen MNEA Sätze  
 15:11  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Antenne ist aktuell indoor...  
 15:12  
 Franz DG2RBF  
@@ -3894,7 +3886,7 @@ könnte sein, dass man hier was um-/einstellen muss.
 Franz DG2RBF  
 Da sieht die GPS Antenne zu wenige Satelitten..  
 15:15  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 ich versuche mal einen Fix zu bekommen. Kann etwas dauern.  
 15:16  
 Franz DG2RBF  
@@ -3956,7 +3948,7 @@ bitte lies hier im Thema! Ich habe alles bbeschrieben
 15:38  
 hier beginnend: https://t.me/c/1987218802/11812/27099  
 15:44  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 So fix ist da. So sieht die Ausgabe jetzt aus:  
 15:46  
 Photo  
@@ -3973,7 +3965,7 @@ Rainer OE1KFR
 Das Format muss NMEA sein. Weiß aber nicht mehr genau welches. Glaub im uBlox kann man unterschiedliche auswählen.  
 16:28  
 16:52  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 gleiches Ergebnis. Der Node probiert alle Baudraten durch. Sie finden aber nicht zueinander. Vielleicht falsches Format auf dem "Fake" Teil eingestellt.  
 17:10  
 #### OE3WAS wolfgang z  
@@ -3982,7 +3974,7 @@ Das was Rainer im Bild zeigt, das sind die Einstellungen, die ich mache, um das 
 Ja, da kann es sich spießen.  
 Ich schau mal, auf welchen Satz ich schaue beim Test der Baudrate ...  
 17:14  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 diese Datensätze liefert das Modul unter anderem jetzt:  
 [17:08:33] ( 72B) $GNRMC,160833.000,A,5058.77603,N,01047.24774,E,0.96,0.00,051225,,,A*7C  
 [17:08:34] ( 74B) $GNGGA,160834.000,5058.77687,N,01047.24494,E,1,06,6.4,190.9,M,0.0,M,,*73  
@@ -3991,13 +3983,13 @@ diese Datensätze liefert das Modul unter anderem jetzt:
 Diese habe ich zuletzt gekauft, und obwohl nicht im Bild ersichtlich, waren es originale u-blox  
 https://www.amazon.de/dp/B0DX1V4WS1  
 17:17  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Bleibt dabei: GPS-Modul und ESP32 reden nicht miteinander 😅  
 17:18  
 #### OE3WAS wolfgang z  
 ja, und wenn die sich nicht finden, dann können zwar die Datensätze passend sein, aber trotzdem kein Erfolg.  
 17:19  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Okay, aber dann brauche ich da erstmal nicht weiter machen.  
 17:20  
 Vielleicht teste ich nochmal die beiden neuen Amazon Module.  
@@ -4007,7 +3999,7 @@ genau darauf schaut es auch:
 #define _RMCterm "RMC"  
 #define _GGAterm "GGA"  
 17:23  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Kurze Frage noch. Auf dem Foto vom großen A steht bei den von Dir bestellten Modulen auch kein ublox drauf? Hast Du welche mit ublox-Aufkleber geliefert bekommen oder so, wie die auf dem Foto?  
 17:24  
 #### OE3WAS wolfgang z  
@@ -4024,7 +4016,7 @@ das ist einfach nur ein öffnen der SoftwareSerial, aber im ´Zusammenspiel mit 
 und da hakt es eben.  
 13 December 2025  
 13:48  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ich möchte noch eine Rückmeldung zum störrischen Node mit den ungewollten Aussendungen und dem GPS-Problem geben.  
 Aktuell scheint er (vorerst) keine ungewollten Aussendungen zu machen. Was wurde alles gemacht:  
 - C6 hatte nur 220µF statt 470µF -> nochmal 220µF parallel  
@@ -4048,7 +4040,7 @@ Das kann doch nicht sein, dass DL5WB die bei DF2AP funktionierende Node wieder g
 14:21  
 Es sind ≈300+ E22 PCBs aufgebaut worden und davon laufen ≈99% ohne Probleme.  
 14:24  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Oh je. Tut mir leid.  
 14:27  
 Hatte heute bei der Übergabe ein kurzes Gespräch. Er hat den Node mit 2W nur mit einer Aufsteckantenne betrieben. Hab ihn drauf hingewiesen, dass das zu Problemen beim ESP32 führen kann. Er soll lieber eine externe Antenne in gebührenden Abstand nutzen oder die TX-Leistung erheblich reduzieren.  
@@ -4057,7 +4049,7 @@ Hatte heute bei der Übergabe ein kurzes Gespräch. Er hat den Node mit 2W nur m
 Vor Allem eine stabile StrV, die auch 3A schafft ohne Spannungseinbruch!  
 👍  
 14:31  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Das könnte aber erklären, warum er bei mir tagelang ohne Probleme lief. Ich hatte ihn immer an einer Außenantenne in Betrieb. Fehlerhafte Aussendungen hatte er bei mir nur beim Starten gemacht.  
 14:32  
 Vielleicht macht der Node durch die HF ständig Reset gemacht?  
@@ -4076,7 +4068,7 @@ aber bei mir nur REBOOT-CRASH, aber keinen Schrott gesendet.
 Da passiert so etwas nicht.  
 Mit GPS ON und kein GPS angesteckt, läuft nur die Suche der BaudRate mehrmals durch und dann wird GPS OFF automatisch durchgeführt.  
 14:41  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Ah ok.  
 14:42  
 Also er baut jetzt mal externe Antenne ran, steckt mal GPS (das Richtige ublox) an und nimmt den WX-Sensor nochmal runter.  
@@ -4089,7 +4081,7 @@ Franz DG2RBF
 Würde den ESP32 mal neu flashen, mit Komplet erase, wenn das nichts hilft, hat die HF-Einstreuung den ESP32 gekillt, eine HF-Einstreuung ist sehr kritisch.  
  
 09:41  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Hatte ich schon gemacht. Ich hatte auch den ESP32 ausgetauscht. Das Problem war, dass der Fehler bei mir in dieser Form gar nicht reproduzierbar war.  
 11:29  
 #### OE3WAS wolfgang z  
@@ -4098,7 +4090,7 @@ Ok, gut. Dann gehen wir wieder die Fehlersuche an:
 "Was ist unterschiedlich (Aufbau, Geräte, ...), wie es bei dir war und was gegenüber dem von DL5WB?❓  
 Es geht um Fehlereingrenzung ...  
 11:34  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Sind schon dabei. Viel kann es nicht sein. Stromversorgung, Antenne, andere HF unmittelbar daneben.  
 11:40  
 #### OE3WAS wolfgang z  
@@ -4118,7 +4110,7 @@ Eine wichtige Änderung in der FW war, die Message mit "::" einleiten zu müssen
 Rainer OE1KFR  
 Das f_sub in dem Log oben deutet darauf hin, dass das extUDP Interface eingeschaltet ist. Dort kann man auch Nachrichten absetzen. Ist der Node Wifi verbunden? War er das bei den Tests auch? Ferrit auf das Kabel zum Netzteil geben?  
 18:18  
-Juergen DF2AP  
+#### Wolfgang Hallmann DF7PN  
 Bei mir war UDP nicht aktiviert. DL5WB hat es glaube wegen MeshDash aktiviert. Ich frag noch mal nach.  
 18:20  
 @Wolfgang: mangels Oszi und weil er bei mir das Problem so nicht hatte, gab’s keine Rückmeldung.  
