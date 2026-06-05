@@ -146,7 +146,7 @@ Eine 4-pol Stiftleiste auf den DC/DC-Wandler **U4 HW-613** löten.
 
 Weitere BT: C6, D4 (alternativ D3)  
 Weitere BT: F1, D5  
-• Zusätzlich ist eine **2A** Feinsicherung **F1** und eine Schutzdiode **D5** (1N4004..1N007) gegen Verpolung eingebaut.  
+• Zusätzlich ist eine **2A** Feinsicherung **F1** und eine Schutzdiode **D5** (1N4004..1N4007) gegen Verpolung eingebaut.  
 • Die Transient Voltage Suppressor Diode **D4** (alternativ **D3**) schützt vor ESD mit einer VBR = 5,6V min. @ I=1mA
 
 ### 2.4 Versorgung über DC/DC R-78B5.0-2.0
