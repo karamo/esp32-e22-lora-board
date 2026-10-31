@@ -1,5 +1,6 @@
-# Q&Q ESP32-E22 PCB  
+# Q&A ESP32-E22 PCB  
 **13.11.2024** Aus Telegram exportierter Chat zur Entwicklung und Information zu ESP32-E22 PCB  
+**alle Links zu DK6BT sind nicht mehr gültig**
 
 #### OE3WAS wolfgang z  
 Alle Beiträge während der Entwicklung der PCB, also vor der endgültigen V2.1.2 wurden in der Telegram Gruppe im Thema #General belassen.  
@@ -10,18 +11,18 @@ Aber grundsätzlich hat V2.1.2 die gleichen Grundfunktionen wie die Vorversionen
 • dementsprechend OLED um 90° gedreht einbaubar  
 • erweiterte Stromversorgungsmöglichkeit  
 ESP32-E22 Projekt - PCB V2.1.2  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2~~  
 
 #### OE3WAS wolfgang z  
 Deep Links für einfacheren Zugriff auf die wichtigsten Unterlagen:  
 Datenblätter u.a. der Key-Components  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/datasheet  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/datasheet~~  
 Schaltplan V2.1.2  
-https://github.com/DK9BT/esp32-e22-lora-board/blob/main/ESP32-E22_V2.1.2/pdf/ESP32-E22_2.1.2_SCH.pdf  
+~~https://github.com/DK9BT/esp32-e22-lora-board/blob/main/ESP32-E22_V2.1.2/pdf/ESP32-E22_2.1.2_SCH.pdf~~  
 Bestückungspläne und Gehäuseeinbau PCB V2.1.2  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/pdf  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/pdf~~  
 Bestückungshinweise PCB V2.1.2  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#best%C3%BCckungshinweise-pcb-v212  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#best%C3%BCckungshinweise-pcb-v212~~  
 
 ❗️Achtung: Die BOM (Bill Of Material = Stückliste) ist noch von V2.1.0 und daher nicht aktuell für V2.1.2 - bitte beachten! Ggf. in den Schaltplan schauen, was aktuell ist.  
 
@@ -38,16 +39,13 @@ Einzelne Teile gibt es nur von Aliexpress (günstiger) ... und da ist auch Liefe
 Den Spannungsregler aber gibt's auch noch anderswo teurer, da ja weit verbreitet.  
 Aber man kann auch alternativ einen teuren Recom DC/DC einbauen. z.B. eine Lieferquelle dafür:  
 https://at.rs-online.com/web/p/schaltregler/1392959  
-10:41  
-#### ben, [15.11.2024 13:59]  
+10:41  #### ben, [15.11.2024 13:59]  
 Achtung: die normalen E32 Nodemcu boards passen nicht, sind zu schmal...am besten einfach über den Amazon link bestellen...die teile passen dann  
-10:42  
-#### Stefan, [15.11.2024 13:28]  
+10:42  #### Stefan, [15.11.2024 13:28]  
 In GitHub sind in der Galerie ein paar Bilder von meinem Node, da kann man den ESP ganz gut erkennen. War auch mal vor Jahren ne Packung von AZ-Delivery im Angebot bei Amazon.  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/gallery/DG4NEU_Stefan  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/gallery/DG4NEU_Stefan~~  
 Inzwischen bevorzuge ich Aliexpress, die Preise sind dort extrem besser und die Herkunft vermutlich die gleiche. Meine Vorliebe für lokale Lieferanten hab ich angesichts dieser Unterschiede mal hintenan gestellt und hab dafür ein bisschen Geduld für die längere Lieferzeit.  
-10:43  
-#### Wolfgang Hallmann DF7PN, [15.11.2024 13:41]  
+10:43  #### Wolfgang Hallmann DF7PN, [15.11.2024 13:41]  
 Ich haben noch eine Frage zu der Liste wegen dem OLED:  
 Da steht drinn: OLED-Display (VCC-GND-SCL-SDA)  
 Ist diese Reihenfolge der Pins genau so einzuhalten, oder ein Tippfehler?  
@@ -58,21 +56,17 @@ Ja, die OLEDs gibt es in beiden Versionen, auf der Platine ist aber vorgesehen, 
 Beim Ali muss man sehr genau hinsehen, dass man die Richtigen bestellt/bekommt. Zur Not eben die Platine anpassen.  
 https://de.aliexpress.com/item/1005006425021544.html  
 Das hatte ich letzt bestellt, die passen und sind günstig, wenn man nicht nur eins bestellt.  
-10:44  
-#### OE3WAS wolfgang z, [15.11.2024 14:10]  
+10:44  #### OE3WAS wolfgang z, [15.11.2024 14:10]  
 1️⃣ Ja, die OLED gibt es in grundsätzlich 2 verschiedenen Pin-Anordnungen. Die angegebene (VCC-GND-SCL-SDA) ist bereits auf der PCB verdrahtet.  
 Fall man VCC <> GND umdrehen möchte, dann sind auf der Rückseiten 2 Leiterbahnen zu unterbrechen und 2 Drahtbrücken herzustellen.  
 Wer will, kann bei JP1 & JP2 Pfostenstecker einbauen (auf der Rückseite) und Jumper verwenden.  
-10:48  
-#### Stefan, [15.11.2024 15:28]  
+10:48  #### Stefan, [15.11.2024 15:28]  
 Du musst nur aufpassen, wenn du den E22 anschließt, der zieht zu viel Strom. Bis dahin solltest du auch die 5V-Versorgung bestücken.  
 10:48  
 Neee, wenn ich ein geeignetes USB-Netzteil verwende, dann funktioniert das. Z.B. von einem RPi.  
-10:50  
-#### Wolfgang Hallmann DF7PN  
+10:50  #### Wolfgang Hallmann DF7PN  
 Danke für die Mühe das hier in diesem Stream zu sammeln!  
-10:55  
-#### OE3WAS wolfgang z  
+10:55  #### OE3WAS wolfgang z  
 #### Stefan, [15.11.2024 15:30]  
 Nicht über den ESP, dann bricht beim Senden die Spannung ein und der macht einen Reboot. Hier getestet.  
 Hilft nur, die Sendeleistung runterzunehmen.  
@@ -88,14 +82,12 @@ Ich sehe da kein Problem.
 und wie man sieht, sind am ESP32-DevKit-V4 die +5V links unten gleich neben der USB-Buchse, also keine langen Leiterbahnen, wo ein nennenswerter Spannungsabfall entstehen könnte.  
 11:08  
 Die beiden bisherigen getesteten Käfer  
-11:09  
-#### OE3WAS wolfgang z, [15.11.2024 15:49]  
+11:09  #### OE3WAS wolfgang z, [15.11.2024 15:49]  
 ja, haben offensichtlich gleiches Pinning und gleichen Pin-Abstand.  
 11:10  
 5 Stk um ≈35€  
-https://www.amazon.de/dp/B08BZFW41S  
-11:18  
-#### ben, [15.11.2024 16:32]  
+~~https://www.amazon.de/dp/B08BZFW41S~~  
+11:18  #### ben, [15.11.2024 16:32]  
 Also um Klarheit wegen der Spannungsversorgung zu bringen....ein "dummes" ("starkes") 5V Netzteil am ESP32 kann auch den E22 mitversorgen...hab ich getestet....ein intelligentes Netzteil schafft aber evtl. nur 500mA. ...die Peaks aber "könnten" ggf. von Elko (am E22) abgefangen werden...ansonsten haben wir für intelligente Netzteile eine USB-C Buchse vorgesehen die wegen der 5.1k Beschaltung die 5V/2A dann auch liefert.  
 #### OE3WAS wolfgang z, [15.11.2024 16:34]  
 kleine Korrektur und Klarstellung: 5k1 bedeuten 5V/3A  
@@ -106,15 +98,13 @@ oder auch einen DC/DC, der 5V/3A liefern kann und mit höherer Eingangsspannung 
 wird dann umgekehrt über die USB-C Buchse der ESP32 mit versorgt?  
 #### OE3WAS wolfgang z, [15.11.2024 16:47]  
 JA, ALLE Varianten sind möglich!  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2#erl%C3%A4uterung-zur-schutzbeschaltung  
+~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2#erl%C3%A4uterung-zur-schutzbeschaltung~~  
 11:28  
 @dg2rbf hat der externe Button irgendeine Funktion?  
 @DG4NEU hast du den Button am ESP32-E22 verwenden können, nachdem du ihn aktiviert hast?  
 #### Stefan, [16.11.2024 11:15]  
 Sorry: Korrektur, gerade noch mal probiert, er schaltet zwischen den einzelnen Messages durch.  
-11:55  
-#### OE3WAS wolfgang z  
-#### OE3WAS wolfgang z, [17.11.2024 14:23]  
+11:55  #### OE3WAS wolfgang z, [17.11.2024 14:23]  
 ESP32-E22-Projekt  
 Ich habe die Idee, einen eigenen Power-Switch auf das Board zu platzieren. Den könnte man direkt bestücken oder auch über Drähte ans Gehäuse führen. Dabei stellt sich die Frage: "In welchen Strompfad einbauen?"  
 1️⃣❓der DC/DC hat ja einen EN-Eingang, an dem man ihn abschalten kann. Das wäre eine ganz einfache Möglichkeit, einen Power-Switch einzubauen. Das würde aber nur bei Versorgung über die Schraubklemme + DC/DC wirken.  
@@ -122,8 +112,7 @@ Ich habe die Idee, einen eigenen Power-Switch auf das Board zu platzieren. Den k
 3️⃣❓ABER: wenn man den ESP32 versorgt, dann kann man den nicht irgendwie ausschalten, da es ja über seine eigene USB läuft.  
 11:55  
 Ok, dann habe ich mich für die einfachste Variante 1️⃣ entschieden und nur einen Jumper mit einer Leiterbahn mit dem EN-Pin des DC/DC verbunden. Offen = EN, geschlossen = OFF (nur mit dem DC/DC-Wandler)  
-12:33  
-#### OE3WAS wolfgang z  
+12:33  #### OE3WAS wolfgang z  
 😭 Ein Einzelentwickler, so wie ich, hat gerade gestern ein E22-Modul "irrtümlich" (eben wegen dieses Spieltriebes) zerstört. Daher ist die endgültige Inbetriebnahme meines ESP32-E22-Boards leider verzögert worden.  
 Ich "wahnsinniger" od. "ehrgeiziger" wollte das E22 nicht direkt auflöten sondern sockeln. Dabei ist die mechanische Spannung zwischen E22-Modul-Lötstellen, die nur Halblöcher sind, offenbar zu groß gewesen und es gab offensichtlich Leiterbahnunterbrechungen am E22.  
 Es kam einfach der Fehlercode -2 bei der Initialisierung von MeshCom.  
@@ -131,8 +120,7 @@ Leider war nicht der Sockel das Problem, sondern MeshCom unterstützte den E22-9
 Zur Unterstützung des E22-900 (für 868MHz) kommen wir noch. ...  
 
 Wenn schon defekt, dann gleich mal öffnen. So sieht ein E22-fffMxxS innen aus.  
-12:36  
-#### Stefan, [19.11.2024 11:41]  
+12:36  #### Stefan, [19.11.2024 11:41]  
 Der Nachteil der (irgendwie-) Sockellösung ist natürlich die fehlende "Bodenhaftung", da müsste man ein dickeres Wärmeableitpad druntersetzen. Bisher allerdings ist die Temperatur des E22 bei mir noch kein Problem gewesen.  
 #### OE3WAS wolfgang z, [19.11.2024 11:42]  
 Es ist dann so viel "Bodenabstand", dass man einen kleinen Kühlkörper unten auf das E22-Modul kleben kann, wie man solche auch beim RPi, Motortreibern u.ä. verwendet.  
@@ -156,8 +144,7 @@ https://www.cdebyte.com/product_serch/E22-400M33S/1/
 12:50  
 Helmi Beh  
 Du musst dich mal mit der Adressierung des I2C-Busses beschäftigen. Das LSB ist das R/W-Bit. Wenn man das nicht berücksichtigt (7bit-Adresse) kommt 0x3C heraus. Wenn man das berücksichtigt (Shift left), wird's dann zu 0x78!  
-12:55  
-#### OE3WAS wolfgang z  
+12:55  #### OE3WAS wolfgang z  
 Kurze Info zur PCB V2.1.2  
 1️⃣ Ich habe mal eine variants.h für Meshtastic erstellt, selbst kompiliert und läuft offenbar problemlos.  
 2️⃣ Der Button funktioniert mit MeshCom ordentlich, aber mit Meshtastic nur sporadisch. Ein PullUp kann das Problem nicht lösen, da GPIO12 = strapping Pin  
@@ -183,8 +170,7 @@ Das ESP32-S3-WROOM-1-N16R8 Board habe ich jetzt auch und festgestellt, dass
 2️⃣ eine andere Pinbelegung als das derzeit verwendete ESP32-DevKitC-V4 hat.  
 ad 1️⃣ es wäre grundsätzlich möglich, den gleichen Formfaktor der Platine beizubehalten, dh. ins gleiche Gehäuse passend.  
 ad 2️⃣ ein Redesign (routing) ist damit erforderlich.  
-14:58  
-#### OE3WAS wolfgang z  
+14:58  #### OE3WAS wolfgang z  
 zu GPS nur wenig Text hier und entsprechende Links, zu viele Beiträge.  
 Besser: ein solches Board, Antenne und Chip als Einheit mit Kabel an die Platine gesteckt.  
 Für die GPS-Antenne ist "rechts oben" neben der SMA-Buchse die Platine ausgespart. Da ist Platz im Gehäuse, die Antenne parallel zur Seitenwand anzubringen.  
@@ -216,17 +202,14 @@ https://t.me/c/1987218802/1/10751
 https://t.me/c/1987218802/1/10854  
 https://t.me/c/1987218802/1/10877  
 https://t.me/c/1987218802/1/10882  
-15:42  
-#### OE3WAS wolfgang z  
+15:42  #### OE3WAS wolfgang z  
 Suitbert, DF2PI, [05.01.2025 18:29]  
 Einbau GPS-Board und GPS-Antenne in OE3WAS-Meshcom-Trcvr: wer eine mechanische Lösung hierfür sucht, darf sich hier gerne bedienen: https://www.printables.com/model/1135886-montagebrucke-interne-gps-antenne-gps-board-fur-me vy 73, Suitbert, DF2PI 😀  
-15:51  
-#### ben, [06.01.2025 20:55]  
+15:51  #### ben, [06.01.2025 20:55]  
 ...übrigens wärmeleitpaste unter den E22 in geringen! Mengen macht sinn...hab irgendwo was von doppelseitigem Klebeband gelesen...lieber Paste  
 #### OE3WAS wolfgang z, [06.01.2025 20:56]  
 dafür ist auch die größere Bohrung in der Mitte da, um die auch nachträglich noch reindrücken zu können!  
-15:52  
-#### Wolfgang Hallmann DF7PN, [06.01.2025 19:21]  
+15:52  #### Wolfgang Hallmann DF7PN, [06.01.2025 19:21]  
 Ich habe heute diese Kabel bekommen USB-C mit D+/- und Cc1/2. Ich messe die mA mit einem USB Adapter und sehe beim Senden mit einem doofen 3A/5V Steckernetzteil beim Senden mit 22 dBm nur max. 0,8 A . Nehme ich eins mit PD Gedöns für CC dann sinds nur 200 mA.  
 Da würde ich sagen das mit dem CC Signal tut nichts signalisieren. Noch dazu frage ich mich wenn normal 0,8A gebraucht werden, da 3A Netzteile angeraten werden? Hat jemand Erfahrungen mit der CC Steuerung?  
 #### OE3WAS wolfgang z, [06.01.2025 20:18]  
@@ -249,7 +232,7 @@ Dass dann u.U. auch ein 2A-Netzteil ausreicht, dass kann schon sein.
 Dass real weniger Strom benötigt wird, das kann auch sein.  
 Ben hat das mit den 5k1 damals gefunden und ich habe mich dann sehr lange und ausgiebig mit der USB-C PD Thematik beschäftigt. Es passt alles, so wie es ist.  
 Wenn es nicht passen sollte, dann ist es ein unpassendes Netgerät u/o ein inkompatibles USB-C Kabel!  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#22-versorgung-%C3%BCber-usb-c  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#22-versorgung-%C3%BCber-usb-c~~  
 #### ben, [06.01.2025 20:57]  
 ...und wenn man das board extern mit spannung vesorgt dann am einfachsten über pg verschraubung und nem externen Netzteil.....usb-c war eher zum testen aufem Schreibtisch gedacht...wenn der node im Freien hängt macht ja auch 5m USB Leitung keinen Sinn  
 15:53  
@@ -291,8 +274,7 @@ Zusätzlich, was noch in der Doku noch nicht so genau beschrieben ist:
 z.B. die 6-polige (VCC GND CC1 CC2 D+ D-), wobei die Belegung offenbar von #### Stefan gefunden wurde. Siehe zuvor.  
 20:50  
 es kann auch sein, dass die 5-polige (VCC GND CC D+ D-) funktioniert. Davon habe ich eine Belegung gefunden. Wahrscheinlich gemeinsames CC, also CC1-CC2 verbunden, was aber zu dem bekannten RPi-Problem führt.  
-20:50  
-#### OE3WAS wolfgang z, [01.12.2024 11:10]  
+20:50  #### OE3WAS wolfgang z, [01.12.2024 11:10]  
 ❌ Die 2-poligen (nur VCC & GND) und die 4-poligen (VCC & GND & D- & D+) funktionieren aber definitiv NICHT, da die CC1 & CC2 Anschlüsse fehlen und daher von dem USB-C Netzteil nur 5V/500mA bereitgestellt werden darf, außer ev. Ausnahmen, wenn man "dumme" Netzteile u/o "dumme" USB-C Anschlusskabel verwendet.  
 21:01  
 Andre fragte nach "Remote-Steuerung"?  
@@ -311,110 +293,81 @@ Hier ein Bild des Laboraufbaus.
 Wild aber es funktioniert .. habe es auf der HAMRADIO vorgestellt.  
 Auf dem orangefarbenen Board ist ein Pegelkonverter aufgebaut.  
  
-20 January 2025  
-#### Stefan  
+20 January 2025  #### Stefan  
 Das sollte auch ohne eine Anleitung kein Problem sein, mit Platine, den Bauteilen, Bestückungsliste und Schaltplan klappt das gut. Bei Fragen dazu, einfach hier melden. 😊  
-15:47  
-Ben  
+15:47  Ben  
 und:  
-15:47  
-https://md.freifunk-mwu.de/s/7OQwy7e9F  
+15:47  https://md.freifunk-mwu.de/s/7OQwy7e9F  
 👍  
-15:53  
-#### Stefan  
+15:53  #### Stefan  
 Könnte André DL4QB vll auf seiner Seite verlinken!  
-15:57  
-#### Wolfgang Hallmann DF7PN  
+15:57  #### Wolfgang Hallmann DF7PN  
 Top 👍 Super herzlichen Dank 😊  
-17:44  
-#### OE3WAS wolfgang z  
+17:44  #### OE3WAS wolfgang z  
 Kannst du auch auf GitHub nachlesen. Ich habe alle wichtigen Informationen gegeben. Brauchst nur lesen und etwas Elektronik-Verständnis. 
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly~~  
 
-1 February 2025  
-10:23  
-#### Wolfgang Hallmann DF7PN  
+1 February 2025  10:23  #### Wolfgang Hallmann DF7PN  
 Guten Morgen. Wie habt Ihr bei Euch die Stromversorgung gelöst? Schraubkkemmen, USB-C Breakout-Board oder direkt an den ESP32? Falls jemand USB-C-Breakout nutzt, gibt es einen Link für ein vierpoliges Kabel um die USB-C-Buchse nach außen zu führen?  
-10:25  
-#### Stefan  
+10:25  #### Stefan  
 Schau mal weiter oben, dort ist der Link für das 6-Polige Kabel. Das funktioniert prima. Aktuell habe ich einfach über 5V-Schraubkkemme versorgt.  
 10:27  
 #### Wolfgang Hallmann DF7PN  
 Danke #### Stefan. Hast Du das HW-613 Modul verbaut oder speist Du einfach 5V fest ein?  
 10:29  
 Kann man als Sicherung auch so eine selbstrückstellende Sicherung bei F1 einbauen? Die kleinen Glassicherungen scheint es nur im 1.000 er Pack zu geben.  
-10:30  
-#### Stefan  
+10:30  #### Stefan  
 Bei mir hängt die 5V-USV dran, die über USB an nem kleinen Netzteil. Bilder dazu im Github  
 10:30  
 Sollte auch gehen! Gute Idee. Nur sind 5A etwas heftig, 3A müsste reichen  
-10:31  
-#### Wolfgang Hallmann DF7PN  
+10:31  #### Wolfgang Hallmann DF7PN  
 Die Dinger sind etwas größer. Sollten aber neben den Elko gut passen.  
 10:32  
 Würde so aussehen  
 10:33  
 Hab die 5 A Variante bestellt.  
-10:33  
-#### Stefan  
+10:33  #### Stefan  
 Sollte die Diode aushalten... 😉  
-10:35  
-#### Wolfgang Hallmann DF7PN  
+10:35  #### Wolfgang Hallmann DF7PN  
 Du hast so ein Montagekreuz aus dem 3-D Druck drunter. Korrekt?  
-10:35  
-#### Stefan  
+10:35  #### Stefan  
 Ja, das hält auch das GPS-Antennchen fest.  
-10:35  
-#### Wolfgang Hallmann DF7PN  
+10:35  #### Wolfgang Hallmann DF7PN  
 Was ist das für eine USV?  
-10:37  
-#### Stefan  
+10:37  #### Stefan  
 https://de.aliexpress.com/item/1005006860598580.html  
 10:38  
 Hält mit 2x3400mAh-Akkus recht lange durch und kostet wenig.  
-11:05  
-#### Wolfgang Hallmann DF7PN  
+11:05  #### Wolfgang Hallmann DF7PN  
 Was es nicht alles gibt. Das wird ja doch ein Riesen Projekt 😂👍  
-11:26  
-#### Stefan  
+11:26  #### Stefan  
 Hast du einen 3D-Drucker in Reichweite?  
-13:55  
-Wolfgang Klein  
+13:55  Wolfgang Klein  
 #### Stefan die 5V Variante oder die 12V-Variante?  
-14:11  
-Wolfgang Klein  
+14:11  Wolfgang Klein  
 Und kann man die STL-Datei bekommen?  
-14:38  
-#### Stefan  
+14:38  #### Stefan  
 Ich hab die 5V-Variante etwas "verbessert", so dass die 5,3V ausspuckt. Wird ein SMD-R getauscht. So kann man die Ohne Sendeleistungsverlust an de E22 anklemmen.  
 14:39  
 Kannst du gerne haben, muss die mal suchen. Ich hatte verschiedene Varianten, die Finale war die mit GPS-Antennen-Halterung.  
-14:44  
-Wolfgang Klein  
+14:44  Wolfgang Klein  
 Super Danke! Und hast Du noch einen Tip für die 3400mAh Akkus? Bin da etwas vorsichtig wegen Fakeangaben  
-14:48  
-#### Stefan  
+14:48  #### Stefan  
 Da passen alle 18650 FlatTop rein, es reichen auch 3000er aus. Die brauchen auch nicht "geschützt" sein, darum kümmert sich die USV.  
-14:59  
-Wolfgang Klein  
+14:59  Wolfgang Klein  
 wenn du einen Bestelllink hättest?  
-15:06  
-#### Stefan  
+15:06  #### Stefan  
 Ich hab meine bei Akkuman bestellt, bin bisher zufrieden:  
 https://www.akkuman.de/shop/10x-Tenpower-INR18650-32HE-36V-Li-Ion-3100mAh-10A-Entladestrom  
 15:08  
 Aber bitte beachten, dass die Zellen kein BMS haben, sollten also nur für T-Beam, die USV etc. verwendet werden!  
-15:10  
-Wolfgang Klein  
+15:10  Wolfgang Klein  
 LED Lampen sollten auch gehen, Danke schaue ich mir mal an  
-15:11  
-#### Stefan  
+15:11  #### Stefan  
 Nur, wenn die ein BMS ha#### ben, sonst ist davon abzuraten. Normale Taschenlampen zum Beispiel haben keinen Schutz gegen Tiefentladung.  
-15:28  
-#### Wolfgang Hallmann DF7PN  
+15:28  #### Wolfgang Hallmann DF7PN  
 An den STL-Dateien hätte ich auch Interesse. Hab jemanden in der Nähe, der 3D-Druck machen kann.  
-16:38  
-#### OE3WAS wolfgang z  
+16:38  #### OE3WAS wolfgang z  
 4-polig geht NICHT - siehe GitHub!  
 16:40  
 Nein, gibt es auch 10 Stk z.B. man muss nur mal suchen.  
@@ -423,15 +376,14 @@ https://www.amazon.de/dp/B083R44LKT
 
 #### OE3WAS wolfgang z  
 Der Elko C2 lins obere Ecke des ESP32 ist völlig unnötig! Siehe GitHub!  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#98-weitere-hinweise  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#98-weitere-hinweise~~  
 19:14  
 ❓Warum lötet ihr Bauteile ein, die ich nicht beschrieben habe, dass sie eingelötet werden sollen?  
 ❗️Kaum jemand weiß, was es mit diesem ADC-Eingang für eine Bewandtnis hat.  
 
-19:19  
-#### OE3WAS wolfgang z  
+19:19  #### OE3WAS wolfgang z  
 Alles, was ich hier nicht beschrieben habe, das sind Spezialfälle und dabei sollte man wissen, was man tut!  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#best%C3%BCckungshinweise-pcb-v212  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/ESP32-E22_V2.1.2/PCB-Assembly#best%C3%BCckungshinweise-pcb-v212~~  
 
 Der Elko link soben schadet grundsätzlich nicht, aber er verlängert in unnötiger Weise den RESET-Vorgang und das könnte in speziellen Versorgungsspannungssituationen zu Fehlfunktionen führen. Ich empfehle, den nicht einzulöten!  
 Der war nur für die "alten" ESP32-Board tw. erforderlich bez. des Flash-Vorganges.  
@@ -445,15 +397,13 @@ Spannungsteiler ist so zu dimensionieren, dass aus der Maximalspannung maximal 3
 
 Der Spannungsteile ist von mir 2:1 gewählt worden, da ich davon ausgehe, auch ≈5V messen zu können und somit der ADC-Eingang nicht "am Anschlag" steht.  
 
-19:46  
-#### Ben  
+19:46  #### Ben  
 The ESP32 includes two 12-bit SAR ADCs – ADC1 and ADC2 – and supports measurements on 18 channels (analog-enabled pins). ADC1 is available on eight GPIOs (32 to 39), while ADC2 is available on ten GPIOs (0, 2, 4, 12 to 15 and 25 to 27).  
 
 wir müssten das aber konfigurierbar machen...also den teiler  
 der eine will 13.8V messen..der nächste nur 5V...  
 oder wir einigen uns auf nen spannungsteiler und stellen das fix ein  
-19:52  
-#### Stefan  
+19:52  #### Stefan  
 Das würde ich vorschlagen, 0-20V, das ist von der Genauigkeit dann noch ausreichend.  
  
 #### Ben  
@@ -474,19 +424,14 @@ bei 100k/22k könnten wir 18,5V messen
 #### OE3WAS wolfgang z  
 Verstärkungsfaktor bzw. Kalibrierungsfaktor.  
 Damit kann man die Genauigkeit noch erhöhen wegen der verschiedenen Toleranzen.  
-19:58  
-Ben  
+19:58  Ben  
 @DG4NEU : bist du grade am rechner? könnte dir ne testversion schnell machen  
-19:58  
-#### Stefan  
+19:58  #### Stefan  
 Nee, leider gerade nicht, kann nachher noch mal gucken.  
-19:59  
-#### OE3WAS wolfgang z  
+19:59  #### OE3WAS wolfgang z  
 macht mal wer ein Issue [Enhancement] für den ADC-Pin und den Kalibrierungsfaktor.  
 
-#### 2 February 2025  
-12:23  
-#### Stefan  
+#### 2 February 2025  12:23  #### Stefan  
 hier noch der Ali-Link für die  
 Einbaubuchse für die Versorgung des E22/ESP32-Boards:  
 rot/schwarz = VCC/GND  
@@ -499,196 +444,128 @@ https://de.aliexpress.com/item/1005005605959202.html
 Ben  
 Flex USB Kabel zum flashen  
 
-7 February 2025  
-
-13 February 2025  
-13:43  
-#### Wolfgang Hallmann DF7PN  
+13 February 2025  13:43  #### Wolfgang Hallmann DF7PN  
 Kurze Frage zum Einbau von U4 HW613. Der muss ja unter das OLED-Display? Ich hab dem Ding eine Stiftleiste verpasst. Passt da noch eine 4er Buchse auf die Leiterplatte oder habt ihr die Stiftleiste direkt eingelötet?  
-13:52  
-#### Stefan  
+13:52  #### Stefan  
 Die Platine ist so designed, dass der auch stehend eingebaut werden kann. Ich würde das nicht mit Stiftleisten oder Buchsenleisten machen, sondern mit starren Drähten fest einlöten. So findet er auch unter dem Display Platz, sonst wird das zu eng. Und unter das Modul eine Isolierung anbringen, damit es nicht direkt aufliegt. Z.B. mit doppelseitigem Klebeband.  
 
 #### OE3WAS wolfgang z  
 einfach so wie du es mit der Stiftleiste bestückt hast von unten durchstecken:  
 16:17  
 NEIN - ist nur marginal höher als die fette Diode  
-17:58  
-#### Wolfgang Hallmann DF7PN  
+17:58  #### Wolfgang Hallmann DF7PN  
 Super Danke. Spannung hab ich auf 5,3V eingestellt. Dann rein damit 👍  
 18:01  
 So richtig?  
-18:31  
-#### OE3WAS wolfgang z  
+18:31  #### OE3WAS wolfgang z  
 Ja, genau so! Passt  
-18:55  
-#### Wolfgang Hallmann DF7PN  
-Danke Wolfgang 👍  
-14 February 2025  
-20:12  
-Andreas Frank  
+14 February 2025  20:12  Andreas Frank  
 Hallo, ich habe eine Frage zur Einstellung der Sendeleistung. Bei meinen beiden Nodes kann ich nur 17 dBm einstellen, obwohl diese mehr könnten. Mache ich da was falsch? Danke für die Antworten. VG Andreas  
-20:17  
-#### Stefan  
+20:17  #### Stefan  
 Du machst nix falsch, die PA im E22 ist noch nicht passend in der Software/FW berücksichtigt. Daher einfach Maximum einstellen, bzw. auch weniger, wenn die volle Leistung nicht benötigt wird.  
-20:38  
-Rainer OE1KFR  
+20:38  Rainer OE1KFR  
 Sofern du die App meinst ist das ein Bug, den ich gestern behoben habe -> please wait for next Release. Bitte per seriell einstellen. In der App wird in Zukunft nur mehr die Base Power des Chips ausgewählt, die Verstärkung der PA ist dann selbst zu berücksichtigen  
-22:07  
-Ben  
+22:07  Ben  
 22db musst du im web-if einstellen dann passt es  
 22:07  
 In echt kommen dann 33db raus  
-22:09  
-Andreas Frank  
+22:09  Andreas Frank  
 Hallo, wenn ich das mache und das Web-Interface aktualisiere stehen die 17 dBm wieder dort.  
-22:09  
-Ben  
+22:09  Ben  
 Hast du die app benutzt oder nur das web if?  
 22:10  
 Screenshot (14.02.2025 22:10:29)  
 22:10  
 So solls aussehen beim e22  
-15 February 2025  
-08:47  
-#### Stefan  
+15 February 2025  08:47  #### Stefan  
 Hast du den E22/ESP32-Bausatz oder einen anderen Node? Das oben Beschriebene gilt nur für diesen, nicht für T-Beam oder so.  
-09:05  
-Andreas Frank  
+09:05  Andreas Frank  
 Hallo #### Stefan, ja, ich habe ein T-Beam. Ich dachte, der kann 100mW.  
-09:10  
-#### Stefan  
+09:10  #### Stefan  
 Bei den "Alten" Versionen des T-Beam ist die Leistung bewusst gedrosselt, sonst tauchen unerwünschte Effekte auf. Nur die neuen laufen mit 21dB problemlos.  
-09:23  
-Rainer OE1KFR  
+09:23  Rainer OE1KFR  
 Müsste man halt 100% verifizieren, dass das für alle SX127x Boards einwandfrei geht. Mein Infostand war, dass der Boost PA Mode bei den Chips ein verzerrtes Signal zur Folge hat, weil es da einen Designfehler im Chip gibt.  
-09:31  
-#### Stefan  
+09:31  #### Stefan  
 Wie könnte man das feststellen? Hohe Leistung und dann schauen, ob msg ankommen?  
-09:33  
-Rainer OE1KFR  
+09:33  Rainer OE1KFR  
 Ja und das halt nicht nur am Schreibtisch.  
-09:35  
-#### Stefan  
+09:35  #### Stefan  
 Ich hab leider keinen der Teile mehr da, vll kann ich mir einen besorgen die Tage.  
-09:46  
-#### Wolfgang Hallmann DF7PN  
+09:46  #### Wolfgang Hallmann DF7PN  
 Frage an die Profis: hier ist beim Workshop gerade ein Pin vom Board am E22 weggebrannt. Ist dieser Pin wichtig? Platine damit kaputt?  
-09:47  
-09:48  
-#### OE3WAS wolfgang z  
+09:48  #### OE3WAS wolfgang z  
 Wie ist das passiert?  
-09:48  
-#### Stefan  
+09:48  #### Stefan  
 Das sind 3 Masse-Pins nebeneinander, daher ist der Verlust zu verschmerzen... 😉  
-09:49  
-#### OE3WAS wolfgang z  
+09:49  #### OE3WAS wolfgang z  
 Genau , so ist es.  
-09:49  
-#### Stefan  
+09:49  #### Stefan  
 Die 3 Pins sind eh etwas schwierig zu löten, da braucht es ordentlich Hitze, weil die Board/Chip-Masseflächen die Wärme rasch abtransportieren.  
 09:51  
 Gleiches gilt für die Pins gegenüber, 2x Masse und in der Mitte die Antenne.  
-09:54  
-#### Wolfgang Hallmann DF7PN  
+09:54  #### Wolfgang Hallmann DF7PN  
 Danke, das ist gerettet.  
-09:55  
-Rainer OE1KFR  
+09:55  Rainer OE1KFR  
 Wir müssten das eh erst in der FW entsprechend möglich machen.  
-11:40  
-Ben  
+11:40  Ben  
 Ich kann THD messen relativ genau...wir müssten da halt nen sauberen träger irgendwie rausgeben....müsste man mal in der radiolib schauen....vielleicht im fsk mode  
-👍  
-12:19  
-Jochen DG3FBL  
+12:19  Jochen DG3FBL  
 T-Beam 1 habe ich zwei hier  
-13:38  
-#### OE3WAS wolfgang z  
+13:38  #### OE3WAS wolfgang z  
 Hmm, wie willst du bei den Chirp-Signal von LoRa eine Verzerrung messen. Stelle ich mir nicht einfach vor.  
-14:33  
-Ben  
+14:33  Ben  
 Der kann auch andere modi.außer. chirp....  
-16 February 2025  
-15:46  
-Stelio  
+16 February 2025  15:46  Stelio  
 Hallo, ich habe für mein ESP32-E22 Projekt ein SMA to N Buchse eingebaut.  
 Also SMA Buchse - SMA Stecker - 20cm RG178 - N-Buchse. Als ich die node in Betrieb genommen habe, musste ich feststellen das der Empfänger verglichen mit einem TLORA T3_V1.6.1 ziemlich schlecht ist. Ich habe dann eine zweite node gebaut, aber habe diesmal eine IPEX to N-Buchse genommen. Jetzt war alles perfekt und daher habe ich die erste Platine auch auf IPEX to N-Buchse umgebaut und die Empfangsleistung ist jetzt auch ok.  
 Kann es sein das das SMA to N-Buchse Kabel so stark dämpft oder habe ich da was übersehen?  
-15:47  
-#### Stefan  
+15:47  #### Stefan  
 Hast du die Lötbrücke auf der Platine für die SMA-Buchse eingelötet?  
-15:48  
-Stelio  
+15:48  Stelio  
 ja, habe ich  
-15:52  
-#### Stefan  
+15:52  #### Stefan  
 Das sollte dann prima funktionieren. Du kannst das auch nachmessen, ob evtl. irgendwo was nicht passt: erst mal mit einem Widerstansmessgerät (Multimeter) auf Durchgang und Isolation. Dann evtl. mit SMA-N-Adapter testen.  
-15:58  
-Stelio  
+15:58  Stelio  
 Ok, Danke #### Stefan. Das Kabel habe ich schon durchgemessen. Die Verbindung Pin21 und R8 dürfte auch ok sein, BTW den jumper habe ich jetzt wieder entfernt.  
-16:00  
-#### Stefan  
+16:00  #### Stefan  
 R8 ist ja 0Ohm, ich hab dafür einen Draht eingelötet. 😉  
-16:03  
-Stelio  
+16:03  Stelio  
 ja, ich auch. Aber es gibt 0R zu kaufen ... habe ich nie verstanden.  
-16:04  
-#### Stefan  
+16:04  #### Stefan  
 Macht Sinn für Bestückungsmaschinen. Daher gibt es die.  
 16:07  
 Ich hab meinen Node mit einem IPX-Kabel angeschlossen, einmal IPX-SMA und einen anderen mit IPX-N, einer mit IPX-BNC ist gerade im Bau. Probleme gab es dabei nicht bisher  
-16:25  
-#### Stefan  
+16:25  #### Stefan  
 Ist meines Erachtens die bessere Variante, als den "Umweg" über die SMA-Buchse zu nehmen.  
-16:32  
-Stelio  
+16:32  Stelio  
 Ja, ich habe ja meine nodes auch auf IPEX umgestellt bzw. angeschlossen.  
-21:54  
-Helmi Beh  
+21:54  Helmi Beh  
 Und bitte denkt dran, dass auch hochwertige IPX-Stecker nur für maximal 10 Steckzyklen spezifiziert sind, weil sie gerne ausleiern.  
-👍  
-21:58  
-#### Stefan  
+21:58  #### Stefan  
 😊 Daher ja für den Gehäuse-Einbau. Das Kabel macht man nicht dauernd ab.  
 Durch die Rumtesterei hab ich die allerdings schon bis an die Verschleißgrenze abgenutzt. Erstaunlich, was die trotzdem aushalten. Ob dann noch die Bandbreite bis 6GHz reicht, hab ich nicht ausprobiert! 😀  
-🤣  
-22 February 2025  
-17:10  
-#### Stefan  
+22 February 2025  17:10  #### Stefan  
 Mal so als Info: Vll kann sich der eine oder andere noch erinnern, ich hatte Probleme mit bestimmten ESP32-Clones aus China. Die sind immer mal unkontrolliert "ausgestiegen" und haben Müll gepostet. Mit der aktuellen Firmware hab ich die nun seit einigen Tagen auf dem E22-Board laufen, keinerlei Probleme mehr. Also kein Unterschied zu den doppelt so teuren ESP32 von EZ-Delivery.  
 Die eine Variante hat einen IPEX-Anschluss für eine ext. WLAN/BT-Antenne, das erhöht die Reichweite dafür ordentlich.  
-17:12  
-#### OE3WAS wolfgang z  
+17:12  #### OE3WAS wolfgang z  
 Ahh, gut. Und was meinst du, war das Problem?  
-17:16  
-#### Stefan  
+17:16  #### Stefan  
 Gute Frage, ich hab ein bisschen die Spannungsversorgung in Verdacht gehabt, aber die ist nicht verändert. Daher vermute ich ich irgendwas in der Firmware. Erklären kann ich es nicht.  
-23 February 2025  
-15:50  
-#### Stefan  
+23 February 2025  15:50  #### Stefan  
 Inzwischen sind die Platinen der 2. Auflage zum Projekt bei mir angekommen, ich fange nun an, die zu verschicken. Sollte noch jemand Interesse ha#### ben, wir haben noch eine geringe Anzahl, die nicht reserviert wurden. 4€ + VVK (2€ DL, 4€ OE). Bitte dann ggf. Mail an dg4neu(at)darc.de  
 Bitte auch melden, wenn die mir bekannten "Besteller" heute keine Info von mir bekommen haben.  
-25 February 2025  
-14:59  
-#### Stefan  
+25 February 2025  14:59  #### Stefan  
 Prima, viel Spaß und Erfolg bei Bau! 🙂  
-18:16  
-#### OE3WAS wolfgang z  
+18:16  #### OE3WAS wolfgang z  
 Bei Startschwierigkeiten am Board dann versuchsweise doch den C1 bestücken. Der verlängert die Reset Zeit.  
-18:46  
-André  
+18:46  André  
 Platinen sind heute angekommen 😊  
 Vielen Dank #### Stefan.  
-👍  
-27 February 2025  
-16:06  
-#### Wolfgang Hallmann DF7PN  
+27 February 2025  16:06  #### Wolfgang Hallmann DF7PN  
 @DG4NEU meine Platinen sind auch eingetroffen. Danke für den Super Service 👍  
-16:08  
-#### Stefan  
+16:08  #### Stefan  
 Gerne, manchmal klappt's auch mit der Post! 😀  
-16:12  
-#### Wolfgang Hallmann DF7PN  
+16:12  #### Wolfgang Hallmann DF7PN  
 kurze Nachfrage: das bei mir verbaute USB-C-Adapterboard hat 4 Anschlüsse  
 -V  
 -CC1  
@@ -696,50 +573,34 @@ kurze Nachfrage: das bei mir verbaute USB-C-Adapterboard hat 4 Anschlüsse
 -G  
 Das Kabel hat sechs Anschlüsse?  
 Was mache ich mit D+ und D-?  
-16:13  
-#### Stefan  
+16:13  #### Stefan  
 Ja, da gibt es noch ws/bl für D+/D-, aktuell nicht genutzt  
-16:17  
-#### Wolfgang Hallmann DF7PN  
+16:17  #### Wolfgang Hallmann DF7PN  
 Super. Dann lass ich die einfach dran und isolier sie.  
-16:20  
-#### Stefan  
+16:20  #### Stefan  
 Mach das, ich hab ne Idee dafür, muss das aber erst noch testen.  
-21:32  
-#### Wolfgang Hallmann DF7PN  
+21:32  #### Wolfgang Hallmann DF7PN  
 Unsere Leute haben da folgendes gemacht. Ein microusb Winkel gekauft und da die Datenleitungen dran gemacht. Somit kann man mit einer externen USB-C Buchse auch die serielle am microusb Anschluss nutzen  
-21:37  
-#### Stefan  
+21:37  #### Stefan  
 Das hab ich heute auch versucht, aber das klappt nicht so, wie ich mir das vorgestellt hab.  
-🤔  
-22:41  
-#### Stefan  
+22:41  #### Stefan  
 Der ESP braucht wohl die 5V an der Buchse, hatte aber heute keine Zeit. Morgen vll. dann gibts auch Einzelheiten.  
 28 February 2025  
-07:57  
-#### Wolfgang Hallmann DF7PN  
+07:57  #### Wolfgang Hallmann DF7PN  
 Klingt gut. Dann warte ich mal auf den Bericht 👍  
-12:10  
-Carsten  
+12:10  Carsten  
 Vielen Dank!!!!! sind bei mir auch angekommen  
-👍  
-12:27  
-#### Stefan  
+12:27  #### Stefan  
 Kannst Du mir mal zeigen, wie das (vom Schaltbild her) gemacht wurde? Hier funktioniert das nicht, wenn nur die Datenleitungen am Micro-USB hängen. Oder haben die Kollegen, das komplett über die Buchse gemacht? Nur die CC1/CC2 am Board angeschlossen? Mit D+/D-/GND/VCC von der Buchse an den ESP klappt das.  
-15:07  
-#### Wolfgang Hallmann DF7PN  
+15:07  #### Wolfgang Hallmann DF7PN  
 Ich habe selber nicht damit experimentiert. Warum es nicht geht bei dir tut mich verwundern. Angeblich soll das USB C Board parallalan der Versorgung zum ESP32 hängen. Ob ich dann die Datenleitungen und Strom getrennt anlege sollte egal sein. Leider habe ich gerade den Schaltplan nicht greifbar. Da müsste es sich zeigen.  
-17:35  
-Ben  
+17:35  Ben  
 Gar nicht ...direkt an Antenne  
-18:13  
-Helmut OE5HWN  
+18:13  Helmut OE5HWN  
 Beim E22 Habe ich weniger Bedenken als bei der 433-iot Pa  
-18:51  
-Jörg DF3EI (df3ei@db0kk.org)  
+18:51  Jörg DF3EI (df3ei@db0kk.org)  
 Sicher eine aus der selben Quelle wie das PA-Modul... 😁  
-1 March 2025  
-18:51  
+1 March 2025  18:51  
 #### Wolfgang Hallmann DF7PN  
 3 x ESP32E22 in Thüringen fertig ✅  
 👍  
@@ -780,7 +641,7 @@ https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf
 11:31  
 11:37  
 Datenblätter & Application Note AN144 siehe Github  
-https://github.com/DK9BT/esp32-e22-lora-board/tree/main/datasheet  
+~~https://github.com/DK9BT/esp32-e22-lora-board/tree/main/datasheet~~  
 11:49  
 #### Stefan  
 Danke für die Info! Demnach ist das aber eine gute Lösung, so liefert USB-C genügend Strom und auch die Kommunikation ist möglich.  
@@ -1307,7 +1168,7 @@ Ok
 15 April 2025  
 12:05  
 #### OE3WAS wolfgang z  
-https://github.com/DK9BT/esp32-e22-lora-board/blob/main/ESP32-E22_V2.1.2/PCB-Assembly/README.md#2-spannungsversorgung  
+~~https://github.com/DK9BT/esp32-e22-lora-board/blob/main/ESP32-E22_V2.1.2/PCB-Assembly/README.md#2-spannungsversorgung~~  
 13:56  
 #### OE3WAS wolfgang z  
 C3 470µF + C4 100nF sind dafür da, die Stromspitzen vom E22 abzublocken. Und somit den Spannungseinbruch abzumildern. Daher auch ganz nahe am E22 platziert.  
@@ -1432,25 +1293,18 @@ Bitteschön!
 15:26  
 #### Wolfgang Hallmann DF7PN  
 Wäre sicher gut gewesen diese MHZ in den Namen mit einzubringen wenn man nicht die einfachen Nutzer auflaufen lassen wollte.  
-15:27  
-#### Stefan  
+15:27  #### Stefan  
 Naja, man sollte schon ein bisschen über die Bezeichnungen Bescheid wissen, wenn man das nicht über den Webflasher macht. Die Unterschiede 433/868 sind da nicht ganz unwichtig. 😉  
-15:39  
-Kurt Baumann OE1KBC  
+15:39  Kurt Baumann OE1KBC  
 SX1268 ist 400 Typ SX1262 ist 900 Typ  
 15:40  
 400 ist 433Mhz … 900 ist 868  
-26 May 2025  
-09:02  
-#### Wolfgang Hallmann DF7PN  
+26 May 2025  09:02  #### Wolfgang Hallmann DF7PN  
 Guten Morgen. Den BME280-Sensor gibt es heute bei AZ-Delivery im 3er-Pack für 11,99€ zzgl. Versand im Angebot.  
-https://www.az-delivery.de/products/gy-bme280?variant=19385550536800&utm_source=90-Days-Engaged&utm_medium=email&utm_campaign=260525_GY-BME280-Sensor_promo_sensoren_LVC&utm_id=01JVYRSQH4SAEJ2JJEZ2ZQGEFT&utm_term=Campaign&utm_content=👉%20Hier%20kaufen%20und%20sparen%20👈&_kx=b2nJXzFUmZF_Rht_n9MewZS-R95z-K-0YgkW6K9F5hdDH8S0JoqPcYl_FPEAP9cG.QVRJMi  
-29 May 2025  
-19:57  
-Wolfgang  
+~~https://www.az-delivery.de/products/gy-bme280~~    
+29 May 2025  19:57  Wolfgang  
 jemand ne Ahnung was mit "brownout detector was triggered" gemein ist. hab mir das PCB von DK9BT zusammen gebrutzelt und wenn das teil startet bekomme ich nach der initalisierung diese Meldung im Telnet client angezeigt. meine Versorungs ist ein 5V 3A netzeil, das sollte nach angaben eigentlich reichen  
-19:59  
-#### Stefan  
+19:59  #### Stefan  
 Wenn das Netzteil genau 5V liefert, an der Schotty-Diode noch 0,3V abfallen und beim ersten Senden mit 2W die Spannung noch mal ein wenig zusammenbricht, dann rutschst du unter die "Brownout-Schwelle". Evtl. die Diode mal überbrücken.  
 20:00  
 Bei anderen waren es unsaubere Lötstellen, an denen durch Übergangswiderstände ein Spannungsabfall aufgetreten ist. Also beim "Zusammenbrutzeln" wundert mich das nicht! 😄  
@@ -3189,7 +3043,7 @@ meinst du, dass es korrekt sei?"
 12:36  
 #### OE3WAS wolfgang z  
 schau mal, hier habe ich die korrekte Verdrahtung beschrieben:  
-https://github.com/DK9BT/esp32-e22-lora-board/blob/main/ESP32-E22_V2.1.2/PCB-Assembly/README.md#41-gps  
+~~https://github.com/DK9BT/esp32-e22-lora-board/blob/main/ESP32-E22_V2.1.2/PCB-Assembly/README.md#41-gps~~  
 12:37  
 Für das ESP32-E22 PCB gilt speziell folgende Zuordnung/Verdrahtung:  
 In der configuration.h  
