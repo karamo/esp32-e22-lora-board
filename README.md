@@ -7,7 +7,8 @@ EBYTE E22-400M33S (2W/33dBm) https://www.amazon.de/dp/B0BMP99S3D
 
 if needed: E22->N Pigtail: https://www.amazon.de/dp/B0C8J131PD
 
-ESP32 Board Dev Kit C V4 https://www.amazon.de/dp/B08BTS62L7/ / https://www.amazon.de/dp/B07Z83MF5W/
+ESP32 Board Dev Kit C V4 ~~https://www.amazon.de/dp/B08BTS62L7/ / https://www.amazon.de/dp/B07Z83MF5W/~~  
+AZ-Delivery gibt es nicht mehr!
 
 Adapter-Kabel zum flashen im eingebauten Zustand https://www.amazon.de/dp/B096843RY3/
 
